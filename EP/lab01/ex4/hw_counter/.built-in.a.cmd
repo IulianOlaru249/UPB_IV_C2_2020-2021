@@ -1,0 +1,1 @@
+cmd_/home/ghostpants/Documents/UPB_IV_C2_2020-2021/EP/lab01/ex4/hw_counter/built-in.a := rm -f /home/ghostpants/Documents/UPB_IV_C2_2020-2021/EP/lab01/ex4/hw_counter/built-in.a; ar cDPrST /home/ghostpants/Documents/UPB_IV_C2_2020-2021/EP/lab01/ex4/hw_counter/built-in.a 

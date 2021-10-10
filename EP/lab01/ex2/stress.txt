@@ -1,0 +1,22 @@
+stress: info: [5528] dispatching hogs: 5 cpu, 0 io, 0 vm, 0 hdd
+stress: dbug: [5528] using backoff sleep of 15000us
+stress: dbug: [5528] setting timeout to 180s
+stress: dbug: [5528] --> hogcpu worker 5 [5529] forked
+stress: dbug: [5528] using backoff sleep of 12000us
+stress: dbug: [5528] setting timeout to 180s
+stress: dbug: [5528] --> hogcpu worker 4 [5530] forked
+stress: dbug: [5528] using backoff sleep of 9000us
+stress: dbug: [5528] setting timeout to 180s
+stress: dbug: [5528] --> hogcpu worker 3 [5531] forked
+stress: dbug: [5528] using backoff sleep of 6000us
+stress: dbug: [5528] setting timeout to 180s
+stress: dbug: [5528] --> hogcpu worker 2 [5532] forked
+stress: dbug: [5528] using backoff sleep of 3000us
+stress: dbug: [5528] setting timeout to 180s
+stress: dbug: [5528] --> hogcpu worker 1 [5533] forked
+stress: dbug: [5528] <-- worker 5529 signalled normally
+stress: dbug: [5528] <-- worker 5530 signalled normally
+stress: dbug: [5528] <-- worker 5531 signalled normally
+stress: dbug: [5528] <-- worker 5533 signalled normally
+stress: dbug: [5528] <-- worker 5532 signalled normally
+stress: info: [5528] successful run completed in 180s

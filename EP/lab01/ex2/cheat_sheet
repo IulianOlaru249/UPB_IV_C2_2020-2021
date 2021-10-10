@@ -1,0 +1,14 @@
+# monitor all cores
+mpstat -P ALL 1
+
+# create N-1 workers
+sudo stress --cpu $((`nproc` - 1)) --timeout 2
+
+# set workers affinity to cpus 1-num of cores
+sudo taskset -cp 1-<number of cores> <pid of workers from prev command>
+
+#
+sudo stress -v --cpu $(((`nproc` - 1) / 2)) --timeout 1 | grep forked | awk '{print $8}' | sed 's/.$//' | sed 's/^.//g' | paste -s -d ' ' | sed 's/^/(/' | sed 's/$/)/'
+
+#
+for (( i = 1; i < $((`nproc` - 1)); i=i+2 )); do echo $i ; done | paste -s -d ' ' | sed 's/^/(/' | sed 's/$/)/'

@@ -1,0 +1,1 @@
+sudo wrmsr -a 0x186 0x41????
