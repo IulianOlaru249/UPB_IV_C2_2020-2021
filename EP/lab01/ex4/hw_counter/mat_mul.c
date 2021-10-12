@@ -66,6 +66,12 @@ main(int32_t argc, char *argv[])
     t = clock();
 
     /* TODO: count L2 cache misses for the next block using RDPMC */
+    register int eax asm("eax");
+    register int edx asm("ebx");
+    register int ecx asm("ecx");
+
+    rdpmc(ecx, eax, edx);
+
 
     /* perform slow multiplication */
     for (uint32_t i=0; i<N; ++i)             /* line   */
@@ -85,6 +91,11 @@ main(int32_t argc, char *argv[])
     t = clock();
 
     /* TODO: count L2 cache misses for the next block using RDPMC */
+    register int eax2 asm("eax");
+    register int edx2 asm("ebx");
+    register int ecx2 asm("ecx");
+    
+    rdpmc(ecx2, eax2, edx2);
 
     /* perform fast(er) multiplication */
     for (uint32_t k=0; k<N; ++k)

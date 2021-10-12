@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+KDIR	Makefile	/^KDIR = \/lib\/modules\/`uname -r`\/build$/;"	m
+M	Makefile	/^	make -C $(KDIR) M=`pwd`$/;"	m
+MOD_TAG	hack_cr4.c	5;"	d	file:
+__versions	hack_cr4.mod.c	/^__used __section(__versions) = {$/;"	v	typeref:struct:__section	file:
+clear_pce	hack_cr4.c	/^clear_pce(void *info)$/;"	f	file:
+main	mat_mul.c	/^main(int32_t argc, char *argv[])$/;"	f
+mod_exit	hack_cr4.c	/^mod_exit(void)$/;"	f	file:
+mod_exit	hack_cr4.c	/^module_exit(mod_exit);$/;"	v
+mod_init	hack_cr4.c	/^mod_init(void)$/;"	f	file:
+mod_init	hack_cr4.c	/^module_init(mod_init);$/;"	v
+print_cr4	hack_cr4.c	/^print_cr4(void *info)$/;"	f	file:
+print_matrix	mat_mul.c	/^print_matrix(uint32_t N, long *m)$/;"	f
+rdpmc	mat_mul.c	7;"	d	file:
+set_pce	hack_cr4.c	/^set_pce(void *info)$/;"	f	file:
+usage	mat_mul.c	/^usage(void)$/;"	f
