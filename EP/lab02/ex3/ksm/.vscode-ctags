@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BINARY	makefile	/^BINARY   := ksm$/;"	m
+BLUE	include/util.h	11;"	d
+CC	makefile	/^CC		?= gcc$/;"	m
+CLR	include/util.h	12;"	d
+C_FLAGS	makefile	/^C_FLAGS	?= -ggdb -I $(INCLUDE)$/;"	m
+DIE	include/util.h	15;"	d
+GREEN	include/util.h	9;"	d
+INCLUDE	makefile	/^INCLUDE  := include$/;"	m
+OBJ	makefile	/^OBJ 	 := obj$/;"	m
+OBJECTS	makefile	/^OBJECTS = $(patsubst $(SRC)\/%.c, $(OBJ)\/%.o, $(SOURCES))$/;"	m
+RED	include/util.h	8;"	d
+SOURCES	makefile	/^SOURCES = $(wildcard $(SRC)\/*.c)$/;"	m
+SRC	makefile	/^SRC 	 := src$/;"	m
+YELLOW	include/util.h	10;"	d
+_UTIL_H	include/util.h	5;"	d
+main	src/main.c	/^int main(int argc, char *argv[])$/;"	f
