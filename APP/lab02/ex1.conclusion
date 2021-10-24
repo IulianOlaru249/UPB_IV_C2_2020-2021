@@ -1,0 +1,10 @@
+Se observa ca static, mult mai putin din timpul de rulare este alocat
+executiei codului.
+
+dinamic:
+Number of threads = 12
+Execution time 0.049758%
+
+static:
+Number of threads = 12
+Execution time 0.0215743%

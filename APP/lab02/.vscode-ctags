@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CHUNKSIZE	ex1.c	5;"	d	file:
+N	ex1.c	6;"	d	file:
+a	ex1.c	/^float a[N], b[N], c[N];$/;"	v
+b	ex1.c	/^float a[N], b[N], c[N];$/;"	v
+c	ex1.c	/^float a[N], b[N], c[N];$/;"	v
+fsize	ex3.c	/^off_t fsize(const char *filename) {$/;"	f
+main	ex1.c	/^int main (int argc, char *argv[]) $/;"	f
+main	ex2.c	/^void main () {	  $/;"	f
+main	ex2_serial.c	/^void main () {	  $/;"	f
+main	ex3.c	/^int main(int argc, char **argv) {$/;"	f
+num_steps	ex2.c	/^static long num_steps = 10000000;	\/* number of intervals *\/$/;"	v	file:
+num_steps	ex2_serial.c	/^static long num_steps = 10000000;	\/* number of intervals *\/$/;"	v	file:
+step	ex2.c	/^double step; \/* the size of the interval - dx *\/$/;"	v
+step	ex2_serial.c	/^double step; \/* the size of the interval - dx *\/$/;"	v
