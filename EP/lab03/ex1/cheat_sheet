@@ -1,0 +1,8 @@
+5400 RPM
+5.5 RD
+
+Divide 5400 RPM by 60 seconds: 90 RPS
+Convert 1 of 90 to decimal: 0.011 seconds per rotation
+Multiply the seconds per rotation by 1000 milliseconds: 11 ms per rotation
+Divide the total in half: 5.5 MS
+
