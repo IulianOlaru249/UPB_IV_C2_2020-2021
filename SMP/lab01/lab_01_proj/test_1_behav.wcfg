@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="97"></NameColumnWidth>
+      <ValueColumnWidth column_width="71"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject type="logic" fp_name="/test_1/clk_0">
+      <obj_property name="ElementShortName">clk_0</obj_property>
+      <obj_property name="ObjectShortName">clk_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/pipe">
+      <obj_property name="ElementShortName">pipe</obj_property>
+      <obj_property name="ObjectShortName">pipe</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/sba">
+      <obj_property name="ElementShortName">sba[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sba[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/rbf">
+      <obj_property name="ElementShortName">rbf</obj_property>
+      <obj_property name="ObjectShortName">rbf</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/st">
+      <obj_property name="ElementShortName">st[2:0]</obj_property>
+      <obj_property name="ObjectShortName">st[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/gnt">
+      <obj_property name="ElementShortName">gnt</obj_property>
+      <obj_property name="ObjectShortName">gnt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/ad_stb0">
+      <obj_property name="ElementShortName">ad_stb0</obj_property>
+      <obj_property name="ObjectShortName">ad_stb0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/ad_stb1">
+      <obj_property name="ElementShortName">ad_stb1</obj_property>
+      <obj_property name="ObjectShortName">ad_stb1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/sb_stb">
+      <obj_property name="ElementShortName">sb_stb</obj_property>
+      <obj_property name="ObjectShortName">sb_stb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/irdy">
+      <obj_property name="ElementShortName">irdy</obj_property>
+      <obj_property name="ObjectShortName">irdy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/trdy">
+      <obj_property name="ElementShortName">trdy</obj_property>
+      <obj_property name="ObjectShortName">trdy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/serr">
+      <obj_property name="ElementShortName">serr</obj_property>
+      <obj_property name="ObjectShortName">serr</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/req">
+      <obj_property name="ElementShortName">req</obj_property>
+      <obj_property name="ObjectShortName">req</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/ad">
+      <obj_property name="ElementShortName">ad[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ad[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/c_be">
+      <obj_property name="ElementShortName">c_be[3:0]</obj_property>
+      <obj_property name="ObjectShortName">c_be[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/inta">
+      <obj_property name="ElementShortName">inta</obj_property>
+      <obj_property name="ObjectShortName">inta</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_1/top/lab_v_1_0_i/core_logic_0/intb">
+      <obj_property name="ElementShortName">intb</obj_property>
+      <obj_property name="ObjectShortName">intb</obj_property>
+   </wvobject>
+</wave_config>

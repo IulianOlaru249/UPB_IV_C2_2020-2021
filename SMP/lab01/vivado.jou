@@ -1,0 +1,195 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Oct 24 18:49:12 2021
+# Process ID: 995
+# Current directory: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01
+# Command line: vivado
+# Log file: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/vivado.log
+# Journal file: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project smp_lab_01 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01 -part xc7a100tcsg324-1
+add_files -norecurse {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/sim.v}
+update_compile_order -fileset sources_1
+launch_simulation
+source sim.tcl
+close_sim
+export_ip_user_files -of_objects  [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/sim.v] -no_script -reset -force -quiet
+remove_files  /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/sim.v
+update_compile_order -fileset sources_1
+create_bd_design "design_lab_1_0"
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference core_logic core_logic_0
+create_bd_cell -type module -reference graphic_controller graphic_controller_0
+set_property location {0.5 -57 323} [get_bd_cells core_logic_0]
+set_property location {1 -60 275} [get_bd_cells core_logic_0]
+set_property location {1.5 261 256} [get_bd_cells graphic_controller_0]
+startgroup
+make_bd_pins_external  [get_bd_pins core_logic_0/clk]
+endgroup
+startgroup
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins graphic_controller_0/clk]
+endgroup
+set_property location {0.5 -358 287} [get_bd_cells graphic_controller_0]
+set_property location {2.5 60 282} [get_bd_cells core_logic_0]
+set_property location {1.5 -46 282} [get_bd_cells core_logic_0]
+connect_bd_net [get_bd_pins graphic_controller_0/st] [get_bd_pins core_logic_0/st]
+connect_bd_net [get_bd_pins graphic_controller_0/gnt] [get_bd_pins core_logic_0/gnt]
+connect_bd_net [get_bd_pins graphic_controller_0/pipe] [get_bd_pins core_logic_0/pipe]
+connect_bd_net [get_bd_pins graphic_controller_0/sba] [get_bd_pins core_logic_0/sba]
+startgroup
+connect_bd_net [get_bd_pins graphic_controller_0/rbf] [get_bd_pins core_logic_0/rbf]
+endgroup
+connect_bd_net [get_bd_pins graphic_controller_0/ad_stb0] [get_bd_pins core_logic_0/ad_stb0]
+connect_bd_net [get_bd_pins graphic_controller_0/ad_stb1] [get_bd_pins core_logic_0/ad_stb1]
+connect_bd_net [get_bd_pins graphic_controller_0/sb_stb] [get_bd_pins core_logic_0/sb_stb]
+connect_bd_net [get_bd_pins graphic_controller_0/serr] [get_bd_pins core_logic_0/serr]
+connect_bd_net [get_bd_pins graphic_controller_0/req] [get_bd_pins core_logic_0/req]
+connect_bd_net [get_bd_pins core_logic_0/rst] [get_bd_pins graphic_controller_0/rst]
+connect_bd_net [get_bd_pins graphic_controller_0/ad] [get_bd_pins core_logic_0/ad]
+connect_bd_net [get_bd_pins graphic_controller_0/c_be] [get_bd_pins core_logic_0/c_be]
+connect_bd_net [get_bd_pins graphic_controller_0/inta] [get_bd_pins core_logic_0/inta]
+connect_bd_net [get_bd_pins graphic_controller_0/intb] [get_bd_pins core_logic_0/intb]
+set_property location {0.5 -693 284} [get_bd_cells core_logic_0]
+undo
+undo
+set_property location {2 257 294} [get_bd_cells graphic_controller_0]
+set_property location {-255 275} [get_bd_ports clk_0]
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+undo
+close_project
+open_project /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01/smp_lab_01.xpr
+update_compile_order -fileset sources_1
+close_project
+create_project lab_01_proj /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj -part xc7a100tcsg324-1
+add_files -norecurse {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_bd_design "lab_v_1_0"
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference core_logic core_logic_0
+create_bd_cell -type module -reference graphic_controller graphic_controller_0
+set_property location {0.5 -183 268} [get_bd_cells core_logic_0]
+startgroup
+make_bd_pins_external  [get_bd_pins core_logic_0/clk]
+endgroup
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins graphic_controller_0/clk]
+close_bd_design [get_bd_designs lab_v_1_0]
+open_bd_design {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd}
+create_bd_cell -type module -reference core_logic core_logic_0
+create_bd_cell -type module -reference graphic_controller graphic_controller_0
+startgroup
+make_bd_pins_external  [get_bd_pins core_logic_0/clk]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins graphic_controller_0/clk]
+set_property location {1 -199 472} [get_bd_cells core_logic_0]
+set_property location {-340 475} [get_bd_ports clk_0]
+set_property location {-339 465} [get_bd_ports clk_0]
+connect_bd_net [get_bd_pins core_logic_0/pipe] [get_bd_pins graphic_controller_0/pipe]
+connect_bd_net [get_bd_pins core_logic_0/sba] [get_bd_pins graphic_controller_0/sba]
+connect_bd_net [get_bd_pins core_logic_0/rbf] [get_bd_pins graphic_controller_0/rbf]
+connect_bd_net [get_bd_pins core_logic_0/sb_stb] [get_bd_pins graphic_controller_0/sb_stb]
+connect_bd_net [get_bd_pins core_logic_0/serr] [get_bd_pins graphic_controller_0/serr]
+connect_bd_net [get_bd_pins core_logic_0/req] [get_bd_pins graphic_controller_0/req]
+connect_bd_net [get_bd_pins core_logic_0/inta] [get_bd_pins graphic_controller_0/inta]
+connect_bd_net [get_bd_pins core_logic_0/intb] [get_bd_pins graphic_controller_0/intb]
+connect_bd_net [get_bd_pins core_logic_0/st] [get_bd_pins graphic_controller_0/st]
+connect_bd_net [get_bd_pins core_logic_0/gnt] [get_bd_pins graphic_controller_0/gnt]
+connect_bd_net [get_bd_pins core_logic_0/ad_stb0] [get_bd_pins graphic_controller_0/ad_stb0]
+connect_bd_net [get_bd_pins core_logic_0/ad_stb1] [get_bd_pins graphic_controller_0/ad_stb1]
+connect_bd_net [get_bd_pins core_logic_0/rst] [get_bd_pins graphic_controller_0/rst]
+connect_bd_net [get_bd_pins core_logic_0/ad] [get_bd_pins graphic_controller_0/ad]
+connect_bd_net [get_bd_pins core_logic_0/c_be] [get_bd_pins graphic_controller_0/c_be]
+save_bd_design
+set_property screensize {214 264} [get_bd_cells core_logic_0]
+make_wrapper -files [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd] -top
+add_files -norecurse /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hdl/lab_v_1_0_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test_1.v w ]
+add_files -fileset sim_1 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test_1.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test2.v w ]
+add_files -fileset sim_1 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test2.v
+update_compile_order -fileset sim_1
+generate_target Simulation [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd]
+export_ip_user_files -of_objects [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd] -directory /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/sim_scripts -ip_user_files_dir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files -ipstatic_source_dir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/modelsim} {questa=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/questa} {ies=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/ies} {xcelium=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/xcelium} {vcs=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/vcs} {riviera=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source test_1.tcl
+relaunch_sim
+save_wave_config {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/test_1_behav.wcfg}
+close_sim
+open_bd_design {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd}
+connect_bd_net [get_bd_pins core_logic_0/irdy] [get_bd_pins graphic_controller_0/serr]
+undo
+reset_property DIR [get_bd_pins irdy]
+create_bd_port -dir O irdy
+delete_bd_objs [get_bd_ports irdy]
+update_module_reference lab_v_1_0_core_logic_0_0
+connect_bd_net [get_bd_pins core_logic_0/irdy] [get_bd_pins graphic_controller_0/irdy]
+open_bd_design {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd}
+connect_bd_net [get_bd_pins graphic_controller_0/trdy] [get_bd_pins core_logic_0/irdy]
+undo
+save_bd_design
+update_module_reference lab_v_1_0_core_logic_0_0
+connect_bd_net [get_bd_pins core_logic_0/trdy] [get_bd_pins graphic_controller_0/trdy]
+save_bd_design
+generate_target Simulation [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd]
+export_ip_user_files -of_objects [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd] -directory /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/sim_scripts -ip_user_files_dir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files -ipstatic_source_dir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/modelsim} {questa=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/questa} {ies=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/ies} {xcelium=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/xcelium} {vcs=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/vcs} {riviera=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source test_1.tcl
+relaunch_sim
+close_sim
+save_project_as project_1_2 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_1_2 -force
+close_project
+open_project /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/test/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+save_project_as project_2_0 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0 -force
+launch_simulation
+source test1.tcl
+relaunch_sim
+save_wave_config {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/test1_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/test1_behav.wcfg
+set_property xsim.view /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/test1_behav.wcfg [get_filesets sim_1]
+close_sim
+open_bd_design {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {0.5 -63 183} [get_bd_cells graphic_controller_0]
+set_property location {-895 217} [get_bd_ports clk_0]
+set_property location {-421 221} [get_bd_ports clk_0]
+set_property location {0.5 -457 234} [get_bd_cells graphic_controller_0]
+set_property location {1.5 -148 238} [get_bd_cells core_logic_0]
+set_property location {2 -139 222} [get_bd_cells core_logic_0]
+set_property location {2 -150 237} [get_bd_cells core_logic_0]
+set_property location {2 -149 228} [get_bd_cells core_logic_0]

@@ -1,0 +1,12 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v,1635095704,verilog,,/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v,,core_logic,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v,1017883462,verilog,,/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/ip/lab_v_1_0_core_logic_0_0/sim/lab_v_1_0_core_logic_0_0.v,,graphic_controller,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/ip/lab_v_1_0_core_logic_0_0/sim/lab_v_1_0_core_logic_0_0.v,1635095751,verilog,,/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/ip/lab_v_1_0_graphic_controller_0_0/sim/lab_v_1_0_graphic_controller_0_0.v,,lab_v_1_0_core_logic_0_0,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/ip/lab_v_1_0_graphic_controller_0_0/sim/lab_v_1_0_graphic_controller_0_0.v,1635094752,verilog,,/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/sim/lab_v_1_0.v,,lab_v_1_0_graphic_controller_0_0,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/sim/lab_v_1_0.v,1635094752,verilog,,/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hdl/lab_v_1_0_wrapper.v,,lab_v_1_0,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test_1.v,1635094677,verilog,,,,test_1,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hdl/lab_v_1_0_wrapper.v,1635094752,verilog,,/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test_1.v,,lab_v_1_0_wrapper,,,,,,,,

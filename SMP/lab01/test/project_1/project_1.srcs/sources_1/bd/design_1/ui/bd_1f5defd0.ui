@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-308,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk_0 -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace inst core_logic_0 -pg 1 -lvl 1 -x 230 -y 190 -defaultsOSRD
+preplace inst graphic_controller_0 -pg 1 -lvl 2 -x 470 -y 190 -defaultsOSRD
+preplace netloc core_logic_0_st 1 1 1 N 140
+preplace netloc core_logic_0_gnt 1 1 1 N 160
+preplace netloc clk_0_1 1 0 2 20 20 350
+preplace netloc core_logic_0_ad_stb0 1 1 1 N 180
+preplace netloc core_logic_0_ad_stb1 1 1 1 N 200
+preplace netloc core_logic_0_trdy 1 1 1 340 220n
+preplace netloc Net 1 1 2 360J 20 580
+preplace netloc graphic_controller_0_pipe 1 0 3 40 410 NJ 410 660
+preplace netloc graphic_controller_0_sba 1 0 3 50 10 NJ 10 650
+preplace netloc graphic_controller_0_rbf 1 0 3 50 420 NJ 420 650
+preplace netloc graphic_controller_0_sb_stb 1 0 3 30 440 NJ 440 670
+preplace netloc graphic_controller_0_irdy 1 0 3 80 400 NJ 400 620
+preplace netloc graphic_controller_0_serr 1 0 3 60 450 NJ 450 640
+preplace netloc graphic_controller_0_req 1 0 3 70 430 NJ 430 630
+preplace netloc graphic_controller_0_ad 1 0 3 90 360 NJ 360 610
+preplace netloc graphic_controller_0_c_be 1 0 3 100 370 NJ 370 600
+preplace netloc graphic_controller_0_inta 1 0 3 110 380 NJ 380 590
+preplace netloc graphic_controller_0_intb 1 0 3 120 390 NJ 390 580
+levelinfo -pg 1 0 230 470 690
+pagesize -pg 1 -db -bbox -sgen -90 0 690 460
+"
+}
+0

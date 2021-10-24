@@ -1,0 +1,1038 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Oct 24 18:49:12 2021
+# Process ID: 995
+# Current directory: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01
+# Command line: vivado
+# Log file: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/vivado.log
+# Journal file: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project smp_lab_01 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01 -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+add_files -norecurse {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/sim.v}
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01/smp_lab_01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01/smp_lab_01.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj sim_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_logic
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:150]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module graphic_controller
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:108]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:124]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01/smp_lab_01.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01/smp_lab_01.sim/sim_1/behav/xsim'
+xelab -wto cc9f6171009e4f8481030ea234b12f99 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto cc9f6171009e4f8481030ea234b12f99 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:150]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:124]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:108]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01/smp_lab_01.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.core_logic
+Compiling module xil_defaultlib.graphic_controller
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01/smp_lab_01.sim/sim_1/behav/xsim/xsim.dir/sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01/smp_lab_01.sim/sim_1/behav/xsim/xsim.dir/sim_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Oct 24 19:13:42 2021. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 24 19:13:42 2021...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 6729.141 ; gain = 0.000 ; free physical = 470 ; free virtual = 25263
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01/smp_lab_01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sim_behav -key {Behavioral:sim_1:Functional:sim} -tclbatch {sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 1 us : File "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/sim.v" Line 30
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 6890.992 ; gain = 161.852 ; free physical = 416 ; free virtual = 25221
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 6890.992 ; gain = 0.000 ; free physical = 343 ; free virtual = 25152
+export_ip_user_files -of_objects  [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/sim.v] -no_script -reset -force -quiet
+remove_files  /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/sim.v
+update_compile_order -fileset sources_1
+create_bd_design "design_lab_1_0"
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01/smp_lab_01.srcs/sources_1/bd/design_lab_1_0/design_lab_1_0.bd> 
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference core_logic core_logic_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference graphic_controller graphic_controller_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property location {0.5 -57 323} [get_bd_cells core_logic_0]
+set_property location {1 -60 275} [get_bd_cells core_logic_0]
+set_property location {1.5 261 256} [get_bd_cells graphic_controller_0]
+startgroup
+make_bd_pins_external  [get_bd_pins core_logic_0/clk]
+endgroup
+startgroup
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins graphic_controller_0/clk]
+endgroup
+set_property location {0.5 -358 287} [get_bd_cells graphic_controller_0]
+set_property location {2.5 60 282} [get_bd_cells core_logic_0]
+set_property location {1.5 -46 282} [get_bd_cells core_logic_0]
+connect_bd_net [get_bd_pins graphic_controller_0/st] [get_bd_pins core_logic_0/st]
+connect_bd_net [get_bd_pins graphic_controller_0/gnt] [get_bd_pins core_logic_0/gnt]
+connect_bd_net [get_bd_pins graphic_controller_0/pipe] [get_bd_pins core_logic_0/pipe]
+connect_bd_net [get_bd_pins graphic_controller_0/sba] [get_bd_pins core_logic_0/sba]
+startgroup
+connect_bd_net [get_bd_pins graphic_controller_0/rbf] [get_bd_pins core_logic_0/rbf]
+endgroup
+connect_bd_net [get_bd_pins graphic_controller_0/ad_stb0] [get_bd_pins core_logic_0/ad_stb0]
+connect_bd_net [get_bd_pins graphic_controller_0/ad_stb1] [get_bd_pins core_logic_0/ad_stb1]
+connect_bd_net [get_bd_pins graphic_controller_0/sb_stb] [get_bd_pins core_logic_0/sb_stb]
+connect_bd_net [get_bd_pins graphic_controller_0/serr] [get_bd_pins core_logic_0/serr]
+connect_bd_net [get_bd_pins graphic_controller_0/req] [get_bd_pins core_logic_0/req]
+connect_bd_net [get_bd_pins core_logic_0/rst] [get_bd_pins graphic_controller_0/rst]
+connect_bd_net [get_bd_pins graphic_controller_0/ad] [get_bd_pins core_logic_0/ad]
+connect_bd_net [get_bd_pins graphic_controller_0/c_be] [get_bd_pins core_logic_0/c_be]
+connect_bd_net [get_bd_pins graphic_controller_0/inta] [get_bd_pins core_logic_0/inta]
+connect_bd_net [get_bd_pins graphic_controller_0/intb] [get_bd_pins core_logic_0/intb]
+set_property location {0.5 -693 284} [get_bd_cells core_logic_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {0.5 -693 284} [get_bd_cells core_logic_0]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/intb] [get_bd_pins core_logic_0/intb]'
+set_property location {2 257 294} [get_bd_cells graphic_controller_0]
+set_property location {-255 275} [get_bd_ports clk_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {-255 275} [get_bd_ports clk_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2 257 294} [get_bd_cells graphic_controller_0]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/inta] [get_bd_pins core_logic_0/inta]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/c_be] [get_bd_pins core_logic_0/c_be]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/ad] [get_bd_pins core_logic_0/ad]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins core_logic_0/rst] [get_bd_pins graphic_controller_0/rst]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/req] [get_bd_pins core_logic_0/req]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/serr] [get_bd_pins core_logic_0/serr]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/sb_stb] [get_bd_pins core_logic_0/sb_stb]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/ad_stb1] [get_bd_pins core_logic_0/ad_stb1]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/ad_stb0] [get_bd_pins core_logic_0/ad_stb0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/rbf] [get_bd_pins core_logic_0/rbf]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/sba] [get_bd_pins core_logic_0/sba]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/pipe] [get_bd_pins core_logic_0/pipe]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/gnt] [get_bd_pins core_logic_0/gnt]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/st] [get_bd_pins core_logic_0/st]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1.5 -46 282} [get_bd_cells core_logic_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 60 282} [get_bd_cells core_logic_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {0.5 -358 287} [get_bd_cells graphic_controller_0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_ports clk_0] [get_bd_pins graphic_controller_0/clk]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'make_bd_pins_external  [get_bd_pins core_logic_0/clk]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'set_property location {1.5 261 256} [get_bd_cells graphic_controller_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {1 -60 275} [get_bd_cells core_logic_0]'
+undo
+INFO: [Common 17-17] undo 'set_property location {0.5 -57 323} [get_bd_cells core_logic_0]'
+undo
+INFO: [Common 17-17] undo 'create_bd_cell -type module -reference graphic_controller graphic_controller_0'
+undo
+INFO: [Common 17-17] undo 'create_bd_cell -type module -reference core_logic core_logic_0'
+close_project
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+open_project /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/smp_lab_01/smp_lab_01.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+create_project lab_01_proj /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+add_files -norecurse {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_bd_design "lab_v_1_0"
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd> 
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference core_logic core_logic_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference graphic_controller graphic_controller_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property location {0.5 -183 268} [get_bd_cells core_logic_0]
+startgroup
+make_bd_pins_external  [get_bd_pins core_logic_0/clk]
+endgroup
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins graphic_controller_0/clk]
+close_bd_design [get_bd_designs lab_v_1_0]
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/ui/bd_1c1b9e67.ui> 
+open_bd_design {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd}
+Successfully read diagram <lab_v_1_0> from BD file </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd>
+create_bd_cell -type module -reference core_logic core_logic_0
+create_bd_cell -type module -reference graphic_controller graphic_controller_0
+startgroup
+make_bd_pins_external  [get_bd_pins core_logic_0/clk]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins graphic_controller_0/clk]
+set_property location {1 -199 472} [get_bd_cells core_logic_0]
+set_property location {-340 475} [get_bd_ports clk_0]
+set_property location {-339 465} [get_bd_ports clk_0]
+connect_bd_net [get_bd_pins core_logic_0/pipe] [get_bd_pins graphic_controller_0/pipe]
+connect_bd_net [get_bd_pins core_logic_0/sba] [get_bd_pins graphic_controller_0/sba]
+connect_bd_net [get_bd_pins core_logic_0/rbf] [get_bd_pins graphic_controller_0/rbf]
+connect_bd_net [get_bd_pins core_logic_0/sb_stb] [get_bd_pins graphic_controller_0/sb_stb]
+connect_bd_net [get_bd_pins core_logic_0/serr] [get_bd_pins graphic_controller_0/serr]
+connect_bd_net [get_bd_pins core_logic_0/req] [get_bd_pins graphic_controller_0/req]
+connect_bd_net [get_bd_pins core_logic_0/inta] [get_bd_pins graphic_controller_0/inta]
+connect_bd_net [get_bd_pins core_logic_0/intb] [get_bd_pins graphic_controller_0/intb]
+connect_bd_net [get_bd_pins core_logic_0/st] [get_bd_pins graphic_controller_0/st]
+connect_bd_net [get_bd_pins core_logic_0/gnt] [get_bd_pins graphic_controller_0/gnt]
+connect_bd_net [get_bd_pins core_logic_0/ad_stb0] [get_bd_pins graphic_controller_0/ad_stb0]
+connect_bd_net [get_bd_pins core_logic_0/ad_stb1] [get_bd_pins graphic_controller_0/ad_stb1]
+connect_bd_net [get_bd_pins core_logic_0/rst] [get_bd_pins graphic_controller_0/rst]
+connect_bd_net [get_bd_pins core_logic_0/ad] [get_bd_pins graphic_controller_0/ad]
+connect_bd_net [get_bd_pins core_logic_0/c_be] [get_bd_pins graphic_controller_0/c_be]
+save_bd_design
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+WARNING: [BD 41-597] NET <Net2> has no source
+WARNING: [BD 41-597] NET <Net3> has no source
+WARNING: [BD 41-597] NET <Net4> has no source
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd> 
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/ui/bd_1c1b9e67.ui> 
+set_property screensize {214 264} [get_bd_cells core_logic_0]
+make_wrapper -files [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd] -top
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/core_logic_0/irdy
+
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+WARNING: [BD 41-597] NET <Net2> has no source
+WARNING: [BD 41-597] NET <Net3> has no source
+WARNING: [BD 41-597] NET <Net4> has no source
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd> 
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/ui/bd_1c1b9e67.ui> 
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net1 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net2 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net3 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net4 is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/synth/lab_v_1_0.v
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net1 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net2 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net3 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net4 is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/sim/lab_v_1_0.v
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hdl/lab_v_1_0_wrapper.v
+add_files -norecurse /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hdl/lab_v_1_0_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test_1.v w ]
+add_files -fileset sim_1 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test_1.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test2.v w ]
+add_files -fileset sim_1 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test2.v
+update_compile_order -fileset sim_1
+generate_target Simulation [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd]
+INFO: [BD 41-1662] The design 'lab_v_1_0.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/core_logic_0/irdy
+
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+WARNING: [BD 41-597] NET <Net2> has no source
+WARNING: [BD 41-597] NET <Net3> has no source
+WARNING: [BD 41-597] NET <Net4> has no source
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd> 
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/ui/bd_1c1b9e67.ui> 
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net1 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net2 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net3 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net4 is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/synth/lab_v_1_0.v
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net1 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net2 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net3 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net4 is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/sim/lab_v_1_0.v
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hdl/lab_v_1_0_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block core_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block graphic_controller_0 .
+Exporting to file /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hw_handoff/lab_v_1_0.hwh
+Generated Block Design Tcl file /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hw_handoff/lab_v_1_0_bd.tcl
+Generated Hardware Definition File /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/synth/lab_v_1_0.hwdef
+export_ip_user_files -of_objects [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd] -directory /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/sim_scripts -ip_user_files_dir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files -ipstatic_source_dir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/modelsim} {questa=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/questa} {ies=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/ies} {xcelium=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/xcelium} {vcs=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/vcs} {riviera=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_1_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_logic
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:150]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module graphic_controller
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:108]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:124]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/ip/lab_v_1_0_core_logic_0_0/sim/lab_v_1_0_core_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_v_1_0_core_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/ip/lab_v_1_0_graphic_controller_0_0/sim/lab_v_1_0_graphic_controller_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_v_1_0_graphic_controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/sim/lab_v_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_v_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hdl/lab_v_1_0_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_v_1_0_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+xelab -wto c59a447559e644f79be90838bbae30db --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_1_behav xil_defaultlib.test_1 xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto c59a447559e644f79be90838bbae30db --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_1_behav xil_defaultlib.test_1 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:150]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:124]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:108]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v" Line 1. Module core_logic doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v" Line 1. Module graphic_controller doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.core_logic
+Compiling module xil_defaultlib.lab_v_1_0_core_logic_0_0
+Compiling module xil_defaultlib.graphic_controller
+Compiling module xil_defaultlib.lab_v_1_0_graphic_controller_0_0
+Compiling module xil_defaultlib.lab_v_1_0
+Compiling module xil_defaultlib.lab_v_1_0_wrapper
+Compiling module xil_defaultlib.test_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_1_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim/xsim.dir/test_1_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim/xsim.dir/test_1_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Oct 24 19:59:24 2021. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 24 19:59:24 2021...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 7325.234 ; gain = 0.000 ; free physical = 356 ; free virtual = 24314
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_1_behav -key {Behavioral:sim_1:Functional:test_1} -tclbatch {test_1.tcl} -protoinst "protoinst_files/lab_v_1_0.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/lab_v_1_0.protoinst
+Time resolution is 1 ps
+source test_1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 7408.023 ; gain = 82.789 ; free physical = 349 ; free virtual = 24308
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 7408.023 ; gain = 0.000 ; free physical = 287 ; free virtual = 24252
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_1_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+xelab -wto c59a447559e644f79be90838bbae30db --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_1_behav xil_defaultlib.test_1 xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto c59a447559e644f79be90838bbae30db --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_1_behav xil_defaultlib.test_1 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:150]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:124]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:108]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/lab_v_1_0.protoinst
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 7408.023 ; gain = 0.000 ; free physical = 264 ; free virtual = 24230
+save_wave_config {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/test_1_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_bd_design {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd}
+connect_bd_net [get_bd_pins core_logic_0/irdy] [get_bd_pins graphic_controller_0/serr]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins core_logic_0/irdy] [get_bd_pins graphic_controller_0/serr]'
+reset_property DIR [get_bd_pins irdy]
+ERROR: [Common 17-107] Cannot change read-only property 'DIR'.
+Resolution: Please refer to Vivado Properties Reference Guide (UG912) for more information on setting properties.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+create_bd_port -dir O irdy
+delete_bd_objs [get_bd_ports irdy]
+update_module_reference lab_v_1_0_core_logic_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd'
+INFO: [IP_Flow 19-1972] Upgraded lab_v_1_0_core_logic_0_0 from core_logic_v1_0 1.0 to core_logic_v1_0 1.0
+WARNING: [IP_Flow 19-4704] Upgraded port 'irdy' inout differs from original direction in
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'lab_v_1_0_core_logic_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'lab_v_1_0_core_logic_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+WARNING: [BD 41-597] NET <Net2> has no source
+WARNING: [BD 41-597] NET <Net3> has no source
+WARNING: [BD 41-597] NET <Net4> has no source
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd> 
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/ui/bd_1c1b9e67.ui> 
+connect_bd_net [get_bd_pins core_logic_0/irdy] [get_bd_pins graphic_controller_0/irdy]
+open_bd_design {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd}
+connect_bd_net [get_bd_pins graphic_controller_0/trdy] [get_bd_pins core_logic_0/irdy]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins graphic_controller_0/trdy] [get_bd_pins core_logic_0/irdy]'
+save_bd_design
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+WARNING: [BD 41-597] NET <Net2> has no source
+WARNING: [BD 41-597] NET <Net3> has no source
+WARNING: [BD 41-597] NET <Net4> has no source
+WARNING: [BD 41-597] NET <Net5> has no source
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd> 
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/ui/bd_1c1b9e67.ui> 
+update_module_reference lab_v_1_0_core_logic_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd'
+INFO: [IP_Flow 19-1972] Upgraded lab_v_1_0_core_logic_0_0 from core_logic_v1_0 1.0 to core_logic_v1_0 1.0
+WARNING: [IP_Flow 19-4704] Upgraded port 'trdy' inout differs from original direction out
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'lab_v_1_0_core_logic_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'lab_v_1_0_core_logic_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+WARNING: [BD 41-597] NET <Net2> has no source
+WARNING: [BD 41-597] NET <Net3> has no source
+WARNING: [BD 41-597] NET <Net4> has no source
+WARNING: [BD 41-597] NET <Net5> has no source
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd> 
+connect_bd_net [get_bd_pins core_logic_0/trdy] [get_bd_pins graphic_controller_0/trdy]
+save_bd_design
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+WARNING: [BD 41-597] NET <Net2> has no source
+WARNING: [BD 41-597] NET <Net3> has no source
+WARNING: [BD 41-597] NET <Net4> has no source
+WARNING: [BD 41-597] NET <Net5> has no source
+WARNING: [BD 41-597] NET <Net6> has no source
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd> 
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/ui/bd_1c1b9e67.ui> 
+generate_target Simulation [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd]
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+WARNING: [BD 41-597] NET <Net2> has no source
+WARNING: [BD 41-597] NET <Net3> has no source
+WARNING: [BD 41-597] NET <Net4> has no source
+WARNING: [BD 41-597] NET <Net5> has no source
+WARNING: [BD 41-597] NET <Net6> has no source
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd> 
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net1 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net2 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net3 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net4 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net5 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net6 is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/synth/lab_v_1_0.v
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net1 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net2 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net3 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net4 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net5 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net6 is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/sim/lab_v_1_0.v
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hdl/lab_v_1_0_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block core_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block graphic_controller_0 .
+Exporting to file /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hw_handoff/lab_v_1_0.hwh
+Generated Block Design Tcl file /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hw_handoff/lab_v_1_0_bd.tcl
+Generated Hardware Definition File /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/synth/lab_v_1_0.hwdef
+export_ip_user_files -of_objects [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/lab_v_1_0.bd] -directory /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/sim_scripts -ip_user_files_dir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files -ipstatic_source_dir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/modelsim} {questa=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/questa} {ies=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/ies} {xcelium=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/xcelium} {vcs=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/vcs} {riviera=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_1_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_logic
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:150]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module graphic_controller
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:108]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:124]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/ip/lab_v_1_0_core_logic_0_0/sim/lab_v_1_0_core_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_v_1_0_core_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/ip/lab_v_1_0_graphic_controller_0_0/sim/lab_v_1_0_graphic_controller_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_v_1_0_graphic_controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/sim/lab_v_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_v_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hdl/lab_v_1_0_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_v_1_0_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+xelab -wto c59a447559e644f79be90838bbae30db --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_1_behav xil_defaultlib.test_1 xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto c59a447559e644f79be90838bbae30db --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_1_behav xil_defaultlib.test_1 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:150]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:124]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:108]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v" Line 1. Module core_logic doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v" Line 1. Module graphic_controller doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.core_logic
+Compiling module xil_defaultlib.lab_v_1_0_core_logic_0_0
+Compiling module xil_defaultlib.graphic_controller
+Compiling module xil_defaultlib.lab_v_1_0_graphic_controller_0_0
+Compiling module xil_defaultlib.lab_v_1_0
+Compiling module xil_defaultlib.lab_v_1_0_wrapper
+Compiling module xil_defaultlib.test_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_1_behav -key {Behavioral:sim_1:Functional:test_1} -tclbatch {test_1.tcl} -protoinst "protoinst_files/lab_v_1_0.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/lab_v_1_0.protoinst
+Time resolution is 1 ps
+source test_1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7537.082 ; gain = 76.852 ; free physical = 185 ; free virtual = 23363
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_1_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_logic
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:150]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module graphic_controller
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:108]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:124]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/ip/lab_v_1_0_core_logic_0_0/sim/lab_v_1_0_core_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_v_1_0_core_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/ip/lab_v_1_0_graphic_controller_0_0/sim/lab_v_1_0_graphic_controller_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_v_1_0_graphic_controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.ip_user_files/bd/lab_v_1_0/sim/lab_v_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_v_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sources_1/bd/lab_v_1_0/hdl/lab_v_1_0_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab_v_1_0_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.srcs/sim_1/new/test_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/lab_01_proj/lab_01_proj.sim/sim_1/behav/xsim'
+xelab -wto c59a447559e644f79be90838bbae30db --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_1_behav xil_defaultlib.test_1 xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto c59a447559e644f79be90838bbae30db --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_1_behav xil_defaultlib.test_1 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v:150]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:124]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v:108]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/core_logic.v" Line 1. Module core_logic doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/AGPtoPCI/graphic_controller.v" Line 1. Module graphic_controller doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.core_logic
+Compiling module xil_defaultlib.lab_v_1_0_core_logic_0_0
+Compiling module xil_defaultlib.graphic_controller
+Compiling module xil_defaultlib.lab_v_1_0_graphic_controller_0_0
+Compiling module xil_defaultlib.lab_v_1_0
+Compiling module xil_defaultlib.lab_v_1_0_wrapper
+Compiling module xil_defaultlib.test_1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/lab_v_1_0.protoinst
+Time resolution is 1 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+save_project_as project_1_2 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_1_2 -force
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_1_2/project_1_2.srcs/sources_1/bd/lab_v_1_0/ui/bd_1c1b9e67.ui> 
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+close_project
+open_project /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/test/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Facultate/An IV/Sem 1/SMP/Lab1/project_1' since last save.
+ERROR: [Project 1-208] No val for DA Elab Attr
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2020) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2020) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirModelSim has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirQuesta has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirIES has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirXcelium has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirVCS has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirRiviera has no valid value
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option SimulatorInstallDirActiveHdl has no valid value
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name IPDefaultOutputPath
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [BD 41-1663] The design 'design_1.bd' cannot be modified due to following reason(s):
+* Project is read-only. Please run 'save_project_as' before making any change to the bd-design. 
+
+WARNING: [Project 1-231] Project 'project_1.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+save_project_as project_2_0 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0 -force
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+launch_simulation
+Command: launch_simulation 
+WARNING: [BD 41-1284] Cannot set parameter FREQ_TOLERANCE_HZ on port /clk_0
+WARNING: [BD 41-1284] Cannot set parameter FREQ_TOLERANCE_HZ on port /clk_0
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block graphic_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block core_logic_0 .
+Exporting to file /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test1_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/graphic_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module graphic_controller
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/graphic_controller.v:108]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/graphic_controller.v:124]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/core_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_logic
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/core_logic.v:150]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.ip_user_files/bd/design_1/ip/design_1_graphic_controller_0_0_1/sim/design_1_graphic_controller_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_graphic_controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.ip_user_files/bd/design_1/ip/design_1_core_logic_0_0_2/sim/design_1_core_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_core_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sim_1/imports/new/test1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim'
+xelab -wto f50c9cf7da744c2fa58a20cd3cd654d2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto f50c9cf7da744c2fa58a20cd3cd654d2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/core_logic.v:150]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/graphic_controller.v:124]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/graphic_controller.v:108]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/core_logic.v" Line 1. Module core_logic doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/graphic_controller.v" Line 1. Module graphic_controller doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.core_logic
+Compiling module xil_defaultlib.design_1_core_logic_0_0
+Compiling module xil_defaultlib.graphic_controller
+Compiling module xil_defaultlib.design_1_graphic_controller_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim/xsim.dir/test1_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim/xsim.dir/test1_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Oct 24 20:25:44 2021. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 24 20:25:44 2021...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 7537.082 ; gain = 0.000 ; free physical = 571 ; free virtual = 23383
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 7537.082 ; gain = 0.000 ; free physical = 550 ; free virtual = 23362
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+WARNING: [BD 41-1284] Cannot set parameter FREQ_TOLERANCE_HZ on port /clk_0
+WARNING: [BD 41-1284] Cannot set parameter FREQ_TOLERANCE_HZ on port /clk_0
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block graphic_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block core_logic_0 .
+Exporting to file /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test1_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/graphic_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module graphic_controller
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/graphic_controller.v:108]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/graphic_controller.v:124]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/core_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_logic
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/core_logic.v:150]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.ip_user_files/bd/design_1/ip/design_1_graphic_controller_0_0_1/sim/design_1_graphic_controller_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_graphic_controller_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.ip_user_files/bd/design_1/ip/design_1_core_logic_0_0_2/sim/design_1_core_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_core_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sim_1/imports/new/test1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 7537.082 ; gain = 0.000 ; free physical = 564 ; free virtual = 23377
+Command: launch_simulation -simset sim_1 -mode behavioral
+WARNING: [BD 41-1284] Cannot set parameter FREQ_TOLERANCE_HZ on port /clk_0
+WARNING: [BD 41-1284] Cannot set parameter FREQ_TOLERANCE_HZ on port /clk_0
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block graphic_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block core_logic_0 .
+Exporting to file /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.sim/sim_1/behav/xsim'
+xelab -wto f50c9cf7da744c2fa58a20cd3cd654d2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto f50c9cf7da744c2fa58a20cd3cd654d2 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/core_logic.v:146]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/core_logic.v:150]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/graphic_controller.v:124]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/graphic_controller.v:108]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/core_logic.v" Line 1. Module core_logic doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/imports/Lab1/graphic_controller.v" Line 1. Module graphic_controller doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.core_logic
+Compiling module xil_defaultlib.design_1_core_logic_0_0
+Compiling module xil_defaultlib.graphic_controller
+Compiling module xil_defaultlib.design_1_graphic_controller_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 7537.082 ; gain = 0.000 ; free physical = 541 ; free virtual = 23354
+save_wave_config {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/test1_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/test1_behav.wcfg
+set_property xsim.view /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/test1_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_bd_design {/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/design_1.bd}
+WARNING: [BD 41-1284] Cannot set parameter FREQ_TOLERANCE_HZ on port /clk_0
+Adding component instance block -- xilinx.com:module_ref:core_logic:1.0 - core_logic_0
+Adding component instance block -- xilinx.com:module_ref:graphic_controller:1.0 - graphic_controller_0
+Successfully read diagram <design_1> from BD file </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab01/project_2_0/project_2_0.srcs/sources_1/bd/design_1/design_1.bd>
+set_property location {0.5 -63 183} [get_bd_cells graphic_controller_0]
+set_property location {-895 217} [get_bd_ports clk_0]
+set_property location {-421 221} [get_bd_ports clk_0]
+set_property location {0.5 -457 234} [get_bd_cells graphic_controller_0]
+set_property location {1.5 -148 238} [get_bd_cells core_logic_0]
+set_property location {2 -139 222} [get_bd_cells core_logic_0]
+set_property location {2 -150 237} [get_bd_cells core_logic_0]
+set_property location {2 -149 228} [get_bd_cells core_logic_0]
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 24 20:46:34 2021...

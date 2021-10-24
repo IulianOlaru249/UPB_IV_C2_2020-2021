@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"lab_v_1_0": {
+			"proto_instances": {
+			}
+		}
+	}
+}
