@@ -1,0 +1,4207 @@
+{
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [
+            -99.88897705, 
+            32.23457718
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 547.8, 
+          "condensed_name": "Abilene", 
+          "conservation_capacity": 7900.0, 
+          "conservation_pool_elevation": 2012.3, 
+          "conservation_storage": 6647.0, 
+          "dead_pool_elevation": 1968.8, 
+          "elevation": 2010.16, 
+          "full_name": "Lake Abilene", 
+          "percent_full": 84.1, 
+          "short_name": "Abilene", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "municipal_abilene", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 6647.0, 
+          "volume_under_conservation_pool_elevation": 7900.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.62355804, 
+            29.79133987
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "Addicks", 
+          "conservation_capacity": null, 
+          "conservation_pool_elevation": 67.5, 
+          "conservation_storage": null, 
+          "dead_pool_elevation": 67.5, 
+          "elevation": 75.79, 
+          "full_name": "Addicks Reservoir", 
+          "percent_full": null, 
+          "short_name": "Addicks", 
+          "tags": [
+            "climate_upper_coast", 
+            "monitored", 
+            "municipal_houston", 
+            "region_region_h", 
+            "texas", 
+            "major", 
+            "basin_san_jacinto", 
+            "flood_control"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": null, 
+          "volume_under_conservation_pool_elevation": null
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -101.0476303, 
+            33.06287766
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 2639.78, 
+          "condensed_name": "AlanHenry", 
+          "conservation_capacity": 96207.0, 
+          "conservation_pool_elevation": 2220.0, 
+          "conservation_storage": 90032.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 2217.73, 
+          "full_name": "Lake Alan Henry", 
+          "percent_full": 93.6, 
+          "short_name": "Alan Henry", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "municipal_lubbock", 
+            "region_llano_estacado", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 90032.0, 
+          "volume_under_conservation_pool_elevation": 96206.795868
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -101.05583, 
+            29.44972
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 29186.36, 
+          "condensed_name": "Amistad", 
+          "conservation_capacity": 1840849.0, 
+          "conservation_pool_elevation": 1117.0, 
+          "conservation_storage": 943687.0, 
+          "dead_pool_elevation": 930.0, 
+          "elevation": 1070.42, 
+          "full_name": "Amistad Reservoir", 
+          "percent_full": 51.3, 
+          "short_name": "Amistad", 
+          "tags": [
+            "climate_edwards_plateau", 
+            "monitored", 
+            "municipal_brownsville", 
+            "municipal_laredo", 
+            "region_plateau", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_rio_grande"
+          ], 
+          "timestamp": "2021-10-28", 
+          "volume": 1144109.0, 
+          "volume_under_conservation_pool_elevation": 3275532.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.86309052, 
+            33.47427368
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1509.6, 
+          "condensed_name": "AmonGCarter", 
+          "conservation_capacity": 19266.0, 
+          "conservation_pool_elevation": 920.0, 
+          "conservation_storage": 19266.0, 
+          "dead_pool_elevation": 892.5, 
+          "elevation": 920.31, 
+          "full_name": "Lake Amon G Carter", 
+          "percent_full": 100.0, 
+          "short_name": "Amon G Carter", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_b", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 20540.0, 
+          "volume_under_conservation_pool_elevation": 20050.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.20278931, 
+            31.89988136
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 3039.45, 
+          "condensed_name": "Aquilla", 
+          "conservation_capacity": 43243.0, 
+          "conservation_pool_elevation": 537.5, 
+          "conservation_storage": 42048.0, 
+          "dead_pool_elevation": 503.0, 
+          "elevation": 537.11, 
+          "full_name": "Aquilla Lake", 
+          "percent_full": 97.2, 
+          "short_name": "Aquilla", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 42084.0, 
+          "volume_under_conservation_pool_elevation": 43278.745432
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.19251251, 
+            32.71624374
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1846.59, 
+          "condensed_name": "Arlington", 
+          "conservation_capacity": 40157.0, 
+          "conservation_pool_elevation": 550.0, 
+          "conservation_storage": 33439.0, 
+          "dead_pool_elevation": 505.0, 
+          "elevation": 546.43, 
+          "full_name": "Lake Arlington", 
+          "percent_full": 83.3, 
+          "short_name": "Arlington", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_fort_worth", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 33471.0, 
+          "volume_under_conservation_pool_elevation": 40188.218182
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.37171936, 
+            33.76426697
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 13623.96, 
+          "condensed_name": "Arrowhead", 
+          "conservation_capacity": 230359.0, 
+          "conservation_pool_elevation": 926.0, 
+          "conservation_storage": 206308.0, 
+          "dead_pool_elevation": 874.0, 
+          "elevation": 924.29, 
+          "full_name": "Lake Arrowhead", 
+          "percent_full": 89.6, 
+          "short_name": "Arrowhead", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_wichita_falls", 
+            "region_region_b", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_red"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 206308.0, 
+          "volume_under_conservation_pool_elevation": 230359.321694
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.76499939, 
+            32.21055603
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1795.48, 
+          "condensed_name": "Athens", 
+          "conservation_capacity": 29503.0, 
+          "conservation_pool_elevation": 440.0, 
+          "conservation_storage": 29374.0, 
+          "dead_pool_elevation": 396.5, 
+          "elevation": 439.93, 
+          "full_name": "Lake Athens", 
+          "percent_full": 99.6, 
+          "short_name": "Athens", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_neches"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 29415.0, 
+          "volume_under_conservation_pool_elevation": 29544.47723102975
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.78639221, 
+            30.31548309
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1540.78, 
+          "condensed_name": "Austin", 
+          "conservation_capacity": 23972.0, 
+          "conservation_pool_elevation": 492.8, 
+          "conservation_storage": 22911.0, 
+          "dead_pool_elevation": 462.0, 
+          "elevation": 492.12, 
+          "full_name": "Lake Austin", 
+          "percent_full": 95.6, 
+          "short_name": "Austin", 
+          "tags": [
+            "climate_south_central", 
+            "monitored", 
+            "region_lower_colorado", 
+            "water_supply", 
+            "highland", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-28", 
+          "volume": 23520.0, 
+          "volume_under_conservation_pool_elevation": 24581.135574199983
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -94.18019104, 
+            30.79548073
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 9903.5, 
+          "condensed_name": "BASteinhagen", 
+          "conservation_capacity": 69186.0, 
+          "conservation_pool_elevation": 83.0, 
+          "conservation_storage": 65563.0, 
+          "dead_pool_elevation": 52.0, 
+          "elevation": 82.64, 
+          "full_name": "B. A. Steinhagen Lake", 
+          "percent_full": 94.8, 
+          "short_name": "B A Steinhagen", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "municipal_beaumont_port_arthur", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_neches"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 65636.0, 
+          "volume_under_conservation_pool_elevation": 69259.394697
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.64720917, 
+            32.25014877
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 3114.81, 
+          "condensed_name": "Bardwell", 
+          "conservation_capacity": 46122.0, 
+          "conservation_pool_elevation": 421.0, 
+          "conservation_storage": 45310.0, 
+          "dead_pool_elevation": 391.0, 
+          "elevation": 420.74, 
+          "full_name": "Bardwell Lake", 
+          "percent_full": 98.2, 
+          "short_name": "Bardwell", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 45660.0, 
+          "volume_under_conservation_pool_elevation": 46472.204224
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.64717102, 
+            29.76995087
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "Barker", 
+          "conservation_capacity": null, 
+          "conservation_pool_elevation": 70.9, 
+          "conservation_storage": null, 
+          "dead_pool_elevation": 70.9, 
+          "elevation": 74.9, 
+          "full_name": "Barker Reservoir", 
+          "percent_full": null, 
+          "short_name": "Barker", 
+          "tags": [
+            "climate_upper_coast", 
+            "monitored", 
+            "municipal_houston", 
+            "region_region_h", 
+            "texas", 
+            "major", 
+            "basin_san_jacinto", 
+            "flood_control"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": null, 
+          "volume_under_conservation_pool_elevation": null
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.47473145, 
+            31.10628891
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 11916.72, 
+          "condensed_name": "Belton", 
+          "conservation_capacity": 435225.0, 
+          "conservation_pool_elevation": 594.0, 
+          "conservation_storage": 420913.0, 
+          "dead_pool_elevation": 483.0, 
+          "elevation": 592.81, 
+          "full_name": "Belton Lake", 
+          "percent_full": 96.7, 
+          "short_name": "Belton", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_temple_killeen", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 420913.0, 
+          "volume_under_conservation_pool_elevation": 435224.777227
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.44863129, 
+            32.65068817
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 2962.17, 
+          "condensed_name": "Benbrook", 
+          "conservation_capacity": 85648.0, 
+          "conservation_pool_elevation": 694.0, 
+          "conservation_storage": 60437.0, 
+          "dead_pool_elevation": 622.0, 
+          "elevation": 686.35, 
+          "full_name": "Benbrook Lake", 
+          "percent_full": 70.6, 
+          "short_name": "Benbrook", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_fort_worth", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 60437.0, 
+          "volume_under_conservation_pool_elevation": 85648.116621
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.00215912, 
+            33.08012009
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 8600.89, 
+          "condensed_name": "BobSandlin", 
+          "conservation_capacity": 192417.0, 
+          "conservation_pool_elevation": 337.5, 
+          "conservation_storage": 179562.0, 
+          "dead_pool_elevation": 300.0, 
+          "elevation": 336.03, 
+          "full_name": "Lake Bob Sandlin", 
+          "percent_full": 93.3, 
+          "short_name": "Bob Sandlin", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_north_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_cypress"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 190293.0, 
+          "volume_under_conservation_pool_elevation": 203147.723186
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.16414642, 
+            33.64538193
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 941.05, 
+          "condensed_name": "Bonham", 
+          "conservation_capacity": 11027.0, 
+          "conservation_pool_elevation": 565.0, 
+          "conservation_storage": 8633.0, 
+          "dead_pool_elevation": 538.0, 
+          "elevation": 562.6, 
+          "full_name": "Lake Bonham", 
+          "percent_full": 78.3, 
+          "short_name": "Bonham", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_red"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 8645.0, 
+          "volume_under_conservation_pool_elevation": 11038.27438
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -99.38561249, 
+            31.13822365
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1463.6, 
+          "condensed_name": "BradyCreek", 
+          "conservation_capacity": 28808.0, 
+          "conservation_pool_elevation": 1743.0, 
+          "conservation_storage": 17305.0, 
+          "dead_pool_elevation": 1712.0, 
+          "elevation": 1736.26, 
+          "full_name": "Brady Creek Reservoir", 
+          "percent_full": 60.1, 
+          "short_name": "Brady Creek", 
+          "tags": [
+            "climate_edwards_plateau", 
+            "monitored", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 18927.0, 
+          "volume_under_conservation_pool_elevation": 30430.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.83197784, 
+            33.22289276
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 11374.62, 
+          "condensed_name": "Bridgeport", 
+          "conservation_capacity": 366236.0, 
+          "conservation_pool_elevation": 836.0, 
+          "conservation_storage": 342983.0, 
+          "dead_pool_elevation": 752.0, 
+          "elevation": 833.98, 
+          "full_name": "Bridgeport Reservoir", 
+          "percent_full": 93.7, 
+          "short_name": "Bridgeport", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_fort_worth", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 342983.0, 
+          "volume_under_conservation_pool_elevation": 366235.52764
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -99.0039444, 
+            31.83709335
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 6668.57, 
+          "condensed_name": "Brownwood", 
+          "conservation_capacity": 130868.0, 
+          "conservation_pool_elevation": 1424.6, 
+          "conservation_storage": 126762.0, 
+          "dead_pool_elevation": 1329.5, 
+          "elevation": 1423.99, 
+          "full_name": "Lake Brownwood", 
+          "percent_full": 96.9, 
+          "short_name": "Brownwood", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 126762.0, 
+          "volume_under_conservation_pool_elevation": 130868.494848638
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.41836548, 
+            30.75156975
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 21194.3, 
+          "condensed_name": "Buchanan", 
+          "conservation_capacity": 816904.0, 
+          "conservation_pool_elevation": 1018.0, 
+          "conservation_storage": 763230.0, 
+          "dead_pool_elevation": 937.5, 
+          "elevation": 1015.5, 
+          "full_name": "Lake Buchanan", 
+          "percent_full": 93.4, 
+          "short_name": "Buchanan", 
+          "tags": [
+            "climate_edwards_plateau", 
+            "monitored", 
+            "municipal_austin", 
+            "region_lower_colorado", 
+            "water_supply", 
+            "highland", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-28", 
+          "volume": 778431.0, 
+          "volume_under_conservation_pool_elevation": 832105.9999999998
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -93.91462708, 
+            32.71014404
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 27023.4, 
+          "condensed_name": "Caddo", 
+          "conservation_capacity": 29898.0, 
+          "conservation_pool_elevation": 168.5, 
+          "conservation_storage": 29898.0, 
+          "dead_pool_elevation": 166.0, 
+          "elevation": 168.63, 
+          "full_name": "Caddo Lake", 
+          "percent_full": 100.0, 
+          "short_name": "Caddo", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_north_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_cypress"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 131297.0, 
+          "volume_under_conservation_pool_elevation": 129000.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.19889832, 
+            29.86882973
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "Canyon", 
+          "conservation_capacity": 378781.0, 
+          "conservation_pool_elevation": 909.0, 
+          "conservation_storage": 378781.0, 
+          "dead_pool_elevation": 775.0, 
+          "elevation": 909.03, 
+          "full_name": "Canyon Lake", 
+          "percent_full": 100.0, 
+          "short_name": "Canyon", 
+          "tags": [
+            "climate_south_central", 
+            "monitored", 
+            "region_south_central_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_guadalupe"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 379099.0, 
+          "volume_under_conservation_pool_elevation": 378852.213774
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.14080811, 
+            32.24320221
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 31380.0, 
+          "condensed_name": "CedarCreek", 
+          "conservation_capacity": 644686.0, 
+          "conservation_pool_elevation": 322.0, 
+          "conservation_storage": 604979.0, 
+          "dead_pool_elevation": 263.5, 
+          "elevation": 320.76, 
+          "full_name": "Cedar Creek Reservoir", 
+          "percent_full": 93.8, 
+          "short_name": "Cedar Creek", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "municipal_fort_worth", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 605078.0, 
+          "volume_under_conservation_pool_elevation": 644785.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -100.8587265, 
+            32.28151321
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1205.8, 
+          "condensed_name": "ChampionCreek", 
+          "conservation_capacity": 41580.0, 
+          "conservation_pool_elevation": 2083.0, 
+          "conservation_storage": 29996.0, 
+          "dead_pool_elevation": 2020.0, 
+          "elevation": 2074.56, 
+          "full_name": "Champion Creek Reservoir", 
+          "percent_full": 72.1, 
+          "short_name": "Champion Creek", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 29996.0, 
+          "volume_under_conservation_pool_elevation": 41580.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -94.6685638, 
+            32.369194
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 3389.9, 
+          "condensed_name": "Cherokee", 
+          "conservation_capacity": 40094.0, 
+          "conservation_pool_elevation": 280.0, 
+          "conservation_storage": 36672.0, 
+          "dead_pool_elevation": 260.0, 
+          "elevation": 278.93, 
+          "full_name": "Lake Cherokee", 
+          "percent_full": 91.5, 
+          "short_name": "Cherokee", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_sabine"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 41054.0, 
+          "volume_under_conservation_pool_elevation": 44475.072429
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.24584198, 
+            28.483881
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 16121.2, 
+          "condensed_name": "ChokeCanyon", 
+          "conservation_capacity": 662820.0, 
+          "conservation_pool_elevation": 220.5, 
+          "conservation_storage": 301689.0, 
+          "dead_pool_elevation": 136.4, 
+          "elevation": 202.94, 
+          "full_name": "Choke Canyon Reservoir", 
+          "percent_full": 45.5, 
+          "short_name": "Choke Canyon", 
+          "tags": [
+            "climate_south", 
+            "monitored", 
+            "municipal_corpus_christi", 
+            "region_coastal_bend", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_nueces"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 301690.0, 
+          "volume_under_conservation_pool_elevation": 662820.98
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.98562622, 
+            32.43790817
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "Cisco", 
+          "conservation_capacity": 29003.0, 
+          "conservation_pool_elevation": 1522.46, 
+          "conservation_storage": 26179.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 1520.17, 
+          "full_name": "Lake Cisco", 
+          "percent_full": 90.3, 
+          "short_name": "Cisco", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 26179.0, 
+          "volume_under_conservation_pool_elevation": 29002.80000239331
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -99.46534729, 
+            32.03013992
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1793.54, 
+          "condensed_name": "Coleman", 
+          "conservation_capacity": 38075.0, 
+          "conservation_pool_elevation": 1717.5, 
+          "conservation_storage": 37085.0, 
+          "dead_pool_elevation": 1662.5, 
+          "elevation": 1716.95, 
+          "full_name": "Lake Coleman", 
+          "percent_full": 97.4, 
+          "short_name": "Coleman", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 37103.0, 
+          "volume_under_conservation_pool_elevation": 38093.907805
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.16499329, 
+            28.7311039
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "ColetoCreek", 
+          "conservation_capacity": 31040.0, 
+          "conservation_pool_elevation": 98.0, 
+          "conservation_storage": 31040.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 98.34, 
+          "full_name": "Coleto Creek Reservoir", 
+          "percent_full": 100.0, 
+          "short_name": "Coleto Creek", 
+          "tags": [
+            "climate_south_central", 
+            "monitored", 
+            "region_south_central_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_guadalupe"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 32045.0, 
+          "volume_under_conservation_pool_elevation": 31040.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -100.919838, 
+            32.344841
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "ColoradoCity", 
+          "conservation_capacity": 30758.0, 
+          "conservation_pool_elevation": 2070.2, 
+          "conservation_storage": 23747.0, 
+          "dead_pool_elevation": 2024.3, 
+          "elevation": 2064.95, 
+          "full_name": "Lake Colorado City", 
+          "percent_full": 77.2, 
+          "short_name": "Colorado City", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 23747.0, 
+          "volume_under_conservation_pool_elevation": 30758.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.56105042, 
+            30.35854149
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 18549.18, 
+          "condensed_name": "Conroe", 
+          "conservation_capacity": 410988.0, 
+          "conservation_pool_elevation": 201.0, 
+          "conservation_storage": 386831.0, 
+          "dead_pool_elevation": 145.0, 
+          "elevation": 199.72, 
+          "full_name": "Lake Conroe", 
+          "percent_full": 94.1, 
+          "short_name": "Conroe", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "municipal_houston", 
+            "region_region_h", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_san_jacinto"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 386865.0, 
+          "volume_under_conservation_pool_elevation": 411021.893113
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.87110901, 
+            28.03834724
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 18617.31, 
+          "condensed_name": "CorpusChristi", 
+          "conservation_capacity": 256062.0, 
+          "conservation_pool_elevation": 94.0, 
+          "conservation_storage": 219422.0, 
+          "dead_pool_elevation": 55.5, 
+          "elevation": 92.09, 
+          "full_name": "Lake Corpus Christi", 
+          "percent_full": 85.7, 
+          "short_name": "Corpus Christi", 
+          "tags": [
+            "climate_south", 
+            "monitored", 
+            "municipal_corpus_christi", 
+            "region_coastal_bend", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_nueces"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 219700.0, 
+          "volume_under_conservation_pool_elevation": 256339.476033
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.56690216, 
+            33.72843933
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1011.89, 
+          "condensed_name": "Crook", 
+          "conservation_capacity": 9195.0, 
+          "conservation_pool_elevation": 476.0, 
+          "conservation_storage": 8000.0, 
+          "dead_pool_elevation": 456.8, 
+          "elevation": 474.84, 
+          "full_name": "Lake Crook", 
+          "percent_full": 87.0, 
+          "short_name": "Crook", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_north_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_red"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 8015.0, 
+          "volume_under_conservation_pool_elevation": 9210.359596
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.15888977, 
+            33.06611252
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 3141.78, 
+          "condensed_name": "CypressSprings", 
+          "conservation_capacity": 66756.0, 
+          "conservation_pool_elevation": 378.0, 
+          "conservation_storage": 62709.0, 
+          "dead_pool_elevation": 317.75, 
+          "elevation": 376.73, 
+          "full_name": "Lake Cypress Springs", 
+          "percent_full": 93.9, 
+          "short_name": "Cypress Springs", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_north_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_cypress"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 62709.0, 
+          "volume_under_conservation_pool_elevation": 66755.620202
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -100.5173187, 
+            31.87958908
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 6236.73, 
+          "condensed_name": "EVSpence", 
+          "conservation_capacity": 517272.0, 
+          "conservation_pool_elevation": 1898.0, 
+          "conservation_storage": 135667.0, 
+          "dead_pool_elevation": 1790.0, 
+          "elevation": 1860.92, 
+          "full_name": "E. V. Spence Reservoir", 
+          "percent_full": 26.2, 
+          "short_name": "E V Spence", 
+          "tags": [
+            "climate_edwards_plateau", 
+            "monitored", 
+            "municipal_midland_odessa", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 135667.0, 
+          "volume_under_conservation_pool_elevation": 517272.0955
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.47502136, 
+            32.87762833
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 8381.38, 
+          "condensed_name": "EagleMountain", 
+          "conservation_capacity": 179880.0, 
+          "conservation_pool_elevation": 649.1, 
+          "conservation_storage": 170878.0, 
+          "dead_pool_elevation": 599.9, 
+          "elevation": 648.04, 
+          "full_name": "Eagle Mountain Reservoir", 
+          "percent_full": 95.0, 
+          "short_name": "Eagle Mountain", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_fort_worth", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 170878.0, 
+          "volume_under_conservation_pool_elevation": 179880.362902
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -107.1911, 
+            33.1542
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 5391.87, 
+          "condensed_name": "ElephantButte", 
+          "conservation_capacity": 1985900.0, 
+          "conservation_pool_elevation": 4406.297704, 
+          "conservation_storage": 115685.0, 
+          "dead_pool_elevation": 4231.5, 
+          "elevation": 4300.11, 
+          "full_name": "Elephant Butte Lake", 
+          "percent_full": 5.8, 
+          "short_name": "Elephant Butte", 
+          "tags": [
+            "monitored", 
+            "municipal_el_paso", 
+            "water_supply", 
+            "new_mexico", 
+            "major"
+          ], 
+          "timestamp": "2021-10-28", 
+          "volume": 115685.0, 
+          "volume_under_conservation_pool_elevation": 1985900.01177998
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -99.16056, 
+            26.55722
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 25497.44, 
+          "condensed_name": "Falcon", 
+          "conservation_capacity": 1551007.0, 
+          "conservation_pool_elevation": 301.1, 
+          "conservation_storage": 312840.0, 
+          "dead_pool_elevation": 204.34, 
+          "elevation": 258.31, 
+          "full_name": "Falcon Reservoir", 
+          "percent_full": 20.2, 
+          "short_name": "Falcon", 
+          "tags": [
+            "climate_south", 
+            "monitored", 
+            "municipal_brownsville", 
+            "region_rio_grande", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_rio_grande"
+          ], 
+          "timestamp": "2021-10-28", 
+          "volume": 403530.0, 
+          "volume_under_conservation_pool_elevation": 2646817.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.52800751, 
+            32.81345749
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 24665.16, 
+          "condensed_name": "Fork", 
+          "conservation_capacity": 605061.0, 
+          "conservation_pool_elevation": 403.0, 
+          "conservation_storage": 550255.0, 
+          "dead_pool_elevation": 360.0, 
+          "elevation": 400.85, 
+          "full_name": "Lake Fork Reservoir", 
+          "percent_full": 90.9, 
+          "short_name": "Fork", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "municipal_dallas", 
+            "region_north_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_sabine"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 581698.0, 
+          "volume_under_conservation_pool_elevation": 636503.684114
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -99.68064117, 
+            32.59623337
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 3856.8, 
+          "condensed_name": "FortPhantomHill", 
+          "conservation_capacity": 70030.0, 
+          "conservation_pool_elevation": 1635.9, 
+          "conservation_storage": 68396.0, 
+          "dead_pool_elevation": 1582.4, 
+          "elevation": 1635.48, 
+          "full_name": "Fort Phantom Hill Reservoir", 
+          "percent_full": 97.7, 
+          "short_name": "Fort Phantom Hill", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "municipal_abilene", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 68402.0, 
+          "volume_under_conservation_pool_elevation": 70036.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.72750854, 
+            30.66769218
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1030.8, 
+          "condensed_name": "Georgetown", 
+          "conservation_capacity": 36823.0, 
+          "conservation_pool_elevation": 791.0, 
+          "conservation_storage": 25620.0, 
+          "dead_pool_elevation": 720.0, 
+          "elevation": 781.37, 
+          "full_name": "Lake Georgetown", 
+          "percent_full": 69.6, 
+          "short_name": "Georgetown", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_austin", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 25701.0, 
+          "volume_under_conservation_pool_elevation": 36903.648852
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.065406, 
+            30.609414
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 2190.95, 
+          "condensed_name": "GibbonsCreek", 
+          "conservation_capacity": 25721.0, 
+          "conservation_pool_elevation": 247.0, 
+          "conservation_storage": 20615.0, 
+          "dead_pool_elevation": 229.39, 
+          "elevation": 244.84, 
+          "full_name": "Gibbons Creek Reservoir", 
+          "percent_full": 80.1, 
+          "short_name": "Gibbons Creek", 
+          "tags": [
+            "major", 
+            "water_supply", 
+            "basin_brazos", 
+            "region_brazos_g", 
+            "climate_east_texas", 
+            "monitored", 
+            "texas"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 22319.0, 
+          "volume_under_conservation_pool_elevation": 27425.013774
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.61367035, 
+            33.13455963
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 2317.13, 
+          "condensed_name": "Graham", 
+          "conservation_capacity": 45288.0, 
+          "conservation_pool_elevation": 1075.0, 
+          "conservation_storage": 40828.0, 
+          "dead_pool_elevation": 1030.0, 
+          "elevation": 1073.15, 
+          "full_name": "Lake Graham", 
+          "percent_full": 90.2, 
+          "short_name": "Graham", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 40842.0, 
+          "volume_under_conservation_pool_elevation": 45302.425
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.68919373, 
+            32.37430573
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 8157.58, 
+          "condensed_name": "Granbury", 
+          "conservation_capacity": 132949.0, 
+          "conservation_pool_elevation": 692.7, 
+          "conservation_storage": 132623.0, 
+          "dead_pool_elevation": 640.0, 
+          "elevation": 692.66, 
+          "full_name": "Lake Granbury", 
+          "percent_full": 99.8, 
+          "short_name": "Granbury", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 133532.0, 
+          "volume_under_conservation_pool_elevation": 133857.989417
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.3263855, 
+            30.69297218
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "Granger", 
+          "conservation_capacity": 51822.0, 
+          "conservation_pool_elevation": 504.0, 
+          "conservation_storage": 51822.0, 
+          "dead_pool_elevation": 457.0, 
+          "elevation": 505.48, 
+          "full_name": "Granger Lake", 
+          "percent_full": 100.0, 
+          "short_name": "Granger", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 58138.0, 
+          "volume_under_conservation_pool_elevation": 51822.4573
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.05639648, 
+            32.97262573
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 6323.8, 
+          "condensed_name": "Grapevine", 
+          "conservation_capacity": 163064.0, 
+          "conservation_pool_elevation": 535.0, 
+          "conservation_storage": 155448.0, 
+          "dead_pool_elevation": 475.0, 
+          "elevation": 533.82, 
+          "full_name": "Grapevine Lake", 
+          "percent_full": 95.3, 
+          "short_name": "Grapevine", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_dallas", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 155448.0, 
+          "volume_under_conservation_pool_elevation": 163063.866299
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -100.8948669, 
+            35.00060654
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 602.0, 
+          "condensed_name": "Greenbelt", 
+          "conservation_capacity": 59968.0, 
+          "conservation_pool_elevation": 2664.0, 
+          "conservation_storage": 10423.0, 
+          "dead_pool_elevation": 2590.0, 
+          "elevation": 2624.75, 
+          "full_name": "Greenbelt Lake", 
+          "percent_full": 17.4, 
+          "short_name": "Greenbelt", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "region_panhandle", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_red"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 10855.0, 
+          "volume_under_conservation_pool_elevation": 60400.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.41609192, 
+            32.07126617
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 539.05, 
+          "condensed_name": "Halbert", 
+          "conservation_capacity": 6033.0, 
+          "conservation_pool_elevation": 368.0, 
+          "conservation_storage": 5100.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 366.33, 
+          "full_name": "Halbert Lake", 
+          "percent_full": 84.5, 
+          "short_name": "Halbert", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 5100.0, 
+          "volume_under_conservation_pool_elevation": 6032.805142
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -99.56090546, 
+            31.83292389
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 269.9, 
+          "condensed_name": "HordsCreek", 
+          "conservation_capacity": 8109.0, 
+          "conservation_pool_elevation": 1900.0, 
+          "conservation_storage": 3674.0, 
+          "dead_pool_elevation": 1856.0, 
+          "elevation": 1888.3, 
+          "full_name": "Hords Creek Lake", 
+          "percent_full": 45.3, 
+          "short_name": "Hords Creek", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 3677.0, 
+          "volume_under_conservation_pool_elevation": 8112.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.14131927, 
+            29.91633224
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "Houston", 
+          "conservation_capacity": 130147.0, 
+          "conservation_pool_elevation": 42.38, 
+          "conservation_storage": 130147.0, 
+          "dead_pool_elevation": 19.23, 
+          "elevation": 42.62, 
+          "full_name": "Lake Houston", 
+          "percent_full": 100.0, 
+          "short_name": "Houston", 
+          "tags": [
+            "climate_upper_coast", 
+            "monitored", 
+            "municipal_houston", 
+            "region_region_h", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_san_jacinto"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 136846.0, 
+          "volume_under_conservation_pool_elevation": 134122.137351
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.60189819, 
+            31.40684509
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1283.64, 
+          "condensed_name": "HoustonCounty", 
+          "conservation_capacity": 17113.0, 
+          "conservation_pool_elevation": 260.0, 
+          "conservation_storage": 16855.0, 
+          "dead_pool_elevation": 234.0, 
+          "elevation": 259.8, 
+          "full_name": "Houston County Lake", 
+          "percent_full": 98.5, 
+          "short_name": "Houston County", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 17407.0, 
+          "volume_under_conservation_pool_elevation": 17665.075482
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.96784973, 
+            32.83150864
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 14980.4, 
+          "condensed_name": "HubbardCreek", 
+          "conservation_capacity": 313298.0, 
+          "conservation_pool_elevation": 1183.31, 
+          "conservation_storage": 291217.0, 
+          "dead_pool_elevation": 1136.31, 
+          "elevation": 1181.87, 
+          "full_name": "Hubbard Creek Reservoir", 
+          "percent_full": 93.0, 
+          "short_name": "Hubbard Creek", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_abilene", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 296093.0, 
+          "volume_under_conservation_pool_elevation": 318173.650046
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.21417999, 
+            33.77399445
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1054.02, 
+          "condensed_name": "HubertHMoss", 
+          "conservation_capacity": 24058.0, 
+          "conservation_pool_elevation": 715.0, 
+          "conservation_storage": 22927.0, 
+          "dead_pool_elevation": 666.0, 
+          "elevation": 713.94, 
+          "full_name": "Moss Lake", 
+          "percent_full": 95.3, 
+          "short_name": "Hubert H Moss", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_red"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 23024.0, 
+          "volume_under_conservation_pool_elevation": 24154.60202
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.38502502, 
+            30.73129272
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 750.71, 
+          "condensed_name": "Inks", 
+          "conservation_capacity": 13962.0, 
+          "conservation_pool_elevation": 888.5, 
+          "conservation_storage": 12915.0, 
+          "dead_pool_elevation": 844.5, 
+          "elevation": 887.15, 
+          "full_name": "Inks Lake", 
+          "percent_full": 92.5, 
+          "short_name": "Inks", 
+          "tags": [
+            "climate_edwards_plateau", 
+            "monitored", 
+            "region_lower_colorado", 
+            "water_supply", 
+            "highland", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-28", 
+          "volume": 13209.0, 
+          "volume_under_conservation_pool_elevation": 14256.182185500045
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -101.138176, 
+            32.59316635
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 4517.05, 
+          "condensed_name": "JBThomas", 
+          "conservation_capacity": 199931.0, 
+          "conservation_pool_elevation": 2258.0, 
+          "conservation_storage": 85886.0, 
+          "dead_pool_elevation": 2200.0, 
+          "elevation": 2238.22, 
+          "full_name": "Lake J.B. Thomas", 
+          "percent_full": 43.0, 
+          "short_name": "J B Thomas", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "municipal_midland_odessa", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 86559.0, 
+          "volume_under_conservation_pool_elevation": 200603.598163
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.30995178, 
+            31.90850258
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1142.81, 
+          "condensed_name": "Jacksonville", 
+          "conservation_capacity": 25670.0, 
+          "conservation_pool_elevation": 422.0, 
+          "conservation_storage": 25025.0, 
+          "dead_pool_elevation": 372.0, 
+          "elevation": 421.44, 
+          "full_name": "Lake Jacksonville", 
+          "percent_full": 97.5, 
+          "short_name": "Jacksonville", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_neches"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 25087.0, 
+          "volume_under_conservation_pool_elevation": 25731.81708
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.62523651, 
+            33.33344269
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 16474.19, 
+          "condensed_name": "JimChapman", 
+          "conservation_capacity": 260332.0, 
+          "conservation_pool_elevation": 440.0, 
+          "conservation_storage": 226927.0, 
+          "dead_pool_elevation": 415.5, 
+          "elevation": 438.04, 
+          "full_name": "Cooper (Chapman) Lake", 
+          "percent_full": 87.2, 
+          "short_name": "Jim Chapman", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_north_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_sulphur"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 265525.0, 
+          "volume_under_conservation_pool_elevation": 298929.954086
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.00111389, 
+            32.64346695
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 7401.6, 
+          "condensed_name": "JoePool", 
+          "conservation_capacity": 175800.0, 
+          "conservation_pool_elevation": 522.0, 
+          "conservation_storage": 172996.0, 
+          "dead_pool_elevation": 466.0, 
+          "elevation": 521.62, 
+          "full_name": "Joe Pool Lake", 
+          "percent_full": 98.4, 
+          "short_name": "Joe Pool", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 174091.0, 
+          "volume_under_conservation_pool_elevation": 176895.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -99.15118408, 
+            33.75842667
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 15125.15, 
+          "condensed_name": "Kemp", 
+          "conservation_capacity": 245307.0, 
+          "conservation_pool_elevation": 1144.0, 
+          "conservation_storage": 239830.0, 
+          "dead_pool_elevation": 1090.0, 
+          "elevation": 1143.64, 
+          "full_name": "Lake Kemp", 
+          "percent_full": 97.8, 
+          "short_name": "Kemp", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "municipal_wichita_falls", 
+            "region_region_b", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_red"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 239956.0, 
+          "volume_under_conservation_pool_elevation": 245433.617631
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.77895355, 
+            33.6631546
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 5152.47, 
+          "condensed_name": "Kickapoo", 
+          "conservation_capacity": 86345.0, 
+          "conservation_pool_elevation": 1045.0, 
+          "conservation_storage": 69105.0, 
+          "dead_pool_elevation": 1000.92, 
+          "elevation": 1041.87, 
+          "full_name": "Lake Kickapoo", 
+          "percent_full": 80.0, 
+          "short_name": "Kickapoo", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_wichita_falls", 
+            "region_region_b", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_red"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 69105.0, 
+          "volume_under_conservation_pool_elevation": 86344.682828
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -94.49936676, 
+            32.7551384
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 17671.03, 
+          "condensed_name": "Lake O' the Pines", 
+          "conservation_capacity": 241363.0, 
+          "conservation_pool_elevation": 228.5, 
+          "conservation_storage": 241363.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 228.55, 
+          "full_name": "Lake O the Pines", 
+          "percent_full": 100.0, 
+          "short_name": "Lake O' the Pines", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_north_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_cypress"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 242246.0, 
+          "volume_under_conservation_pool_elevation": 241362.653444
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.48249054, 
+            33.03178787
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 18296.45, 
+          "condensed_name": "Lavon", 
+          "conservation_capacity": 406388.0, 
+          "conservation_pool_elevation": 492.0, 
+          "conservation_storage": 335451.0, 
+          "dead_pool_elevation": 453.0, 
+          "elevation": 488.4, 
+          "full_name": "Lavon Lake", 
+          "percent_full": 82.5, 
+          "short_name": "Lavon", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_dallas", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 338423.0, 
+          "volume_under_conservation_pool_elevation": 409359.515152
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.6756134, 
+            32.36374283
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1657.61, 
+          "condensed_name": "Leon", 
+          "conservation_capacity": 27762.0, 
+          "conservation_pool_elevation": 1375.0, 
+          "conservation_storage": 25629.0, 
+          "dead_pool_elevation": 1335.0, 
+          "elevation": 1373.75, 
+          "full_name": "Leon Reservoir", 
+          "percent_full": 92.3, 
+          "short_name": "Leon", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 25909.0, 
+          "volume_under_conservation_pool_elevation": 28042.134114
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.96444702, 
+            33.06928635
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 26121.89, 
+          "condensed_name": "Lewisville", 
+          "conservation_capacity": 563228.0, 
+          "conservation_pool_elevation": 522.0, 
+          "conservation_storage": 526856.0, 
+          "dead_pool_elevation": 481.0, 
+          "elevation": 520.63, 
+          "full_name": "Lewisville Lake", 
+          "percent_full": 93.5, 
+          "short_name": "Lewisville", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_dallas", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 562530.0, 
+          "volume_under_conservation_pool_elevation": 598901.915152
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.31913757, 
+            31.32517815
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 11951.27, 
+          "condensed_name": "Limestone", 
+          "conservation_capacity": 203780.0, 
+          "conservation_pool_elevation": 363.0, 
+          "conservation_storage": 187223.0, 
+          "dead_pool_elevation": 322.0, 
+          "elevation": 361.64, 
+          "full_name": "Lake Limestone", 
+          "percent_full": 91.9, 
+          "short_name": "Limestone", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 187223.0, 
+          "volume_under_conservation_pool_elevation": 203780.442975
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.01021576, 
+            30.63353157
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 82685.43, 
+          "condensed_name": "Livingston", 
+          "conservation_capacity": 1741867.0, 
+          "conservation_pool_elevation": 131.0, 
+          "conservation_storage": 1724675.0, 
+          "dead_pool_elevation": 58.0, 
+          "elevation": 130.79, 
+          "full_name": "Livingston Reservoir", 
+          "percent_full": 99.0, 
+          "short_name": "Livingston", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "municipal_houston", 
+            "region_region_h", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 1724675.0, 
+          "volume_under_conservation_pool_elevation": 1741867.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.12004089, 
+            33.24344635
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "LostCreek", 
+          "conservation_capacity": 11950.0, 
+          "conservation_pool_elevation": 1009.5, 
+          "conservation_storage": 11828.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 1009.21, 
+          "full_name": "Lost Creek Reservoir", 
+          "percent_full": 99.0, 
+          "short_name": "Lost Creek", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 11828.0, 
+          "volume_under_conservation_pool_elevation": 11949.5
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.33835602, 
+            30.55602264
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 6117.48, 
+          "condensed_name": "LyndonBJohnson", 
+          "conservation_capacity": 115249.0, 
+          "conservation_pool_elevation": 825.4, 
+          "conservation_storage": 110881.0, 
+          "dead_pool_elevation": 793.4, 
+          "elevation": 824.7, 
+          "full_name": "Lake L. B. Johnson", 
+          "percent_full": 96.2, 
+          "short_name": "Lyndon B Johnson", 
+          "tags": [
+            "climate_edwards_plateau", 
+            "monitored", 
+            "region_lower_colorado", 
+            "water_supply", 
+            "highland", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-28", 
+          "volume": 131243.0, 
+          "volume_under_conservation_pool_elevation": 135610.9105601994
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -101.4382248, 
+            34.54534149
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 192.0, 
+          "condensed_name": "Mackenzie", 
+          "conservation_capacity": 46450.0, 
+          "conservation_pool_elevation": 3100.0, 
+          "conservation_storage": 3735.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 3011.7, 
+          "full_name": "Mackenzie Reservoir", 
+          "percent_full": 8.0, 
+          "short_name": "Mackenzie", 
+          "tags": [
+            "climate_high_plains", 
+            "monitored", 
+            "region_llano_estacado", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_red"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 3735.0, 
+          "volume_under_conservation_pool_elevation": 46450.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.25722222, 
+            30.55583333
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 539.88, 
+          "condensed_name": "MarbleFalls", 
+          "conservation_capacity": 6901.0, 
+          "conservation_pool_elevation": 737.0, 
+          "conservation_storage": 6798.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 736.31, 
+          "full_name": "Lake Marble Falls", 
+          "percent_full": 98.5, 
+          "short_name": "Marble Falls", 
+          "tags": [
+            "climate_edwards_plateau", 
+            "monitored", 
+            "region_lower_colorado", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-28", 
+          "volume": 6798.0, 
+          "volume_under_conservation_pool_elevation": 6901.15629
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -94.57325745, 
+            32.26182556
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 4599.21, 
+          "condensed_name": "Martin", 
+          "conservation_capacity": 75726.0, 
+          "conservation_pool_elevation": 306.0, 
+          "conservation_storage": 66412.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 304.05, 
+          "full_name": "Martin Lake", 
+          "percent_full": 87.7, 
+          "short_name": "Martin", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_sabine"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 66412.0, 
+          "volume_under_conservation_pool_elevation": 75726.081175
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.93392181, 
+            29.5402298
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 2441.34, 
+          "condensed_name": "Medina", 
+          "conservation_capacity": 254823.0, 
+          "conservation_pool_elevation": 1064.2, 
+          "conservation_storage": 72679.0, 
+          "dead_pool_elevation": 912.2, 
+          "elevation": 1020.5, 
+          "full_name": "Medina Lake", 
+          "percent_full": 28.5, 
+          "short_name": "Medina", 
+          "tags": [
+            "climate_south_central", 
+            "monitored", 
+            "region_south_central_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_san_antonio"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 72679.0, 
+          "volume_under_conservation_pool_elevation": 254823.232323
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -101.5512848, 
+            35.71059799
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 6930.91, 
+          "condensed_name": "Meredith", 
+          "conservation_capacity": 500000.0, 
+          "conservation_pool_elevation": 2936.5, 
+          "conservation_storage": 180272.0, 
+          "dead_pool_elevation": 2850.0, 
+          "elevation": 2885.69, 
+          "full_name": "Lake Meredith", 
+          "percent_full": 36.1, 
+          "short_name": "Meredith", 
+          "tags": [
+            "climate_high_plains", 
+            "monitored", 
+            "municipal_amarillo", 
+            "municipal_lubbock", 
+            "region_panhandle", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_canadian"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 218686.0, 
+          "volume_under_conservation_pool_elevation": 817969.789532
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -99.38896942, 
+            33.40898514
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 2089.2, 
+          "condensed_name": "MillersCreek", 
+          "conservation_capacity": 26768.0, 
+          "conservation_pool_elevation": 1334.0, 
+          "conservation_storage": 24531.0, 
+          "dead_pool_elevation": 1305.0, 
+          "elevation": 1332.96, 
+          "full_name": "Millers Creek Reservoir", 
+          "percent_full": 91.6, 
+          "short_name": "Millers Creek", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 25814.0, 
+          "volume_under_conservation_pool_elevation": 28051.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.04198456, 
+            32.81679535
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 469.4, 
+          "condensed_name": "MineralWells", 
+          "conservation_capacity": 5273.0, 
+          "conservation_pool_elevation": 863.0, 
+          "conservation_storage": 5273.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 863.1, 
+          "full_name": "Lake Mineral Wells", 
+          "percent_full": 100.0, 
+          "short_name": "Mineral Wells", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 5319.0, 
+          "volume_under_conservation_pool_elevation": 5272.620018
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.04354858, 
+            33.08012009
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1631.84, 
+          "condensed_name": "Monticello", 
+          "conservation_capacity": 34740.0, 
+          "conservation_pool_elevation": 340.0, 
+          "conservation_storage": 27162.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 335.92, 
+          "full_name": "Monticello Reservoir", 
+          "percent_full": 78.2, 
+          "short_name": "Monticello", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_north_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_cypress"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 27162.0, 
+          "volume_under_conservation_pool_elevation": 34739.556405
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.94333649, 
+            32.73207474
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 2898.6, 
+          "condensed_name": "MountainCreek", 
+          "conservation_capacity": 22850.0, 
+          "conservation_pool_elevation": 457.0, 
+          "conservation_storage": 22850.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 457.71, 
+          "full_name": "Mountain Creek Lake", 
+          "percent_full": 100.0, 
+          "short_name": "Mountain Creek", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 24760.0, 
+          "volume_under_conservation_pool_elevation": 22850.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -94.42103577, 
+            32.03461075
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 3369.71, 
+          "condensed_name": "Murvaul", 
+          "conservation_capacity": 38285.0, 
+          "conservation_pool_elevation": 265.3, 
+          "conservation_storage": 36482.0, 
+          "dead_pool_elevation": 235.0, 
+          "elevation": 264.77, 
+          "full_name": "Murvaul Lake", 
+          "percent_full": 95.3, 
+          "short_name": "Murvaul", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_sabine"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 36482.0, 
+          "volume_under_conservation_pool_elevation": 38284.561983
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -94.82549286, 
+            31.58879089
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 2013.31, 
+          "condensed_name": "Nacogdoches", 
+          "conservation_capacity": 39522.0, 
+          "conservation_pool_elevation": 279.0, 
+          "conservation_storage": 35517.0, 
+          "dead_pool_elevation": 235.9, 
+          "elevation": 277.09, 
+          "full_name": "Lake Nacogdoches", 
+          "percent_full": 89.9, 
+          "short_name": "Nacogdoches", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "municipal_nacogdoches", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_neches"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 35519.0, 
+          "volume_under_conservation_pool_elevation": 39523.18641
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -100.4781, 
+            31.3886
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1225.2, 
+          "condensed_name": "Nasworthy", 
+          "conservation_capacity": 9615.0, 
+          "conservation_pool_elevation": 1872.2, 
+          "conservation_storage": 8073.0, 
+          "dead_pool_elevation": 1860.0, 
+          "elevation": 1871.09, 
+          "full_name": "Lake Nasworthy", 
+          "percent_full": 84.0, 
+          "short_name": "Nasworthy", 
+          "tags": [
+            "climate_edwards_plateau", 
+            "monitored", 
+            "municipal_san_angelo", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-28", 
+          "volume": 8566.0, 
+          "volume_under_conservation_pool_elevation": 10108.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -101.62957, 
+            32.22011948
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 2269.7, 
+          "condensed_name": "NaturalDam", 
+          "conservation_capacity": 54560.0, 
+          "conservation_pool_elevation": 2457.0, 
+          "conservation_storage": 26375.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 2447.27, 
+          "full_name": "Natural Dam Salt Lake", 
+          "percent_full": 48.3, 
+          "short_name": "Natural Dam", 
+          "tags": [
+            "climate_high_plains", 
+            "monitored", 
+            "texas", 
+            "major", 
+            "previously_monitored"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 26375.0, 
+          "volume_under_conservation_pool_elevation": 54560.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.68943787, 
+            31.95765686
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 4573.97, 
+          "condensed_name": "NavarroMills", 
+          "conservation_capacity": 49827.0, 
+          "conservation_pool_elevation": 424.5, 
+          "conservation_storage": 46765.0, 
+          "dead_pool_elevation": 400.0, 
+          "elevation": 423.84, 
+          "full_name": "Navarro Mills Lake", 
+          "percent_full": 93.9, 
+          "short_name": "Navarro Mills", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 46766.0, 
+          "volume_under_conservation_pool_elevation": 49827.420386
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.17358398, 
+            32.72846222
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 814.5, 
+          "condensed_name": "NewTerrellCity", 
+          "conservation_capacity": 8583.0, 
+          "conservation_pool_elevation": 504.0, 
+          "conservation_storage": 7877.0, 
+          "dead_pool_elevation": 481.0, 
+          "elevation": 503.17, 
+          "full_name": "New Terrell City Lake", 
+          "percent_full": 91.8, 
+          "short_name": "New Terrell City", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 7888.0, 
+          "volume_under_conservation_pool_elevation": 8594.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.65280151, 
+            33.88259888
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1297.96, 
+          "condensed_name": "Nocona", 
+          "conservation_capacity": 21444.0, 
+          "conservation_pool_elevation": 827.5, 
+          "conservation_storage": 19875.0, 
+          "dead_pool_elevation": 795.0, 
+          "elevation": 826.31, 
+          "full_name": "Lake Nocona (Farmer's Creek)", 
+          "percent_full": 92.7, 
+          "short_name": "Nocona", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_b", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_red"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 20179.0, 
+          "volume_under_conservation_pool_elevation": 21748.688338
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.75200653, 
+            33.986763
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1381.8, 
+          "condensed_name": "NorthForkBuffaloCreek", 
+          "conservation_capacity": 15400.0, 
+          "conservation_pool_elevation": 1048.0, 
+          "conservation_storage": 13463.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 1046.78, 
+          "full_name": "North Fork Buffalo Creek Reservoir", 
+          "percent_full": 87.4, 
+          "short_name": "North Fork Buffalo Creek", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "region_region_b", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_red"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 13463.0, 
+          "volume_under_conservation_pool_elevation": 15400.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -100.4817581, 
+            31.48460388
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 716.28, 
+          "condensed_name": "OCFisher", 
+          "conservation_capacity": 115742.0, 
+          "conservation_pool_elevation": 1908.0, 
+          "conservation_storage": 7622.0, 
+          "dead_pool_elevation": 1840.0, 
+          "elevation": 1866.74, 
+          "full_name": "O. C. Fisher Lake", 
+          "percent_full": 6.6, 
+          "short_name": "O C Fisher", 
+          "tags": [
+            "climate_edwards_plateau", 
+            "monitored", 
+            "municipal_san_angelo", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 7623.0, 
+          "volume_under_conservation_pool_elevation": 115743.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -99.66840363, 
+            31.50015831
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "OHIvie", 
+          "conservation_capacity": 554340.0, 
+          "conservation_pool_elevation": 1551.5, 
+          "conservation_storage": 313707.0, 
+          "dead_pool_elevation": 1480.0, 
+          "elevation": 1536.5, 
+          "full_name": "O. H. Ivie Reservoir", 
+          "percent_full": 56.6, 
+          "short_name": "O H Ivie", 
+          "tags": [
+            "climate_edwards_plateau", 
+            "monitored", 
+            "municipal_midland_odessa", 
+            "municipal_san_angelo", 
+            "municipal_abilene", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 313707.0, 
+          "volume_under_conservation_pool_elevation": 554339.5
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -100.268425, 
+            32.04069138
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1883.0, 
+          "condensed_name": "OakCreek", 
+          "conservation_capacity": 39210.0, 
+          "conservation_pool_elevation": 2000.0, 
+          "conservation_storage": 28466.0, 
+          "dead_pool_elevation": 1951.0, 
+          "elevation": 1995.1, 
+          "full_name": "Oak Creek Reservoir", 
+          "percent_full": 72.6, 
+          "short_name": "Oak Creek", 
+          "tags": [
+            "climate_edwards_plateau", 
+            "monitored", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 28616.0, 
+          "volume_under_conservation_pool_elevation": 39360.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.43689728, 
+            32.0534935
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 22441.42, 
+          "condensed_name": "Palestine", 
+          "conservation_capacity": 367303.0, 
+          "conservation_pool_elevation": 345.0, 
+          "conservation_storage": 350222.0, 
+          "dead_pool_elevation": 298.0, 
+          "elevation": 344.25, 
+          "full_name": "Lake Palestine", 
+          "percent_full": 95.3, 
+          "short_name": "Palestine", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_neches"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 350231.0, 
+          "volume_under_conservation_pool_elevation": 367312.020799
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -101.164444, 
+            36.34777832
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "PaloDuro", 
+          "conservation_capacity": 61066.0, 
+          "conservation_pool_elevation": 2892.0, 
+          "conservation_storage": 586.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 2830.87, 
+          "full_name": "Palo Duro Reservoir", 
+          "percent_full": 1.0, 
+          "short_name": "Palo Duro", 
+          "tags": [
+            "climate_high_plains", 
+            "monitored", 
+            "region_panhandle", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_canadian"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 586.0, 
+          "volume_under_conservation_pool_elevation": 61066.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.26921082, 
+            32.64762878
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "PaloPinto", 
+          "conservation_capacity": 26766.0, 
+          "conservation_pool_elevation": 867.0, 
+          "conservation_storage": 26766.0, 
+          "dead_pool_elevation": 835.0, 
+          "elevation": 867.06, 
+          "full_name": "Lake Palo Pinto", 
+          "percent_full": 100.0, 
+          "short_name": "Palo Pinto", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 27282.0, 
+          "volume_under_conservation_pool_elevation": 27151.888577841608
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.41529846, 
+            32.2890358
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1500.08, 
+          "condensed_name": "PatCleburne", 
+          "conservation_capacity": 26008.0, 
+          "conservation_pool_elevation": 733.5, 
+          "conservation_storage": 22607.0, 
+          "dead_pool_elevation": 690.0, 
+          "elevation": 731.28, 
+          "full_name": "Lake Pat Cleburne", 
+          "percent_full": 86.9, 
+          "short_name": "Pat Cleburne", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 22607.0, 
+          "volume_under_conservation_pool_elevation": 26008.383471
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.54467773, 
+            33.85288239
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 5506.64, 
+          "condensed_name": "PatMayse", 
+          "conservation_capacity": 113683.0, 
+          "conservation_pool_elevation": 451.0, 
+          "conservation_storage": 106830.0, 
+          "dead_pool_elevation": 415.0, 
+          "elevation": 449.77, 
+          "full_name": "Pat Mayse Lake", 
+          "percent_full": 94.0, 
+          "short_name": "Pat Mayse", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_north_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_red"
+          ], 
+          "timestamp": "2021-10-28", 
+          "volume": 110990.0, 
+          "volume_under_conservation_pool_elevation": 117843.60551
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.42588806, 
+            32.87234497
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 17708.89, 
+          "condensed_name": "PossumKingdom", 
+          "conservation_capacity": 538139.0, 
+          "conservation_pool_elevation": 999.0, 
+          "conservation_storage": 530302.0, 
+          "dead_pool_elevation": 874.8, 
+          "elevation": 998.56, 
+          "full_name": "Possum Kingdom Lake", 
+          "percent_full": 98.5, 
+          "short_name": "Possum Kingdom", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 530302.0, 
+          "volume_under_conservation_pool_elevation": 538138.56382
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -98.48616028, 
+            31.96875572
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 4443.03, 
+          "condensed_name": "Proctor", 
+          "conservation_capacity": 54762.0, 
+          "conservation_pool_elevation": 1162.0, 
+          "conservation_storage": 50012.0, 
+          "dead_pool_elevation": 1128.0, 
+          "elevation": 1160.95, 
+          "full_name": "Proctor Lake", 
+          "percent_full": 91.3, 
+          "short_name": "Proctor", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 50012.0, 
+          "volume_under_conservation_pool_elevation": 54762.308173
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.49610138, 
+            32.80012894
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 20036.06, 
+          "condensed_name": "RayHubbard", 
+          "conservation_capacity": 439559.0, 
+          "conservation_pool_elevation": 435.5, 
+          "conservation_storage": 410627.0, 
+          "dead_pool_elevation": 388.0, 
+          "elevation": 434.08, 
+          "full_name": "Lake Ray Hubbard", 
+          "percent_full": 93.4, 
+          "short_name": "Ray Hubbard", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_dallas", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 410627.0, 
+          "volume_under_conservation_pool_elevation": 439559.005326
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.05001068, 
+            33.35539246
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 27919.91, 
+          "condensed_name": "RayRoberts", 
+          "conservation_capacity": 788167.0, 
+          "conservation_pool_elevation": 632.5, 
+          "conservation_storage": 769031.0, 
+          "dead_pool_elevation": 551.0, 
+          "elevation": 631.82, 
+          "full_name": "Ray Roberts Lake", 
+          "percent_full": 97.6, 
+          "short_name": "Ray Roberts", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_dallas", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 769354.0, 
+          "volume_under_conservation_pool_elevation": 788489.685216
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -103.9101944, 
+            31.90123749
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "RedBluff", 
+          "conservation_capacity": 151110.0, 
+          "conservation_pool_elevation": 2827.4, 
+          "conservation_storage": 110630.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 2821.5, 
+          "full_name": "Red Bluff Reservoir", 
+          "percent_full": 73.2, 
+          "short_name": "Red Bluff", 
+          "tags": [
+            "climate_trans_pecos", 
+            "monitored", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_rio_grande"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 110630.0, 
+          "volume_under_conservation_pool_elevation": 151110.00000000332
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.20664215, 
+            32.04043579
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 41602.24, 
+          "condensed_name": "RichlandChambers", 
+          "conservation_capacity": 1087839.0, 
+          "conservation_pool_elevation": 315.0, 
+          "conservation_storage": 1022871.0, 
+          "dead_pool_elevation": 266.0, 
+          "elevation": 313.46, 
+          "full_name": "Richland-Chambers Reservoir", 
+          "percent_full": 94.0, 
+          "short_name": "Richland-Chambers", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_fort_worth", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 1047795.0, 
+          "volume_under_conservation_pool_elevation": 1112763.49825
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -94.1060257, 
+            31.06075096
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 105488.0, 
+          "condensed_name": "SamRayburn", 
+          "conservation_capacity": 2857077.0, 
+          "conservation_pool_elevation": 164.4, 
+          "conservation_storage": 2561645.0, 
+          "dead_pool_elevation": 105.0, 
+          "elevation": 161.7, 
+          "full_name": "Sam Rayburn Reservoir", 
+          "percent_full": 89.7, 
+          "short_name": "Sam Rayburn", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "municipal_beaumont_port_arthur", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_neches"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 2580601.0, 
+          "volume_under_conservation_pool_elevation": 2876033.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.52580261, 
+            30.32243347
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "Somerville", 
+          "conservation_capacity": 150293.0, 
+          "conservation_pool_elevation": 238.0, 
+          "conservation_storage": 150293.0, 
+          "dead_pool_elevation": 206.0, 
+          "elevation": 238.14, 
+          "full_name": "Somerville Lake", 
+          "percent_full": 100.0, 
+          "short_name": "Somerville", 
+          "tags": [
+            "climate_south_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 151873.0, 
+          "volume_under_conservation_pool_elevation": 150292.522314
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.78697205, 
+            32.30014038
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "SquawCreek", 
+          "conservation_capacity": 151250.0, 
+          "conservation_pool_elevation": 775.0, 
+          "conservation_storage": 151250.0, 
+          "dead_pool_elevation": 653.0, 
+          "elevation": 775.5, 
+          "full_name": "Squaw Creek Reservoir", 
+          "percent_full": 100.0, 
+          "short_name": "Squaw Creek", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 152861.0, 
+          "volume_under_conservation_pool_elevation": 151272.974105
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -99.57952881, 
+            33.06260681
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 4854.0, 
+          "condensed_name": "Stamford", 
+          "conservation_capacity": 51570.0, 
+          "conservation_pool_elevation": 1416.8, 
+          "conservation_storage": 47799.0, 
+          "dead_pool_elevation": 1382.8, 
+          "elevation": 1416.04, 
+          "full_name": "Lake Stamford", 
+          "percent_full": 92.7, 
+          "short_name": "Stamford", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 47802.0, 
+          "volume_under_conservation_pool_elevation": 51573.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.53279114, 
+            31.02240372
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 6358.63, 
+          "condensed_name": "StillhouseHollow", 
+          "conservation_capacity": 227771.0, 
+          "conservation_pool_elevation": 622.0, 
+          "conservation_storage": 223289.0, 
+          "dead_pool_elevation": 515.0, 
+          "elevation": 621.3, 
+          "full_name": "Stillhouse Hollow Lake", 
+          "percent_full": 98.0, 
+          "short_name": "Stillhouse Hollow", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_austin", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 223343.0, 
+          "volume_under_conservation_pool_elevation": 227825.190083
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -94.97565555, 
+            31.9340833
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1900.45, 
+          "condensed_name": "Striker", 
+          "conservation_capacity": 16934.0, 
+          "conservation_pool_elevation": 293.0, 
+          "conservation_storage": 16417.0, 
+          "dead_pool_elevation": 282.0, 
+          "elevation": 292.66, 
+          "full_name": "Lake Striker", 
+          "percent_full": 96.9, 
+          "short_name": "Striker", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_neches"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 22348.0, 
+          "volume_under_conservation_pool_elevation": 22865.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.64189911, 
+            33.16789246
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "SulphurSprings", 
+          "conservation_capacity": 17747.0, 
+          "conservation_pool_elevation": 458.95, 
+          "conservation_storage": 11368.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 454.87, 
+          "full_name": "Lake Sulphur Springs", 
+          "percent_full": 64.1, 
+          "short_name": "Sulphur Springs", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_north_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_sulphur"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 11368.0, 
+          "volume_under_conservation_pool_elevation": 17746.84999999998
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -100.3037109, 
+            32.43873215
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 560.5, 
+          "condensed_name": "Sweetwater", 
+          "conservation_capacity": 12267.0, 
+          "conservation_pool_elevation": 2116.5, 
+          "conservation_storage": 10094.0, 
+          "dead_pool_elevation": 0.0, 
+          "elevation": 2112.95, 
+          "full_name": "Lake Sweetwater", 
+          "percent_full": 82.3, 
+          "short_name": "Sweetwater", 
+          "tags": [
+            "climate_low_rolling_plains", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 10094.0, 
+          "volume_under_conservation_pool_elevation": 12267.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.91968536, 
+            32.80873489
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 35700.04, 
+          "condensed_name": "Tawakoni", 
+          "conservation_capacity": 871685.0, 
+          "conservation_pool_elevation": 437.5, 
+          "conservation_storage": 825209.0, 
+          "dead_pool_elevation": 378.0, 
+          "elevation": 436.22, 
+          "full_name": "Lake Tawakoni", 
+          "percent_full": 94.7, 
+          "short_name": "Tawakoni", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_dallas", 
+            "region_north_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_sabine"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 825217.0, 
+          "volume_under_conservation_pool_elevation": 871692.553168
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.57775116, 
+            28.89193153
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 9003.88, 
+          "condensed_name": "Texana", 
+          "conservation_capacity": 159566.0, 
+          "conservation_pool_elevation": 44.0, 
+          "conservation_storage": 153015.0, 
+          "dead_pool_elevation": 4.0, 
+          "elevation": 43.28, 
+          "full_name": "Lake Texana", 
+          "percent_full": 95.9, 
+          "short_name": "Texana", 
+          "tags": [
+            "climate_upper_coast", 
+            "monitored", 
+            "municipal_corpus_christi", 
+            "region_lavaca", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_lavaca"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 153294.0, 
+          "volume_under_conservation_pool_elevation": 159844.566391
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.57222222, 
+            33.81805556
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 71643.46, 
+          "condensed_name": "Texoma", 
+          "conservation_capacity": 1243801.0, 
+          "conservation_pool_elevation": 617.0, 
+          "conservation_storage": 1187209.0, 
+          "dead_pool_elevation": 523.0, 
+          "elevation": 615.46, 
+          "full_name": "Lake Texoma", 
+          "percent_full": 95.5, 
+          "short_name": "Texoma", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_red"
+          ], 
+          "timestamp": "2021-10-28", 
+          "volume": 2374419.0, 
+          "volume_under_conservation_pool_elevation": 2487603.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -93.57212067, 
+            31.1962986
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 162466.0, 
+          "condensed_name": "ToledoBend", 
+          "conservation_capacity": 2236450.0, 
+          "conservation_pool_elevation": 172.0, 
+          "conservation_storage": 1890008.0, 
+          "dead_pool_elevation": 100.0, 
+          "elevation": 167.78, 
+          "full_name": "Toledo Bend Reservoir", 
+          "percent_full": 84.5, 
+          "short_name": "Toledo Bend", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_sabine"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 3784115.0, 
+          "volume_under_conservation_pool_elevation": 4477000.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.90723419, 
+            30.39186859
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 14877.8, 
+          "condensed_name": "Travis", 
+          "conservation_capacity": 1113348.0, 
+          "conservation_pool_elevation": 681.0, 
+          "conservation_storage": 807474.0, 
+          "dead_pool_elevation": 535.9, 
+          "elevation": 663.04, 
+          "full_name": "Lake Travis", 
+          "percent_full": 72.5, 
+          "short_name": "Travis", 
+          "tags": [
+            "climate_south_central", 
+            "monitored", 
+            "municipal_austin", 
+            "region_lower_colorado", 
+            "water_supply", 
+            "highland", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-28", 
+          "volume": 829082.0, 
+          "volume_under_conservation_pool_elevation": 1134956.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -100.5384293, 
+            31.38210678
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 5437.5, 
+          "condensed_name": "TwinButtes", 
+          "conservation_capacity": 182454.0, 
+          "conservation_pool_elevation": 1940.2, 
+          "conservation_storage": 97644.0, 
+          "dead_pool_elevation": 1885.0, 
+          "elevation": 1928.33, 
+          "full_name": "Twin Buttes Reservoir", 
+          "percent_full": 53.5, 
+          "short_name": "Twin Buttes", 
+          "tags": [
+            "climate_edwards_plateau", 
+            "monitored", 
+            "municipal_san_angelo", 
+            "region_region_f", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_colorado"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 101393.0, 
+          "volume_under_conservation_pool_elevation": 186203.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -95.17605591, 
+            32.24182129
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 4557.41, 
+          "condensed_name": "Tyler", 
+          "conservation_capacity": 72073.0, 
+          "conservation_pool_elevation": 375.38, 
+          "conservation_storage": 68783.0, 
+          "dead_pool_elevation": 350.0, 
+          "elevation": 374.67, 
+          "full_name": "Lake Tyler", 
+          "percent_full": 95.4, 
+          "short_name": "Tyler", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "municipal_tyler", 
+            "region_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_neches"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 73994.0, 
+          "volume_under_conservation_pool_elevation": 77283.549679
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.19778442, 
+            31.57960892
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 7817.01, 
+          "condensed_name": "Waco", 
+          "conservation_capacity": 189418.0, 
+          "conservation_pool_elevation": 462.2, 
+          "conservation_storage": 177007.0, 
+          "dead_pool_elevation": 400.2, 
+          "elevation": 460.64, 
+          "full_name": "Waco Lake", 
+          "percent_full": 93.4, 
+          "short_name": "Waco", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_waco", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 177213.0, 
+          "volume_under_conservation_pool_elevation": 189623.91434269
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -96.80527496, 
+            32.34181213
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 594.21, 
+          "condensed_name": "Waxahachie", 
+          "conservation_capacity": 10780.0, 
+          "conservation_pool_elevation": 531.5, 
+          "conservation_storage": 9178.0, 
+          "dead_pool_elevation": 498.75, 
+          "elevation": 528.91, 
+          "full_name": "Lake Waxahachie", 
+          "percent_full": 85.1, 
+          "short_name": "Waxahachie", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 9784.0, 
+          "volume_under_conservation_pool_elevation": 11385.786593
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.67475128, 
+            32.77262878
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 1011.36, 
+          "condensed_name": "Weatherford", 
+          "conservation_capacity": 17812.0, 
+          "conservation_pool_elevation": 896.0, 
+          "conservation_storage": 15527.0, 
+          "dead_pool_elevation": 857.0, 
+          "elevation": 893.82, 
+          "full_name": "Lake Weatherford", 
+          "percent_full": 87.2, 
+          "short_name": "Weatherford", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 15527.0, 
+          "volume_under_conservation_pool_elevation": 17812.465014
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -101.0840302, 
+            33.45786667
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 738.2, 
+          "condensed_name": "WhiteRiver", 
+          "conservation_capacity": 29880.0, 
+          "conservation_pool_elevation": 2372.2, 
+          "conservation_storage": 6484.0, 
+          "dead_pool_elevation": 2340.0, 
+          "elevation": 2351.48, 
+          "full_name": "White River Reservoir", 
+          "percent_full": 21.7, 
+          "short_name": "White River", 
+          "tags": [
+            "climate_high_plains", 
+            "monitored", 
+            "region_llano_estacado", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 8450.0, 
+          "volume_under_conservation_pool_elevation": 31846.0
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.37195587, 
+            31.86543655
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 21350.82, 
+          "condensed_name": "Whitney", 
+          "conservation_capacity": 553344.0, 
+          "conservation_pool_elevation": 533.0, 
+          "conservation_storage": 511208.0, 
+          "dead_pool_elevation": 448.83, 
+          "elevation": 531.09, 
+          "full_name": "Whitney Lake", 
+          "percent_full": 92.4, 
+          "short_name": "Whitney", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "region_brazos_g", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_brazos"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 512067.0, 
+          "volume_under_conservation_pool_elevation": 554202.904683
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -97.41640472, 
+            32.7892952
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": 3311.49, 
+          "condensed_name": "Worth", 
+          "conservation_capacity": 24419.0, 
+          "conservation_pool_elevation": 594.0, 
+          "conservation_storage": 21117.0, 
+          "dead_pool_elevation": 584.3, 
+          "elevation": 593.02, 
+          "full_name": "Lake Worth", 
+          "percent_full": 86.5, 
+          "short_name": "Worth", 
+          "tags": [
+            "climate_north_central", 
+            "monitored", 
+            "municipal_fort_worth", 
+            "region_region_c", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_trinity"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 30193.0, 
+          "volume_under_conservation_pool_elevation": 33494.923049
+        }, 
+        "type": "Feature"
+      }, 
+      {
+        "geometry": {
+          "coordinates": [
+            -94.16074371, 
+            33.30456924
+          ], 
+          "type": "Point"
+        }, 
+        "properties": {
+          "area": null, 
+          "condensed_name": "WrightPatman", 
+          "conservation_capacity": 135069.0, 
+          "conservation_pool_elevation": 221.2, 
+          "conservation_storage": 135069.0, 
+          "dead_pool_elevation": 200.0, 
+          "elevation": 224.78, 
+          "full_name": "Wright Patman Lake", 
+          "percent_full": 100.0, 
+          "short_name": "Wright Patman", 
+          "tags": [
+            "climate_east_texas", 
+            "monitored", 
+            "municipal_texarkana", 
+            "region_north_east_texas", 
+            "water_supply", 
+            "texas", 
+            "major", 
+            "basin_sulphur"
+          ], 
+          "timestamp": "2021-10-27", 
+          "volume": 225187.0, 
+          "volume_under_conservation_pool_elevation": 135115.530579
+        }, 
+        "type": "Feature"
+      }
+    ], 
+    "type": "FeatureCollection"
+  }
