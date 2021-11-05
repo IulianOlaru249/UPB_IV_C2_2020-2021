@@ -1,0 +1,397 @@
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+      <title>ArcGIS API for JavaScript Tutorials: Display a map</title>
+      <style>
+         html,
+         body,
+         #viewDiv {
+         padding: 0;
+         margin: 0;
+         height: 100%;
+         width: 100%;
+         }
+      </style>
+      <link rel="stylesheet" href="https://js.arcgis.com/4.21/esri/themes/light/main.css">
+      <script src="https://js.arcgis.com/4.21/"></script>
+      <script>
+         require([
+           "esri/config",
+           "esri/Map",
+           "esri/views/MapView",
+           "esri/widgets/Locate",
+           "esri/widgets/Track",
+           "esri/Graphic",
+           "esri/layers/GraphicsLayer",
+           "esri/layers/FeatureLayer"
+         ], function (
+                  esriConfig,
+                  Map,
+                  MapView,
+                  Locate,
+                  Track,
+                  Graphic,
+                  GraphicsLayer,
+                  FeatureLayer
+         ) {
+             esriConfig.apiKey = "AAPK0a48607720df4f1abcf8a2b4d5d53418ErSVO4mqT6JY-1WkiLJ2r89iRvksCj6iUEDglICQk02fhz9i0uegGB0m9l_kJGUG";
+         
+             const map = new Map({
+               basemap: "arcgis-navigation" // Basemap layer service
+             });
+             const view = new MapView({
+               map: map,
+               // center: [-40, 28],
+               // zoom: 2,
+               center: [-118.805, 34.027], // Longitude, latitude
+               zoom: 12, // Zoom level
+               container: "viewDiv" // Div element
+             });
+         
+           
+           var customlayer = new FeatureLayer({
+         portalItem: {
+         id: "883cedb8c9fe4524b64d47666ed234a7", // my-layer-id
+         portal: "https://www.arcgis.com" // Default: The ArcGIS Online Portal
+         }
+         });
+         
+         map.layers.add(customlayer);
+         
+           
+           
+           
+                 const popupTrails = {
+           title: "Trail Information",
+           content: [{
+            type: "media",
+             mediaInfos: [{
+               type: "column-chart",
+               caption: "",
+               value: {
+                 fields: [ "ELEV_MIN","ELEV_MAX" ],
+                 normalizeField: null,
+                 tooltipField: "Min and max elevation values"
+                 }
+               }]
+           }]
+         }
+           
+                const popupTrailheads = {
+           "title": "Trailhead",
+           "content": "<b>Trail:</b> {TRL_NAME}<br><b>City:</b> {CITY_JUR}<br><b>Cross Street:</b> {X_STREET}<br><b>Parking:</b> {PARKING}<br><b>Elevation:</b> {ELEV_FT} ft"
+         }
+           
+           
+           
+               const trailheadsRenderer = {
+           "type": "simple",
+           "symbol": {
+             "type": "picture-marker",
+             "url": "http://static.arcgis.com/images/Symbols/NPS/npsPictograph_0231b.png",
+             "width": "18px",
+             "height": "18px"
+           }
+         }
+           
+               
+                     const trailheadsLabels = {
+           symbol: {
+             type: "text",
+             color: "#FFFFFF",
+             haloColor: "#5E8D74",
+             haloSize: "2px",
+             font: {
+               size: "12px",
+               family: "Noto Sans",
+               style: "italic",
+               weight: "normal"
+             }
+           },
+         
+           labelPlacement: "above-center",
+           labelExpressionInfo: {
+             expression: "$feature.TRL_NAME"
+           }
+         };
+           
+           
+                 const trailsRenderer = {
+           type: "simple",
+           symbol: {
+             color: "#BA55D3",
+             type: "simple-line",
+             style: "solid"
+           },
+           
+                   
+                           visualVariables: [
+             {
+               type: "size",
+               field: "ELEV_GAIN",
+               minDataValue: 0,
+               maxDataValue: 2300,
+               minSize: "3px",
+               maxSize: "7px"
+             }
+           ]
+         };
+           
+                const bikeTrailsRenderer = {
+           type: "simple",
+           symbol: {
+             type: "simple-line",
+             style: "short-dot",
+             color: "#FF91FF",
+             width: "1px"
+           }
+         };
+           
+           
+                function createFillSymbol(value, color) {
+           return {
+             "value": value,
+             "symbol": {
+               "color": color,
+               "type": "simple-fill",
+               "style": "solid",
+               "outline": {
+                 "style": "none"
+               }
+             },
+             "label": value
+           };
+         }
+           
+           
+           
+                 const openSpacesRenderer = {
+           type: "unique-value",
+           field: "TYPE",
+           uniqueValueInfos: [
+             createFillSymbol("Natural Areas", "#9E559C"),
+             createFillSymbol("Regional Open Space", "#A7C636"),
+             createFillSymbol("Local Park", "#149ECE"),
+             createFillSymbol("Regional Recreation Park", "#ED5151")
+           ]
+         };
+           
+           
+           
+           
+                const popupOpenspaces = {
+           "title": "{PARK_NAME}",
+           "content": [{
+             "type": "fields",
+             "fieldInfos": [
+               {
+                 "fieldName": "AGNCY_NAME",
+                 "label": "Agency",
+                 "isEditable": true,
+                 "tooltip": "",
+                 "visible": true,
+                 "format": null,
+                 "stringFieldOption": "text-box"
+               },
+               {
+                 "fieldName": "TYPE",
+                 "label": "Type",
+                 "isEditable": true,
+                 "tooltip": "",
+                 "visible": true,
+                 "format": null,
+                 "stringFieldOption": "text-box"
+               },
+               {
+                 "fieldName": "ACCESS_TYP",
+                 "label": "Access",
+                 "isEditable": true,
+                 "tooltip": "",
+                 "visible": true,
+                 "format": null,
+                 "stringFieldOption": "text-box"
+               },
+         
+               {
+                 "fieldName": "GIS_ACRES",
+                 "label": "Acres",
+                 "isEditable": true,
+                 "tooltip": "",
+                 "visible": true,
+                 "format": {
+                   "places": 2,
+                   "digitSeparator": true
+                 },
+         
+                 "stringFieldOption": "text-box"
+               }
+             ]
+           }]
+         }
+           
+                 const openspaces = new FeatureLayer({
+           url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Parks_and_Open_Space/FeatureServer/0",
+           renderer: openSpacesRenderer,
+           opacity: 0.2,
+           outFields: ["TYPE","PARK_NAME", "AGNCY_NAME","ACCESS_TYP","GIS_ACRES","TRLS_MI","TOTAL_GOOD","TOTAL_FAIR", "TOTAL_POOR"],
+           popupTemplate: popupOpenspaces
+         });
+         
+         // Add the layer
+         map.add(openspaces,0);
+           
+           
+                const bikeTrails = new FeatureLayer({
+           url:
+             "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trails/FeatureServer/0",
+           renderer: bikeTrailsRenderer,
+           definitionExpression: "USE_BIKE = 'YES'"
+         });
+         
+         map.add(bikeTrails, 1);
+           
+           
+           
+             const trailheadsLayer = new FeatureLayer({
+         url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trailheads/FeatureServer/0",
+                      renderer: trailheadsRenderer,
+           labelingInfo: [trailheadsLabels],
+                      outFields: ["TRL_NAME","CITY_JUR","X_STREET","PARKING","ELEV_FT"],
+           popupTemplate: popupTrailheads
+         });
+         map.add(trailheadsLayer);
+           
+            const trailsLayer = new FeatureLayer({
+         url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Trails/FeatureServer/0",
+                     renderer: trailsRenderer,
+           opacity: .75,
+                    outFields: ["TRL_NAME","ELEV_GAIN"],
+           popupTemplate: popupTrails
+         });
+           
+         map.add(trailsLayer, 0);    
+           
+           
+           
+         const parksLayer = new FeatureLayer({
+         url: "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/Parks_and_Open_Space/FeatureServer/0"
+         });
+           
+         map.add(parksLayer, 0);   
+           
+           
+           
+         const graphicsLayer = new GraphicsLayer();
+         map.add(graphicsLayer);
+         
+         const point = { //Create a point
+         type: "point",
+         longitude: -118.80657463861,
+         latitude: 34.0005930608889
+         };
+         const simpleMarkerSymbol = {
+         type: "simple-marker",
+         color: [226, 119, 40],  // Orange
+         outline: {
+           color: [255, 255, 255], // White
+           width: 1
+         }
+         };
+         const pointGraphic = new Graphic({
+         geometry: point,
+         symbol: simpleMarkerSymbol
+         });
+         graphicsLayer.add(pointGraphic);
+           
+         const polyline = {
+         type: "polyline",
+         paths: [
+           [-118.821527826096, 34.0139576938577], //Longitude, latitude
+           [-118.814893761649, 34.0080602407843], //Longitude, latitude
+           [-118.808878330345, 34.0016642996246]  //Longitude, latitude
+         ]
+         };
+         const simpleLineSymbol = {
+         type: "simple-line",
+         color: [226, 119, 40], // Orange
+         width: 2
+         };     
+         
+         const polylineGraphic = new Graphic({
+         geometry: polyline,
+         symbol: simpleLineSymbol
+         });
+         graphicsLayer.add(polylineGraphic); 
+         
+           const polygon = {
+         type: "polygon",
+         rings: [
+           [-118.818984489994, 34.0137559967283], //Longitude, latitude
+           [-118.806796597377, 34.0215816298725], //Longitude, latitude
+           [-118.791432890735, 34.0163883241613], //Longitude, latitude
+           [-118.79596686535, 34.008564864635],   //Longitude, latitude
+           [-118.808558110679, 34.0035027131376]  //Longitude, latitude
+         ]
+         };
+         
+         const simpleFillSymbol = {
+         type: "simple-fill",
+         color: [227, 139, 79, 0.8],  // Orange, opacity 80%
+         outline: {
+           color: [255, 255, 255],
+           width: 1
+         }
+         };
+         
+                   
+           const popupTemplate = {
+         title: "{Name}",
+         content: "{Description}"
+         }
+         const attributes = {
+         Name: "Graphic",
+         Description: "I am a polygon"
+         }
+           
+           const polygonGraphic = new Graphic({
+         geometry: polygon,
+         symbol: simpleFillSymbol,
+         attributes: attributes,
+         popupTemplate: popupTemplate
+         
+         });
+         graphicsLayer.add(polygonGraphic);
+           
+           
+             const locate = new Locate({
+               view: view,
+               useHeadingEnabled: false,
+               goToOverride: function(view, options) {
+               options.target.scale = 1500;
+               return view.goTo(options.target);
+              }
+             });
+             view.ui.add(locate, "top-left");
+             const track = new Track({
+             view: view,
+             graphic: new Graphic({
+               symbol: {
+                 type: "simple-marker",
+                 size: "12px",
+                 color: "green",
+                 outline: {
+                   color: "#efefef",
+                   width: "1.5px"
+                 }
+               }
+             }),
+             useHeadingEnabled: false
+           });
+           view.ui.add(track, "top-left");
+         });
+      </script>
+   </head>
+   <body>
+      <div id="viewDiv"></div>
+   </body>
