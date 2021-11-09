@@ -1,0 +1,86 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 28859
+License: Customer
+
+Current time: 	Tue Nov 09 12:26:11 EET 2021
+Time zone: 	Eastern European Standard Time (Europe/Bucharest)
+
+OS: DISTRIB_ID=LinuxMint
+OS Version: 5.4.0-89-generic
+OS Architecture: amd64
+Available processors (cores): 12
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 5 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ghostpants
+User home directory: /home/ghostpants
+User working directory: /home/ghostpants/Documents/UPB_IV_C2_2020-2021
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /home/ghostpants/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /home/ghostpants/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /home/ghostpants/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/ghostpants/Documents/UPB_IV_C2_2020-2021/vivado.log
+Vivado journal file location: 	/home/ghostpants/Documents/UPB_IV_C2_2020-2021/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-28859-ghostmachine
+
+Xilinx Environment Variables
+----------------------------
+J2SDKDIR: /usr/lib/jvm/java-15-oracle
+XILINX: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 850 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 850 MB. GUI used memory: 50 MB. Current time: 11/9/21, 12:26:13 PM EET
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 862 MB. GUI used memory: 47 MB. Current time: 11/9/21, 12:27:03 PM EET
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // y (x, cr)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// [GUI Memory]: 71 MB (+72218kb) [00:01:06]
+// [Engine Memory]: 882 MB (+773880kb) [00:01:06]
+// [GUI Memory]: 79 MB (+4047kb) [00:01:06]
+// [GUI Memory]: 85 MB (+2662kb) [00:01:06]
+// f (cr): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
