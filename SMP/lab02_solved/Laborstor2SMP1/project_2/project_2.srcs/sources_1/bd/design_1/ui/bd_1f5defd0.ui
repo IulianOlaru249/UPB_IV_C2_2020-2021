@@ -1,0 +1,80 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.637291",
+   "Default View_TopLeft":"-1084,-383",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port ceva_0 -pg 1 -lvl 4 -x 600 -y 240 -defaultsOSRD
+preplace port Hdoi_0 -pg 1 -lvl 4 -x 600 -y 180 -defaultsOSRD
+preplace port PAI6_0 -pg 1 -lvl 4 -x 600 -y 160 -defaultsOSRD
+preplace port CLK_0 -pg 1 -lvl 0 -x -980 -y 110 -defaultsOSRD
+preplace port H1_0 -pg 1 -lvl 0 -x -980 -y -120 -defaultsOSRD
+preplace port PC0_0 -pg 1 -lvl 0 -x -980 -y -60 -defaultsOSRD
+preplace port PC1_0 -pg 1 -lvl 0 -x -980 -y -30 -defaultsOSRD
+preplace port PAI5_0 -pg 1 -lvl 4 -x 600 -y 140 -defaultsOSRD
+preplace port PAI4_0 -pg 1 -lvl 4 -x 600 -y 120 -defaultsOSRD
+preplace port PAI3_0 -pg 1 -lvl 4 -x 600 -y 100 -defaultsOSRD
+preplace port PAI2_0 -pg 1 -lvl 4 -x 600 -y 80 -defaultsOSRD
+preplace port PAI1_0 -pg 1 -lvl 4 -x 600 -y 60 -defaultsOSRD
+preplace port PAI0_0 -pg 1 -lvl 4 -x 600 -y 40 -defaultsOSRD
+preplace port PA7_0 -pg 1 -lvl 0 -x -980 -y -90 -defaultsOSRD
+preplace port LDS_0 -pg 1 -lvl 4 -x 600 -y -200 -defaultsOSRD
+preplace port PIC5_0 -pg 1 -lvl 4 -x 600 -y 200 -defaultsOSRD
+preplace port PC6_0 -pg 1 -lvl 0 -x -980 -y 430 -defaultsOSRD
+preplace port FC2_1 -pg 1 -lvl 4 -x 600 -y 260 -defaultsOSRD
+preplace port FC1_1 -pg 1 -lvl 4 -x 600 -y 280 -defaultsOSRD
+preplace port FC0_1 -pg 1 -lvl 4 -x 600 -y 300 -defaultsOSRD
+preplace port AS_1 -pg 1 -lvl 4 -x 600 -y 320 -defaultsOSRD
+preplace port DTACKi_0 -pg 1 -lvl 4 -x 600 -y 220 -defaultsOSRD
+preplace port IPL2_1 -pg 1 -lvl 0 -x -980 -y 250 -defaultsOSRD
+preplace port IPL1_1 -pg 1 -lvl 0 -x -980 -y 270 -defaultsOSRD
+preplace port IPL0_1 -pg 1 -lvl 0 -x -980 -y 230 -defaultsOSRD
+preplace port IRESET_1 -pg 1 -lvl 0 -x -980 -y 290 -defaultsOSRD
+preplace portBus C_0 -pg 1 -lvl 4 -x 600 -y -170 -defaultsOSRD
+preplace portBus PC_0 -pg 1 -lvl 4 -x 600 -y 340 -defaultsOSRD
+preplace inst MC68230_0 -pg 1 -lvl 3 -x 330 -y -10 -defaultsOSRD
+preplace inst REG_0 -pg 1 -lvl 1 -x -350 -y -80 -defaultsOSRD
+preplace inst Decadd_0 -pg 1 -lvl 1 -x -350 -y 80 -defaultsOSRD
+preplace inst MC68000_0 -pg 1 -lvl 2 -x -20 -y -20 -defaultsOSRD
+preplace netloc CLK_0_1 1 0 3 -960 170 -160 140 210
+preplace netloc Decadd_0_CSo 1 1 2 -170 -180 160
+preplace netloc H1_0_1 1 0 3 -950J -200 N -200 210
+preplace netloc IPL0_1_1 1 0 2 -910J -180 -180
+preplace netloc IPL1_1_1 1 0 2 -900J -170 -190
+preplace netloc IPL2_1_1 1 0 2 -920J -210 -220
+preplace netloc IRESET_1_1 1 0 2 NJ 290 -150
+preplace netloc MC68000_0_A 1 0 3 -880 -270 N -270 120
+preplace netloc MC68000_0_AS 1 2 2 200 -170 480J
+preplace netloc MC68000_0_D 1 2 1 180 -120n
+preplace netloc MC68000_0_FC0 1 2 2 190 -180 500J
+preplace netloc MC68000_0_FC1 1 2 2 170 -190 520J
+preplace netloc MC68000_0_FC2 1 2 2 150 -220 550J
+preplace netloc MC68000_0_PC 1 2 2 120 340 NJ
+preplace netloc MC68000_0_RESET 1 2 1 120 60n
+preplace netloc MC68000_0_RW 1 2 1 120 40n
+preplace netloc MC68000_0_UDS 1 0 3 -890 -260 N -260 90
+preplace netloc MC68000p_0_LDS 1 0 4 -870 -240 N -240 140 -230 580J
+preplace netloc MC68230_0_DTACKi 1 1 3 -140 150 N 150 450
+preplace netloc MC68230_0_Hdoi 1 3 1 470 30n
+preplace netloc MC68230_0_PAI0 1 3 1 580 -110n
+preplace netloc MC68230_0_PAI1 1 3 1 570 -90n
+preplace netloc MC68230_0_PAI2 1 3 1 560 -70n
+preplace netloc MC68230_0_PAI3 1 3 1 540 -50n
+preplace netloc MC68230_0_PAI4 1 3 1 530 -30n
+preplace netloc MC68230_0_PAI5 1 3 1 510 -10n
+preplace netloc MC68230_0_PAI6 1 3 1 490 10n
+preplace netloc MC68230_0_PIC5 1 3 1 460 50n
+preplace netloc MC68230_0_ceva 1 3 1 440 90n
+preplace netloc PA7_0_1 1 0 3 -960J -230 N -230 110
+preplace netloc PC0_0_1 1 0 3 -930J -190 N -190 100
+preplace netloc PC1_0_1 1 0 3 -940J -220 N -220 130
+preplace netloc PC6_0_1 1 0 3 -910J 280 N 280 170
+preplace netloc REG_0_Ao 1 1 2 -210 -250 220
+preplace netloc REG_0_Ao1 1 0 2 -860 -160 -230
+preplace netloc REG_0_C 1 1 3 -200 -210 N -210 570J
+levelinfo -pg 1 -980 -350 -20 330 600
+pagesize -pg 1 -db -bbox -sgen -1100 -520 730 580
+"
+}
+0

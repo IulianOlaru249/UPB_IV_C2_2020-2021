@@ -1,0 +1,32 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto fefcda871b9b4fc8a427c3d4653a4ca6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'PC_0' [C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sim_1/new/test.v:79]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Legion/Desktop/Laborstor2SMP1/DECADD.V" Line 1. Module Decadd doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Legion/Desktop/Laborstor2SMP1/MC68000PI.V" Line 1. Module MC68000 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Legion/Desktop/Laborstor2SMP1/MC68230.V" Line 1. Module MC68230 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Legion/Desktop/Laborstor2SMP1/REG.V" Line 1. Module REG doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Legion/Desktop/Laborstor2SMP1/DECADD.V" Line 1. Module Decadd doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Legion/Desktop/Laborstor2SMP1/MC68000PI.V" Line 1. Module MC68000 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Legion/Desktop/Laborstor2SMP1/MC68230.V" Line 1. Module MC68230 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Legion/Desktop/Laborstor2SMP1/REG.V" Line 1. Module REG doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Decadd
+Compiling module xil_defaultlib.design_1_Decadd_0_0
+Compiling module xil_defaultlib.MC68000
+Compiling module xil_defaultlib.design_1_MC68000_0_2
+Compiling module xil_defaultlib.MC68230
+Compiling module xil_defaultlib.design_1_MC68230_0_0
+Compiling module xil_defaultlib.REG
+Compiling module xil_defaultlib.design_1_REG_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav

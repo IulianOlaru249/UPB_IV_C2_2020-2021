@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov  9 12:48:09 2021
+# Process ID: 3280
+# Current directory: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00.87 ; elapsed = 00:00:06 . Memory (MB): peak = 386.055 ; gain = 0.000 ; free physical = 131 ; free virtual = 16768
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov  9 12:48:15 2021...

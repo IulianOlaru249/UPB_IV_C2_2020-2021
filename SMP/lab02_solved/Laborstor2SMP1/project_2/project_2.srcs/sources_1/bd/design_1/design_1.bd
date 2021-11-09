@@ -1,0 +1,594 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA44D1FB0C1F0690B",
+      "device": "xc7a100tcsg324-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "MC68230_0": "",
+      "REG_0": "",
+      "Decadd_0": "",
+      "MC68000_0": ""
+    },
+    "ports": {
+      "ceva_0": {
+        "direction": "O"
+      },
+      "Hdoi_0": {
+        "direction": "O"
+      },
+      "PAI6_0": {
+        "direction": "O"
+      },
+      "CLK_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_CLK_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "H1_0": {
+        "direction": "I"
+      },
+      "PC0_0": {
+        "direction": "I"
+      },
+      "PC1_0": {
+        "direction": "I"
+      },
+      "C_0": {
+        "direction": "O",
+        "left": "23",
+        "right": "22"
+      },
+      "PAI5_0": {
+        "direction": "O"
+      },
+      "PAI4_0": {
+        "direction": "O"
+      },
+      "PAI3_0": {
+        "direction": "O"
+      },
+      "PAI2_0": {
+        "direction": "O"
+      },
+      "PAI1_0": {
+        "direction": "O"
+      },
+      "PAI0_0": {
+        "direction": "O"
+      },
+      "PA7_0": {
+        "direction": "I"
+      },
+      "LDS_0": {
+        "direction": "O"
+      },
+      "PIC5_0": {
+        "direction": "O"
+      },
+      "PC6_0": {
+        "direction": "I"
+      },
+      "FC2_1": {
+        "direction": "O"
+      },
+      "FC1_1": {
+        "direction": "O"
+      },
+      "FC0_1": {
+        "direction": "O"
+      },
+      "AS_1": {
+        "direction": "O"
+      },
+      "PC_0": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "DTACKi_0": {
+        "direction": "O"
+      },
+      "IPL2_1": {
+        "direction": "I"
+      },
+      "IPL1_1": {
+        "direction": "I"
+      },
+      "IPL0_1": {
+        "direction": "I"
+      },
+      "IRESET_1": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "MC68230_0": {
+        "vlnv": "xilinx.com:module_ref:MC68230:1.0",
+        "xci_name": "design_1_MC68230_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "MC68230",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "PAI0": {
+            "direction": "O"
+          },
+          "PAI1": {
+            "direction": "O"
+          },
+          "PAI2": {
+            "direction": "O"
+          },
+          "PAI3": {
+            "direction": "O"
+          },
+          "PAI4": {
+            "direction": "O"
+          },
+          "PAI5": {
+            "direction": "O"
+          },
+          "PAI6": {
+            "direction": "O"
+          },
+          "PA7": {
+            "direction": "I"
+          },
+          "Hdoi": {
+            "direction": "O"
+          },
+          "H1": {
+            "direction": "I"
+          },
+          "PC0": {
+            "direction": "I"
+          },
+          "PC1": {
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I",
+            "left": "0",
+            "right": "7"
+          },
+          "RSi": {
+            "direction": "I",
+            "left": "5",
+            "right": "1"
+          },
+          "CS": {
+            "direction": "I"
+          },
+          "PC6": {
+            "direction": "I"
+          },
+          "PIC5": {
+            "direction": "O"
+          },
+          "DTACKi": {
+            "direction": "O"
+          },
+          "RW": {
+            "direction": "I"
+          },
+          "RESET": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESET",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_CLK_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ceva": {
+            "direction": "O"
+          }
+        }
+      },
+      "REG_0": {
+        "vlnv": "xilinx.com:module_ref:REG:1.0",
+        "xci_name": "design_1_REG_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "REG",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "23",
+            "right": "1"
+          },
+          "Ao": {
+            "direction": "O",
+            "left": "5",
+            "right": "1"
+          },
+          "Ao1": {
+            "direction": "O",
+            "left": "21",
+            "right": "6"
+          },
+          "C": {
+            "direction": "O",
+            "left": "23",
+            "right": "22"
+          }
+        }
+      },
+      "Decadd_0": {
+        "vlnv": "xilinx.com:module_ref:Decadd:1.0",
+        "xci_name": "design_1_Decadd_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Decadd",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Ai": {
+            "direction": "I",
+            "left": "21",
+            "right": "6"
+          },
+          "LDSi": {
+            "direction": "I"
+          },
+          "UDSi": {
+            "direction": "I"
+          },
+          "CSo": {
+            "direction": "O"
+          },
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_CLK_0",
+                "value_src": "default_prop"
+              }
+            }
+          }
+        }
+      },
+      "MC68000_0": {
+        "vlnv": "xilinx.com:module_ref:MC68000:1.0",
+        "xci_name": "design_1_MC68000_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "MC68000",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESET",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_CLK_0",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "D": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "A": {
+            "direction": "O",
+            "left": "23",
+            "right": "1"
+          },
+          "LDS": {
+            "direction": "O"
+          },
+          "FC2": {
+            "direction": "O"
+          },
+          "FC1": {
+            "direction": "O"
+          },
+          "FC0": {
+            "direction": "O"
+          },
+          "AS": {
+            "direction": "O"
+          },
+          "UDS": {
+            "direction": "O"
+          },
+          "RW": {
+            "direction": "O"
+          },
+          "RESET": {
+            "type": "rst",
+            "direction": "O"
+          },
+          "DTACK": {
+            "direction": "I"
+          },
+          "IPL2": {
+            "direction": "I"
+          },
+          "IPL1": {
+            "direction": "I"
+          },
+          "IPL0": {
+            "direction": "I"
+          },
+          "IRESET": {
+            "direction": "I"
+          },
+          "PC": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "CLK_0_1": {
+        "ports": [
+          "CLK_0",
+          "MC68230_0/CLK",
+          "Decadd_0/CLK",
+          "MC68000_0/CLK"
+        ]
+      },
+      "Decadd_0_CSo": {
+        "ports": [
+          "Decadd_0/CSo",
+          "MC68230_0/CS"
+        ]
+      },
+      "H1_0_1": {
+        "ports": [
+          "H1_0",
+          "MC68230_0/H1"
+        ]
+      },
+      "IPL0_1_1": {
+        "ports": [
+          "IPL0_1",
+          "MC68000_0/IPL0"
+        ]
+      },
+      "IPL1_1_1": {
+        "ports": [
+          "IPL1_1",
+          "MC68000_0/IPL1"
+        ]
+      },
+      "IPL2_1_1": {
+        "ports": [
+          "IPL2_1",
+          "MC68000_0/IPL2"
+        ]
+      },
+      "IRESET_1_1": {
+        "ports": [
+          "IRESET_1",
+          "MC68000_0/IRESET"
+        ]
+      },
+      "MC68000_0_A": {
+        "ports": [
+          "MC68000_0/A",
+          "REG_0/A"
+        ]
+      },
+      "MC68000_0_AS": {
+        "ports": [
+          "MC68000_0/AS",
+          "AS_1"
+        ]
+      },
+      "MC68000_0_D": {
+        "ports": [
+          "MC68000_0/D",
+          "MC68230_0/D"
+        ]
+      },
+      "MC68000_0_FC0": {
+        "ports": [
+          "MC68000_0/FC0",
+          "FC0_1"
+        ]
+      },
+      "MC68000_0_FC1": {
+        "ports": [
+          "MC68000_0/FC1",
+          "FC1_1"
+        ]
+      },
+      "MC68000_0_FC2": {
+        "ports": [
+          "MC68000_0/FC2",
+          "FC2_1"
+        ]
+      },
+      "MC68000_0_PC": {
+        "ports": [
+          "MC68000_0/PC",
+          "PC_0"
+        ]
+      },
+      "MC68000_0_RESET": {
+        "ports": [
+          "MC68000_0/RESET",
+          "MC68230_0/RESET"
+        ]
+      },
+      "MC68000_0_RW": {
+        "ports": [
+          "MC68000_0/RW",
+          "MC68230_0/RW"
+        ]
+      },
+      "MC68000_0_UDS": {
+        "ports": [
+          "MC68000_0/UDS",
+          "Decadd_0/UDSi"
+        ]
+      },
+      "MC68000p_0_LDS": {
+        "ports": [
+          "MC68000_0/LDS",
+          "LDS_0",
+          "Decadd_0/LDSi"
+        ]
+      },
+      "MC68230_0_DTACKi": {
+        "ports": [
+          "MC68230_0/DTACKi",
+          "DTACKi_0",
+          "MC68000_0/DTACK"
+        ]
+      },
+      "MC68230_0_Hdoi": {
+        "ports": [
+          "MC68230_0/Hdoi",
+          "Hdoi_0"
+        ]
+      },
+      "MC68230_0_PAI0": {
+        "ports": [
+          "MC68230_0/PAI0",
+          "PAI0_0"
+        ]
+      },
+      "MC68230_0_PAI1": {
+        "ports": [
+          "MC68230_0/PAI1",
+          "PAI1_0"
+        ]
+      },
+      "MC68230_0_PAI2": {
+        "ports": [
+          "MC68230_0/PAI2",
+          "PAI2_0"
+        ]
+      },
+      "MC68230_0_PAI3": {
+        "ports": [
+          "MC68230_0/PAI3",
+          "PAI3_0"
+        ]
+      },
+      "MC68230_0_PAI4": {
+        "ports": [
+          "MC68230_0/PAI4",
+          "PAI4_0"
+        ]
+      },
+      "MC68230_0_PAI5": {
+        "ports": [
+          "MC68230_0/PAI5",
+          "PAI5_0"
+        ]
+      },
+      "MC68230_0_PAI6": {
+        "ports": [
+          "MC68230_0/PAI6",
+          "PAI6_0"
+        ]
+      },
+      "MC68230_0_PIC5": {
+        "ports": [
+          "MC68230_0/PIC5",
+          "PIC5_0"
+        ]
+      },
+      "MC68230_0_ceva": {
+        "ports": [
+          "MC68230_0/ceva",
+          "ceva_0"
+        ]
+      },
+      "PA7_0_1": {
+        "ports": [
+          "PA7_0",
+          "MC68230_0/PA7"
+        ]
+      },
+      "PC0_0_1": {
+        "ports": [
+          "PC0_0",
+          "MC68230_0/PC0"
+        ]
+      },
+      "PC1_0_1": {
+        "ports": [
+          "PC1_0",
+          "MC68230_0/PC1"
+        ]
+      },
+      "PC6_0_1": {
+        "ports": [
+          "PC6_0",
+          "MC68230_0/PC6"
+        ]
+      },
+      "REG_0_Ao": {
+        "ports": [
+          "REG_0/Ao",
+          "MC68230_0/RSi"
+        ]
+      },
+      "REG_0_Ao1": {
+        "ports": [
+          "REG_0/Ao1",
+          "Decadd_0/Ai"
+        ]
+      },
+      "REG_0_C": {
+        "ports": [
+          "REG_0/C",
+          "C_0"
+        ]
+      }
+    }
+  }
+}

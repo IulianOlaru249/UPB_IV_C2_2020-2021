@@ -1,0 +1,80 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.637291",
+   "Default View_TopLeft":"-1084,-69",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_ceva_0 -pg 1 -lvl 5 -x 440 -y 290 -defaultsOSRD
+preplace port port-id_Hdoi_0 -pg 1 -lvl 5 -x 440 -y 180 -defaultsOSRD
+preplace port port-id_PAI6_0 -pg 1 -lvl 5 -x 440 -y 210 -defaultsOSRD
+preplace port port-id_CLK_0 -pg 1 -lvl 0 -x -970 -y -150 -defaultsOSRD
+preplace port port-id_H1_0 -pg 1 -lvl 0 -x -970 -y -120 -defaultsOSRD
+preplace port port-id_PC0_0 -pg 1 -lvl 0 -x -970 -y -60 -defaultsOSRD
+preplace port port-id_PC1_0 -pg 1 -lvl 0 -x -970 -y -30 -defaultsOSRD
+preplace port port-id_PAI5_0 -pg 1 -lvl 5 -x 440 -y 70 -defaultsOSRD
+preplace port port-id_PAI4_0 -pg 1 -lvl 5 -x 440 -y 40 -defaultsOSRD
+preplace port port-id_PAI3_0 -pg 1 -lvl 5 -x 440 -y 10 -defaultsOSRD
+preplace port port-id_PAI2_0 -pg 1 -lvl 5 -x 440 -y -20 -defaultsOSRD
+preplace port port-id_PAI1_0 -pg 1 -lvl 5 -x 440 -y -50 -defaultsOSRD
+preplace port port-id_PAI0_0 -pg 1 -lvl 5 -x 440 -y -80 -defaultsOSRD
+preplace port port-id_PA7_0 -pg 1 -lvl 0 -x -970 -y -90 -defaultsOSRD
+preplace port port-id_LDS_0 -pg 1 -lvl 5 -x 440 -y -200 -defaultsOSRD
+preplace port port-id_PIC5_0 -pg 1 -lvl 5 -x 440 -y 130 -defaultsOSRD
+preplace port port-id_PC6_0 -pg 1 -lvl 0 -x -970 -y 430 -defaultsOSRD
+preplace port port-id_FC2_1 -pg 1 -lvl 5 -x 440 -y 400 -defaultsOSRD
+preplace port port-id_FC1_1 -pg 1 -lvl 5 -x 440 -y 370 -defaultsOSRD
+preplace port port-id_FC0_1 -pg 1 -lvl 5 -x 440 -y 430 -defaultsOSRD
+preplace port port-id_AS_1 -pg 1 -lvl 5 -x 440 -y 460 -defaultsOSRD
+preplace port port-id_DTACKi_0 -pg 1 -lvl 5 -x 440 -y 260 -defaultsOSRD
+preplace port port-id_IPL2_1 -pg 1 -lvl 0 -x -970 -y 260 -defaultsOSRD
+preplace port port-id_IPL1_1 -pg 1 -lvl 0 -x -970 -y 200 -defaultsOSRD
+preplace port port-id_IPL0_1 -pg 1 -lvl 0 -x -970 -y 230 -defaultsOSRD
+preplace port port-id_IRESET_1 -pg 1 -lvl 0 -x -970 -y 290 -defaultsOSRD
+preplace portBus C_0 -pg 1 -lvl 5 -x 440 -y -170 -defaultsOSRD
+preplace portBus PC_0 -pg 1 -lvl 5 -x 440 -y 340 -defaultsOSRD
+preplace inst MC68230_0 -pg 1 -lvl 4 -x 150 -y 180 -defaultsOSRD
+preplace inst REG_0 -pg 1 -lvl 2 -x -500 -y 160 -defaultsOSRD
+preplace inst Decadd_0 -pg 1 -lvl 1 -x -770 -y 130 -defaultsOSRD
+preplace inst MC68000_0 -pg 1 -lvl 3 -x -240 -y 310 -defaultsOSRD
+preplace netloc MC68230_0_ceva 1 4 1 330 280n
+preplace netloc MC68230_0_Hdoi 1 4 1 330 180n
+preplace netloc MC68230_0_PAI6 1 4 1 280 200n
+preplace netloc CLK_0_1 1 0 4 -940 220 -660 230 -340 150 -90
+preplace netloc H1_0_1 1 0 4 NJ -120 NJ -120 NJ -120 0
+preplace netloc REG_0_Ao1 1 0 3 -920 40 NJ 40 -380
+preplace netloc REG_0_Ao 1 2 2 N 140 -50
+preplace netloc PC0_0_1 1 0 4 NJ -60 NJ -60 NJ -60 -20
+preplace netloc PC1_0_1 1 0 4 NJ -30 NJ -30 NJ -30 -30
+preplace netloc Decadd_0_CSo 1 1 3 -670J 70 NJ 70 -40
+preplace netloc REG_0_C 1 2 3 -370J -170 N -170 NJ
+preplace netloc MC68230_0_PAI5 1 4 1 310 70n
+preplace netloc MC68230_0_PAI4 1 4 1 300 40n
+preplace netloc MC68230_0_PAI3 1 4 1 290 10n
+preplace netloc MC68230_0_PAI2 1 4 1 280 -20n
+preplace netloc MC68230_0_PAI1 1 4 1 270 -50n
+preplace netloc MC68230_0_PAI0 1 4 1 260 -80n
+preplace netloc PA7_0_1 1 0 4 NJ -90 NJ -90 NJ -90 -10
+preplace netloc MC68000p_0_LDS 1 0 5 -930 30 N 30 N 30 -80 -200 NJ
+preplace netloc MC68230_0_PIC5 1 4 1 320 130n
+preplace netloc PC6_0_1 1 0 4 NJ 430 NJ 430 -360J 130 -60
+preplace netloc MC68230_0_DTACKi 1 2 3 -340 470 N 470 300
+preplace netloc MC68000_0_D 1 3 1 -70 160n
+preplace netloc MC68000_0_A 1 1 3 -660 80 NJ 80 -130
+preplace netloc MC68000_0_FC2 1 3 2 -100 400 NJ
+preplace netloc MC68000_0_FC1 1 3 2 -110 370 NJ
+preplace netloc MC68000_0_FC0 1 3 2 -120 360 260J
+preplace netloc MC68000_0_AS 1 3 2 N 330 280J
+preplace netloc MC68000_0_UDS 1 0 4 -920 480 NJ 480 NJ 480 -140
+preplace netloc MC68000_0_RW 1 3 1 -130 240n
+preplace netloc MC68000_0_RESET 1 3 1 -40 260n
+preplace netloc MC68000_0_PC 1 3 2 N 410 330J
+preplace netloc IPL2_1_1 1 0 3 NJ 260 NJ 260 -370
+preplace netloc IPL1_1_1 1 0 3 -950J 240 NJ 240 -350
+preplace netloc IPL0_1_1 1 0 3 NJ 230 -670J 250 -380
+preplace netloc IRESET_1_1 1 0 3 NJ 290 NJ 290 -390
+levelinfo -pg 1 -970 -770 -500 -240 150 440
+pagesize -pg 1 -db -bbox -sgen -1080 -520 560 580
+"
+}
+0

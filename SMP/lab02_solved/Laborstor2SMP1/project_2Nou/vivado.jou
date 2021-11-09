@@ -1,0 +1,213 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov  2 17:47:57 2021
+# Process ID: 1388
+# Current directory: C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2948 C:\Users\Legion\Desktop\Laborstor2SMP1\project_2Nou\project_2Nou.xpr
+# Log file: C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/vivado.log
+# Journal file: C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+open_bd_design {c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd}
+launch_simulation
+source design_1_wrapper.tcl
+open_bd_design {c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sim_1
+close_sim
+open_bd_design {c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd}
+launch_simulation
+make_wrapper -files [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd] -top
+export_ip_user_files -of_objects  [get_files c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+file delete -force c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper -files [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse {C:/Users/Legion/Desktop/Laborstor2SMP1/DECADD.V C:/Users/Legion/Desktop/Laborstor2SMP1/REG.V C:/Users/Legion/Desktop/Laborstor2SMP1/MC68230.V C:/Users/Legion/Desktop/Laborstor2SMP1/MC68000PI.V}
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_nets MC68000p_0_FC2] [get_bd_nets MC68000p_0_FC0] [get_bd_nets MC68000p_0_RESET] [get_bd_nets MC68230_0_DTACKi] [get_bd_nets IPL2_0_1] [get_bd_nets MC68000p_0_RW] [get_bd_nets IPL1_0_1] [get_bd_nets MC68000p_0_A] [get_bd_nets MC68000p_0_AS] [get_bd_nets IPL0_0_1] [get_bd_nets MC68000p_0_D] [get_bd_nets MC68000p_0_FC1] [get_bd_nets MC68000p_0_UDS] [get_bd_nets IRESET_0_1] [get_bd_cells MC68000p_0]
+create_bd_cell -type module -reference MC68000 MC68000_0
+startgroup
+connect_bd_net [get_bd_pins MC68000_0/LDS] [get_bd_pins REG_0/A]
+endgroup
+delete_bd_objs [get_bd_nets MC68000_0_LDS]
+connect_bd_net [get_bd_pins MC68000_0/A] [get_bd_pins REG_0/A]
+startgroup
+make_bd_pins_external  [get_bd_cells MC68000_0]
+make_bd_intf_pins_external  [get_bd_cells MC68000_0]
+endgroup
+undo
+startgroup
+connect_bd_net [get_bd_pins MC68000_0/LDS] [get_bd_pins Decadd_0/LDSi]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins MC68000_0/FC2]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins MC68000_0/FC1]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins MC68000_0/FC0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins MC68000_0/AS]
+endgroup
+connect_bd_net [get_bd_pins MC68000_0/UDS] [get_bd_pins Decadd_0/UDSi]
+connect_bd_net [get_bd_pins MC68000_0/RW] [get_bd_pins MC68230_0/RW]
+connect_bd_net [get_bd_pins MC68000_0/RESET] [get_bd_pins MC68230_0/RESET]
+startgroup
+make_bd_pins_external  [get_bd_pins MC68000_0/PC]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins MC68000_0/CLK]
+endgroup
+delete_bd_objs [get_bd_nets CLK_1_1]
+connect_bd_net [get_bd_ports CLK_0] [get_bd_pins MC68000_0/CLK]
+startgroup
+make_bd_pins_external  [get_bd_pins MC68230_0/DTACKi]
+endgroup
+connect_bd_net [get_bd_pins MC68000_0/DTACK] [get_bd_pins MC68230_0/DTACKi]
+startgroup
+make_bd_pins_external  [get_bd_pins MC68000_0/IPL2]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins MC68000_0/IPL1]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins MC68000_0/IPL0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins MC68000_0/IRESET]
+endgroup
+delete_bd_objs [get_bd_nets MC68000_0_A]
+startgroup
+make_bd_pins_external  [get_bd_cells REG_0]
+make_bd_intf_pins_external  [get_bd_cells REG_0]
+endgroup
+undo
+startgroup
+make_bd_pins_external  [get_bd_pins REG_0/A]
+endgroup
+undo
+startgroup
+make_bd_pins_external  [get_bd_pins REG_0/A]
+endgroup
+undo
+startgroup
+connect_bd_net [get_bd_pins MC68000_0/LDS] [get_bd_pins REG_0/A]
+endgroup
+undo
+connect_bd_net [get_bd_pins REG_0/A] [get_bd_pins MC68000_0/A]
+file mkdir C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/new
+close [ open C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/new/util.v w ]
+add_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/new/util.v
+update_compile_order -fileset sources_1
+connect_bd_net [get_bd_pins MC68000_0/D] [get_bd_pins MC68230_0/D]
+save_bd_design
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files -ipstatic_source_dir C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.cache/compile_simlib/modelsim} {questa=C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.cache/compile_simlib/questa} {riviera=C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.cache/compile_simlib/riviera} {activehdl=C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+launch_simulation
+launch_simulation
+delete_bd_objs [get_bd_ports CLK_1]
+delete_bd_objs [get_bd_ports IPL1_0]
+delete_bd_objs [get_bd_ports IPL0_0]
+delete_bd_objs [get_bd_ports IPL2_0]
+delete_bd_objs [get_bd_ports IRESET_0]
+delete_bd_objs [get_bd_ports FC0_0]
+delete_bd_objs [get_bd_ports FC1_0]
+delete_bd_objs [get_bd_ports FC2_0]
+delete_bd_objs [get_bd_ports UDS_0]
+delete_bd_objs [get_bd_ports AS_0]
+save_bd_design
+export_ip_user_files -of_objects  [get_files c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+file delete -force c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_nets IRESET_1_1] [get_bd_nets MC68000_0_FC1] [get_bd_nets IPL0_1_1] [get_bd_nets MC68000_0_A] [get_bd_nets IPL2_1_1] [get_bd_nets MC68000_0_FC0] [get_bd_nets MC68000_0_D] [get_bd_nets MC68000_0_FC2] [get_bd_nets MC68000_0_AS] [get_bd_nets MC68000_0_UDS] [get_bd_nets MC68000_0_RW] [get_bd_nets MC68000_0_RESET] [get_bd_nets IPL1_1_1] [get_bd_nets MC68000_0_PC] [get_bd_cells MC68000_0]
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference MC68000 MC68000_0
+add_files -norecurse C:/Users/Legion/Desktop/Laborstor2SMP1/MC68000P.V
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_cells MC68000_0]
+export_ip_user_files -of_objects  [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/MC68000P.V] -no_script -reset -force -quiet
+remove_files  C:/Users/Legion/Desktop/Laborstor2SMP1/MC68000P.V
+export_ip_user_files -of_objects  [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/MC68000PI.V] -no_script -reset -force -quiet
+remove_files  C:/Users/Legion/Desktop/Laborstor2SMP1/MC68000PI.V
+add_files -norecurse C:/Users/Legion/Desktop/Laborstor2SMP1/MC68000PI.V
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference MC68000 MC68000_0
+connect_bd_net [get_bd_pins MC68000_0/D] [get_bd_pins MC68230_0/D]
+connect_bd_net [get_bd_pins MC68000_0/LDS] [get_bd_pins Decadd_0/LDSi]
+connect_bd_net [get_bd_pins REG_0/A] [get_bd_pins MC68000_0/A]
+connect_bd_net [get_bd_ports FC2_1] [get_bd_pins MC68000_0/FC2]
+connect_bd_net [get_bd_ports FC1_1] [get_bd_pins MC68000_0/FC1]
+connect_bd_net [get_bd_ports FC0_1] [get_bd_pins MC68000_0/FC0]
+connect_bd_net [get_bd_ports AS_1] [get_bd_pins MC68000_0/AS]
+connect_bd_net [get_bd_pins MC68000_0/UDS] [get_bd_pins Decadd_0/UDSi]
+connect_bd_net [get_bd_pins MC68000_0/RW] [get_bd_pins MC68230_0/RW]
+connect_bd_net [get_bd_pins MC68000_0/RESET] [get_bd_pins MC68230_0/RESET]
+undo
+connect_bd_net [get_bd_pins MC68000_0/RESET] [get_bd_pins MC68230_0/RESET]
+connect_bd_net [get_bd_ports PC_0] [get_bd_pins MC68000_0/PC]
+connect_bd_net [get_bd_ports CLK_0] [get_bd_pins MC68000_0/CLK]
+connect_bd_net [get_bd_pins MC68000_0/DTACK] [get_bd_pins MC68230_0/DTACKi]
+connect_bd_net [get_bd_ports IPL2_1] [get_bd_pins MC68000_0/IPL2]
+connect_bd_net [get_bd_ports IPL1_1] [get_bd_pins MC68000_0/IPL1]
+connect_bd_net [get_bd_ports IPL0_1] [get_bd_pins MC68000_0/IPL0]
+connect_bd_net [get_bd_ports IRESET_1] [get_bd_pins MC68000_0/IRESET]
+save_bd_design
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+file delete -force c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files -ipstatic_source_dir C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.cache/compile_simlib/modelsim} {questa=C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.cache/compile_simlib/questa} {riviera=C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.cache/compile_simlib/riviera} {activehdl=C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+make_wrapper -files [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd] -top
+generate_target Simulation [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files -ipstatic_source_dir C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.cache/compile_simlib/modelsim} {questa=C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.cache/compile_simlib/questa} {riviera=C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.cache/compile_simlib/riviera} {activehdl=C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+launch_simulation
+source test.tcl
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source test.tcl
+open_bd_design {c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd}
+relaunch_sim
+open_bd_design {c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd}
+relaunch_sim
+open_bd_design {c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd}
+export_ip_user_files -of_objects  [get_files c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+file delete -force c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse c:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+close_sim

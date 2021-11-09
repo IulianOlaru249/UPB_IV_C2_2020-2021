@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../MC68230.V" \
+"../../../../../REG.V" \
+"../../../../../DECADD.V" \
+"../../../../../MC68000PI.V" \
+"../../../../project_2Nou.ip_user_files/bd/design_1/ip/design_1_MC68230_0_0/sim/design_1_MC68230_0_0.v" \
+"../../../../project_2Nou.ip_user_files/bd/design_1/ip/design_1_REG_0_0/sim/design_1_REG_0_0.v" \
+"../../../../project_2Nou.ip_user_files/bd/design_1/ip/design_1_Decadd_0_0/sim/design_1_Decadd_0_0.v" \
+"../../../../project_2Nou.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../project_2Nou.ip_user_files/bd/design_1/ip/design_1_MC68000_0_2/sim/design_1_MC68000_0_2.v" \
+"../../../../project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../project_2Nou.srcs/sim_1/new/test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

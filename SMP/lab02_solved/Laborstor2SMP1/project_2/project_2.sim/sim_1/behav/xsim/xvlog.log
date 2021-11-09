@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.srcs/sources_1/imports/Laborstor2SMP1/MC68230.V" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MC68230
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.srcs/sources_1/imports/Laborstor2SMP1/REG.V" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.srcs/sources_1/imports/Laborstor2SMP1/DECADD.V" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decadd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.srcs/sources_1/imports/Laborstor2SMP1/MC68000PI.V" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MC68000
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_MC68230_0_0/sim/design_1_MC68230_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_MC68230_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_REG_0_0/sim/design_1_REG_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_REG_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_Decadd_0_0/sim/design_1_Decadd_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_Decadd_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_MC68000_0_0/sim/design_1_MC68000_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_MC68000_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2458] undeclared symbol AS_1, assumed default net type wire [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.srcs/sim_1/new/test.v:54]
+INFO: [VRFC 10-2458] undeclared symbol DTACKi_0, assumed default net type wire [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.srcs/sim_1/new/test.v:57]
+INFO: [VRFC 10-2458] undeclared symbol FC0_1, assumed default net type wire [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.srcs/sim_1/new/test.v:58]
+INFO: [VRFC 10-2458] undeclared symbol FC1_1, assumed default net type wire [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.srcs/sim_1/new/test.v:59]
+INFO: [VRFC 10-2458] undeclared symbol FC2_1, assumed default net type wire [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.srcs/sim_1/new/test.v:60]
+INFO: [VRFC 10-2458] undeclared symbol PC_0, assumed default net type wire [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab02_solved/Laborstor2SMP1/project_2/project_2.srcs/sim_1/new/test.v:79]

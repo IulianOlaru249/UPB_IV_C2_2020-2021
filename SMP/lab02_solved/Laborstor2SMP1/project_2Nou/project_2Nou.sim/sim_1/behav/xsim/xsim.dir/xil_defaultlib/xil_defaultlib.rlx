@@ -1,0 +1,16 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/Users/Legion/Desktop/Laborstor2SMP1/DECADD.V,922448314,verilog,,C:/Users/Legion/Desktop/Laborstor2SMP1/MC68000PI.V,,Decadd,,,,,,,,
+C:/Users/Legion/Desktop/Laborstor2SMP1/MC68000PI.V,922448022,verilog,,C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/bd/design_1/ip/design_1_MC68230_0_0/sim/design_1_MC68230_0_0.v,,MC68000,,,,,,,,
+C:/Users/Legion/Desktop/Laborstor2SMP1/MC68230.V,922444940,verilog,,C:/Users/Legion/Desktop/Laborstor2SMP1/REG.V,,MC68230,,,,,,,,
+C:/Users/Legion/Desktop/Laborstor2SMP1/REG.V,922444382,verilog,,C:/Users/Legion/Desktop/Laborstor2SMP1/DECADD.V,,REG,,,,,,,,
+C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v,1635875396,verilog,,C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sim_1/new/test.v,,design_1_wrapper,,,,,,,,
+C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/bd/design_1/ip/design_1_Decadd_0_0/sim/design_1_Decadd_0_0.v,1635798402,verilog,,C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/bd/design_1/sim/design_1.v,,design_1_Decadd_0_0,,,,,,,,
+C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/bd/design_1/ip/design_1_MC68000_0_2/sim/design_1_MC68000_0_2.v,1635874152,verilog,,C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v,,design_1_MC68000_0_2,,,,,,,,
+C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/bd/design_1/ip/design_1_MC68230_0_0/sim/design_1_MC68230_0_0.v,1635798402,verilog,,C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/bd/design_1/ip/design_1_REG_0_0/sim/design_1_REG_0_0.v,,design_1_MC68230_0_0,,,,,,,,
+C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/bd/design_1/ip/design_1_REG_0_0/sim/design_1_REG_0_0.v,1635798402,verilog,,C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/bd/design_1/ip/design_1_Decadd_0_0/sim/design_1_Decadd_0_0.v,,design_1_REG_0_0,,,,,,,,
+C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/bd/design_1/sim/design_1.v,1635874354,verilog,,C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.ip_user_files/bd/design_1/ip/design_1_MC68000_0_2/sim/design_1_MC68000_0_2.v,,design_1,,,,,,,,
+C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+C:/Users/Legion/Desktop/Laborstor2SMP1/project_2Nou/project_2Nou.srcs/sim_1/new/test.v,1635875224,verilog,,,,test,,,,,,,,
