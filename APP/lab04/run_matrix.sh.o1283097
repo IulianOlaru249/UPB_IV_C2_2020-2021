@@ -1,0 +1,163 @@
+mpi_mm has started with 48 tasks.
+Initializing arrays...
+Sending 2 rows to task 1 offset=0
+Sending 2 rows to task 2 offset=2
+Sending 2 rows to task 3 offset=4
+Sending 2 rows to task 4 offset=6
+Sending 2 rows to task 5 offset=8
+Sending 2 rows to task 6 offset=10
+Sending 2 rows to task 7 offset=12
+Sending 2 rows to task 8 offset=14
+Sending 2 rows to task 9 offset=16
+Sending 2 rows to task 10 offset=18
+Sending 2 rows to task 11 offset=20
+Sending 2 rows to task 12 offset=22
+Sending 2 rows to task 13 offset=24
+Sending 2 rows to task 14 offset=26
+Sending 2 rows to task 15 offset=28
+Sending 1 rows to task 16 offset=30
+Sending 1 rows to task 17 offset=31
+Sending 1 rows to task 18 offset=32
+Sending 1 rows to task 19 offset=33
+Sending 1 rows to task 20 offset=34
+Sending 1 rows to task 21 offset=35
+Sending 1 rows to task 22 offset=36
+Sending 1 rows to task 23 offset=37
+Sending 1 rows to task 24 offset=38
+Sending 1 rows to task 25 offset=39
+Sending 1 rows to task 26 offset=40
+Sending 1 rows to task 27 offset=41
+Sending 1 rows to task 28 offset=42
+Sending 1 rows to task 29 offset=43
+Sending 1 rows to task 30 offset=44
+Sending 1 rows to task 31 offset=45
+Sending 1 rows to task 32 offset=46
+Sending 1 rows to task 33 offset=47
+Sending 1 rows to task 34 offset=48
+Sending 1 rows to task 35 offset=49
+Sending 1 rows to task 36 offset=50
+Sending 1 rows to task 37 offset=51
+Sending 1 rows to task 38 offset=52
+Sending 1 rows to task 39 offset=53
+Sending 1 rows to task 40 offset=54
+Sending 1 rows to task 41 offset=55
+Sending 1 rows to task 42 offset=56
+Sending 1 rows to task 43 offset=57
+Sending 1 rows to task 44 offset=58
+Sending 1 rows to task 45 offset=59
+Sending 1 rows to task 46 offset=60
+Sending 1 rows to task 47 offset=61
+Received results from task 1
+Received results from task 2
+Received results from task 3
+Received results from task 4
+Received results from task 5
+Received results from task 6
+Received results from task 7
+Received results from task 8
+Received results from task 9
+Received results from task 10
+Received results from task 11
+Received results from task 12
+Received results from task 13
+Received results from task 14
+Received results from task 15
+Received results from task 16
+Received results from task 17
+Received results from task 18
+Received results from task 19
+Received results from task 20
+Received results from task 21
+Received results from task 22
+Received results from task 23
+Received results from task 24
+Received results from task 25
+Received results from task 26
+Received results from task 27
+Received results from task 28
+Received results from task 29
+Received results from task 30
+Received results from task 31
+Received results from task 32
+Received results from task 33
+Received results from task 34
+Received results from task 35
+Received results from task 36
+Received results from task 37
+Received results from task 38
+Received results from task 39
+Received results from task 40
+Received results from task 41
+Received results from task 42
+Received results from task 43
+Received results from task 44
+Received results from task 45
+Received results from task 46
+Received results from task 47
+******************************************************
+Result Matrix:
+
+  0.00   1015.00   2030.00   3045.00   4060.00   5075.00   6090.00   
+  0.00   1120.00   2240.00   3360.00   4480.00   5600.00   6720.00   
+  0.00   1225.00   2450.00   3675.00   4900.00   6125.00   7350.00   
+  0.00   1330.00   2660.00   3990.00   5320.00   6650.00   7980.00   
+  0.00   1435.00   2870.00   4305.00   5740.00   7175.00   8610.00   
+  0.00   1540.00   3080.00   4620.00   6160.00   7700.00   9240.00   
+  0.00   1645.00   3290.00   4935.00   6580.00   8225.00   9870.00   
+  0.00   1750.00   3500.00   5250.00   7000.00   8750.00   10500.00   
+  0.00   1855.00   3710.00   5565.00   7420.00   9275.00   11130.00   
+  0.00   1960.00   3920.00   5880.00   7840.00   9800.00   11760.00   
+  0.00   2065.00   4130.00   6195.00   8260.00   10325.00   12390.00   
+  0.00   2170.00   4340.00   6510.00   8680.00   10850.00   13020.00   
+  0.00   2275.00   4550.00   6825.00   9100.00   11375.00   13650.00   
+  0.00   2380.00   4760.00   7140.00   9520.00   11900.00   14280.00   
+  0.00   2485.00   4970.00   7455.00   9940.00   12425.00   14910.00   
+  0.00   2590.00   5180.00   7770.00   10360.00   12950.00   15540.00   
+  0.00   2695.00   5390.00   8085.00   10780.00   13475.00   16170.00   
+  0.00   2800.00   5600.00   8400.00   11200.00   14000.00   16800.00   
+  0.00   2905.00   5810.00   8715.00   11620.00   14525.00   17430.00   
+  0.00   3010.00   6020.00   9030.00   12040.00   15050.00   18060.00   
+  0.00   3115.00   6230.00   9345.00   12460.00   15575.00   18690.00   
+  0.00   3220.00   6440.00   9660.00   12880.00   16100.00   19320.00   
+  0.00   3325.00   6650.00   9975.00   13300.00   16625.00   19950.00   
+  0.00   3430.00   6860.00   10290.00   13720.00   17150.00   20580.00   
+  0.00   3535.00   7070.00   10605.00   14140.00   17675.00   21210.00   
+  0.00   3640.00   7280.00   10920.00   14560.00   18200.00   21840.00   
+  0.00   3745.00   7490.00   11235.00   14980.00   18725.00   22470.00   
+  0.00   3850.00   7700.00   11550.00   15400.00   19250.00   23100.00   
+  0.00   3955.00   7910.00   11865.00   15820.00   19775.00   23730.00   
+  0.00   4060.00   8120.00   12180.00   16240.00   20300.00   24360.00   
+  0.00   4165.00   8330.00   12495.00   16660.00   20825.00   24990.00   
+  0.00   4270.00   8540.00   12810.00   17080.00   21350.00   25620.00   
+  0.00   4375.00   8750.00   13125.00   17500.00   21875.00   26250.00   
+  0.00   4480.00   8960.00   13440.00   17920.00   22400.00   26880.00   
+  0.00   4585.00   9170.00   13755.00   18340.00   22925.00   27510.00   
+  0.00   4690.00   9380.00   14070.00   18760.00   23450.00   28140.00   
+  0.00   4795.00   9590.00   14385.00   19180.00   23975.00   28770.00   
+  0.00   4900.00   9800.00   14700.00   19600.00   24500.00   29400.00   
+  0.00   5005.00   10010.00   15015.00   20020.00   25025.00   30030.00   
+  0.00   5110.00   10220.00   15330.00   20440.00   25550.00   30660.00   
+  0.00   5215.00   10430.00   15645.00   20860.00   26075.00   31290.00   
+  0.00   5320.00   10640.00   15960.00   21280.00   26600.00   31920.00   
+  0.00   5425.00   10850.00   16275.00   21700.00   27125.00   32550.00   
+  0.00   5530.00   11060.00   16590.00   22120.00   27650.00   33180.00   
+  0.00   5635.00   11270.00   16905.00   22540.00   28175.00   33810.00   
+  0.00   5740.00   11480.00   17220.00   22960.00   28700.00   34440.00   
+  0.00   5845.00   11690.00   17535.00   23380.00   29225.00   35070.00   
+  0.00   5950.00   11900.00   17850.00   23800.00   29750.00   35700.00   
+  0.00   6055.00   12110.00   18165.00   24220.00   30275.00   36330.00   
+  0.00   6160.00   12320.00   18480.00   24640.00   30800.00   36960.00   
+  0.00   6265.00   12530.00   18795.00   25060.00   31325.00   37590.00   
+  0.00   6370.00   12740.00   19110.00   25480.00   31850.00   38220.00   
+  0.00   6475.00   12950.00   19425.00   25900.00   32375.00   38850.00   
+  0.00   6580.00   13160.00   19740.00   26320.00   32900.00   39480.00   
+  0.00   6685.00   13370.00   20055.00   26740.00   33425.00   40110.00   
+  0.00   6790.00   13580.00   20370.00   27160.00   33950.00   40740.00   
+  0.00   6895.00   13790.00   20685.00   27580.00   34475.00   41370.00   
+  0.00   7000.00   14000.00   21000.00   28000.00   35000.00   42000.00   
+  0.00   7105.00   14210.00   21315.00   28420.00   35525.00   42630.00   
+  0.00   7210.00   14420.00   21630.00   28840.00   36050.00   43260.00   
+  0.00   7315.00   14630.00   21945.00   29260.00   36575.00   43890.00   
+  0.00   7420.00   14840.00   22260.00   29680.00   37100.00   44520.00   
+******************************************************
+Done.

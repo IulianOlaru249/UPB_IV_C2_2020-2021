@@ -1,0 +1,327 @@
+
+******************** MPI Bandwidth Test ********************
+Message start size= 100000 bytes
+Message finish size= 1000000 bytes
+Incremented by 100000 bytes per iteration
+Roundtrips per iteration= 100
+MPI_Wtick resolution = 1.000000e-09
+************************************************************
+task    0 is on dp-wn04.grid.pub.ro partner=  24
+task    1 is on dp-wn04.grid.pub.ro partner=  25
+task    2 is on dp-wn04.grid.pub.ro partner=  26
+task    3 is on dp-wn04.grid.pub.ro partner=  27
+task    4 is on dp-wn04.grid.pub.ro partner=  28
+task    5 is on dp-wn04.grid.pub.ro partner=  29
+task    6 is on dp-wn04.grid.pub.ro partner=  30
+task    7 is on dp-wn04.grid.pub.ro partner=  31
+task    8 is on dp-wn04.grid.pub.ro partner=  32
+task    9 is on dp-wn04.grid.pub.ro partner=  33
+task   10 is on dp-wn04.grid.pub.ro partner=  34
+task   11 is on dp-wn04.grid.pub.ro partner=  35
+task   12 is on dp-wn04.grid.pub.ro partner=  36
+task   13 is on dp-wn04.grid.pub.ro partner=  37
+task   14 is on dp-wn04.grid.pub.ro partner=  38
+task   15 is on dp-wn04.grid.pub.ro partner=  39
+task   16 is on dp-wn04.grid.pub.ro partner=  40
+task   17 is on dp-wn04.grid.pub.ro partner=  41
+task   18 is on dp-wn04.grid.pub.ro partner=  42
+task   19 is on dp-wn04.grid.pub.ro partner=  43
+task   20 is on dp-wn04.grid.pub.ro partner=  44
+task   21 is on dp-wn04.grid.pub.ro partner=  45
+task   22 is on dp-wn04.grid.pub.ro partner=  46
+task   23 is on dp-wn04.grid.pub.ro partner=  47
+task   24 is on dp-wn01.grid.pub.ro partner=   0
+task   25 is on dp-wn01.grid.pub.ro partner=   1
+task   26 is on dp-wn01.grid.pub.ro partner=   2
+task   27 is on dp-wn01.grid.pub.ro partner=   3
+task   28 is on dp-wn01.grid.pub.ro partner=   4
+task   29 is on dp-wn01.grid.pub.ro partner=   5
+task   30 is on dp-wn01.grid.pub.ro partner=   6
+task   31 is on dp-wn01.grid.pub.ro partner=   7
+task   32 is on dp-wn01.grid.pub.ro partner=   8
+task   33 is on dp-wn01.grid.pub.ro partner=   9
+task   34 is on dp-wn01.grid.pub.ro partner=  10
+task   35 is on dp-wn01.grid.pub.ro partner=  11
+task   36 is on dp-wn01.grid.pub.ro partner=  12
+task   37 is on dp-wn01.grid.pub.ro partner=  13
+task   38 is on dp-wn01.grid.pub.ro partner=  14
+task   39 is on dp-wn01.grid.pub.ro partner=  15
+task   40 is on dp-wn01.grid.pub.ro partner=  16
+task   41 is on dp-wn01.grid.pub.ro partner=  17
+task   42 is on dp-wn01.grid.pub.ro partner=  18
+task   43 is on dp-wn01.grid.pub.ro partner=  19
+task   44 is on dp-wn01.grid.pub.ro partner=  20
+task   45 is on dp-wn01.grid.pub.ro partner=  21
+task   46 is on dp-wn01.grid.pub.ro partner=  22
+task   47 is on dp-wn01.grid.pub.ro partner=  23
+************************************************************
+***Message size:   100000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -   24:    8.57 / 6.23 / 4.28 
+   task pair:    1 -   25:    17.68 / 11.06 / 6.17 
+   task pair:    2 -   26:    10.78 / 6.22 / 4.42 
+   task pair:    3 -   27:    31.27 / 16.24 / 7.16 
+   task pair:    4 -   28:    9.14 / 5.99 / 3.65 
+   task pair:    5 -   29:    10.65 / 6.57 / 3.72 
+   task pair:    6 -   30:    20.16 / 10.80 / 5.45 
+   task pair:    7 -   31:    10.61 / 7.18 / 4.31 
+   task pair:    8 -   32:    11.57 / 6.25 / 3.69 
+   task pair:    9 -   33:    17.90 / 10.36 / 5.22 
+   task pair:   10 -   34:    23.00 / 13.30 / 5.89 
+   task pair:   11 -   35:    8.50 / 6.04 / 3.57 
+   task pair:   12 -   36:    19.85 / 10.33 / 5.81 
+   task pair:   13 -   37:    19.01 / 9.91 / 3.65 
+   task pair:   14 -   38:    12.63 / 7.20 / 2.74 
+   task pair:   15 -   39:    16.21 / 10.59 / 5.21 
+   task pair:   16 -   40:    11.98 / 6.38 / 3.93 
+   task pair:   17 -   41:    28.03 / 13.97 / 5.43 
+   task pair:   18 -   42:    16.67 / 10.86 / 5.88 
+   task pair:   19 -   43:    14.59 / 10.15 / 6.20 
+   task pair:   20 -   44:    15.78 / 9.80 / 6.68 
+   task pair:   21 -   45:    11.03 / 6.13 / 3.50 
+   task pair:   22 -   46:    8.61 / 5.97 / 4.06 
+   task pair:   23 -   47:    14.42 / 9.71 / 5.18 
+   OVERALL AVERAGES:          15.36 / 9.05 / 4.82 
+
+***Message size:   200000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -   24:    8.36 / 6.00 / 4.00 
+   task pair:    1 -   25:    18.28 / 11.81 / 7.11 
+   task pair:    2 -   26:    8.78 / 6.32 / 4.26 
+   task pair:    3 -   27:    28.69 / 20.29 / 12.31 
+   task pair:    4 -   28:    8.56 / 5.76 / 3.93 
+   task pair:    5 -   29:    8.53 / 5.88 / 4.18 
+   task pair:    6 -   30:    15.65 / 10.59 / 6.94 
+   task pair:    7 -   31:    9.47 / 6.64 / 4.68 
+   task pair:    8 -   32:    7.54 / 5.63 / 4.01 
+   task pair:    9 -   33:    17.98 / 11.48 / 6.83 
+   task pair:   10 -   34:    28.77 / 15.30 / 8.19 
+   task pair:   11 -   35:    7.98 / 6.13 / 3.70 
+   task pair:   12 -   36:    15.59 / 10.82 / 6.60 
+   task pair:   13 -   37:    17.86 / 10.72 / 7.15 
+   task pair:   14 -   38:    8.97 / 6.70 / 4.23 
+   task pair:   15 -   39:    18.55 / 11.87 / 7.46 
+   task pair:   16 -   40:    10.56 / 6.09 / 3.77 
+   task pair:   17 -   41:    30.93 / 16.34 / 7.61 
+   task pair:   18 -   42:    16.75 / 12.10 / 7.64 
+   task pair:   19 -   43:    16.23 / 11.67 / 6.75 
+   task pair:   20 -   44:    16.38 / 11.04 / 6.33 
+   task pair:   21 -   45:    7.77 / 5.24 / 3.86 
+   task pair:   22 -   46:    8.75 / 6.20 / 3.77 
+   task pair:   23 -   47:    16.00 / 10.98 / 6.63 
+   OVERALL AVERAGES:          14.70 / 9.65 / 5.91 
+
+***Message size:   300000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -   24:    8.57 / 5.87 / 3.12 
+   task pair:    1 -   25:    17.12 / 11.26 / 7.72 
+   task pair:    2 -   26:    9.30 / 6.26 / 3.98 
+   task pair:    3 -   27:    31.69 / 21.83 / 16.13 
+   task pair:    4 -   28:    7.62 / 5.62 / 3.63 
+   task pair:    5 -   29:    8.38 / 5.63 / 3.78 
+   task pair:    6 -   30:    15.24 / 11.02 / 7.26 
+   task pair:    7 -   31:    9.04 / 6.43 / 4.33 
+   task pair:    8 -   32:    7.43 / 5.53 / 3.99 
+   task pair:    9 -   33:    17.72 / 11.16 / 7.71 
+   task pair:   10 -   34:    30.77 / 16.50 / 8.51 
+   task pair:   11 -   35:    8.70 / 6.17 / 4.05 
+   task pair:   12 -   36:    15.41 / 10.93 / 7.22 
+   task pair:   13 -   37:    15.58 / 10.95 / 7.10 
+   task pair:   14 -   38:    8.79 / 6.28 / 4.37 
+   task pair:   15 -   39:    17.05 / 11.53 / 7.79 
+   task pair:   16 -   40:    8.77 / 6.07 / 4.10 
+   task pair:   17 -   41:    31.12 / 17.71 / 8.76 
+   task pair:   18 -   42:    20.40 / 11.57 / 7.83 
+   task pair:   19 -   43:    18.29 / 11.10 / 6.82 
+   task pair:   20 -   44:    14.21 / 10.56 / 6.81 
+   task pair:   21 -   45:    8.31 / 5.71 / 3.55 
+   task pair:   22 -   46:    8.20 / 6.15 / 4.43 
+   task pair:   23 -   47:    14.10 / 10.53 / 6.64 
+   OVERALL AVERAGES:          14.66 / 9.68 / 6.23 
+
+***Message size:   400000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -   24:    8.34 / 5.77 / 4.01 
+   task pair:    1 -   25:    16.52 / 11.41 / 7.70 
+   task pair:    2 -   26:    8.22 / 6.00 / 4.55 
+   task pair:    3 -   27:    28.94 / 20.84 / 12.93 
+   task pair:    4 -   28:    7.11 / 5.53 / 3.84 
+   task pair:    5 -   29:    7.40 / 5.47 / 4.16 
+   task pair:    6 -   30:    17.35 / 10.89 / 6.67 
+   task pair:    7 -   31:    8.66 / 6.39 / 4.94 
+   task pair:    8 -   32:    6.93 / 5.51 / 3.90 
+   task pair:    9 -   33:    15.81 / 11.14 / 8.09 
+   task pair:   10 -   34:    29.28 / 16.21 / 8.49 
+   task pair:   11 -   35:    9.47 / 5.98 / 4.51 
+   task pair:   12 -   36:    15.56 / 10.77 / 7.26 
+   task pair:   13 -   37:    17.42 / 10.76 / 6.97 
+   task pair:   14 -   38:    9.17 / 6.13 / 4.37 
+   task pair:   15 -   39:    15.60 / 11.44 / 7.27 
+   task pair:   16 -   40:    8.91 / 6.02 / 4.39 
+   task pair:   17 -   41:    34.86 / 18.18 / 9.81 
+   task pair:   18 -   42:    17.63 / 11.86 / 7.90 
+   task pair:   19 -   43:    16.76 / 11.38 / 6.75 
+   task pair:   20 -   44:    15.14 / 10.47 / 5.94 
+   task pair:   21 -   45:    7.44 / 5.58 / 3.77 
+   task pair:   22 -   46:    8.90 / 6.19 / 4.42 
+   task pair:   23 -   47:    16.04 / 10.56 / 6.59 
+   OVERALL AVERAGES:          14.48 / 9.60 / 6.22 
+
+***Message size:   500000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -   24:    8.74 / 5.71 / 3.81 
+   task pair:    1 -   25:    16.57 / 11.54 / 7.68 
+   task pair:    2 -   26:    9.23 / 6.06 / 4.03 
+   task pair:    3 -   27:    31.30 / 21.33 / 12.78 
+   task pair:    4 -   28:    8.40 / 5.40 / 3.89 
+   task pair:    5 -   29:    8.20 / 5.61 / 3.95 
+   task pair:    6 -   30:    16.14 / 10.48 / 6.61 
+   task pair:    7 -   31:    7.90 / 6.28 / 4.85 
+   task pair:    8 -   32:    7.17 / 5.30 / 3.95 
+   task pair:    9 -   33:    16.00 / 11.39 / 7.51 
+   task pair:   10 -   34:    31.22 / 16.04 / 8.03 
+   task pair:   11 -   35:    8.12 / 5.93 / 4.20 
+   task pair:   12 -   36:    16.66 / 10.19 / 7.07 
+   task pair:   13 -   37:    14.67 / 10.15 / 7.08 
+   task pair:   14 -   38:    8.46 / 6.09 / 4.57 
+   task pair:   15 -   39:    16.76 / 11.50 / 7.97 
+   task pair:   16 -   40:    8.69 / 5.94 / 4.36 
+   task pair:   17 -   41:    37.99 / 18.32 / 9.82 
+   task pair:   18 -   42:    17.89 / 11.46 / 7.21 
+   task pair:   19 -   43:    17.66 / 11.33 / 6.91 
+   task pair:   20 -   44:    16.92 / 11.12 / 6.65 
+   task pair:   21 -   45:    8.11 / 5.44 / 4.05 
+   task pair:   22 -   46:    7.86 / 5.94 / 4.16 
+   task pair:   23 -   47:    18.00 / 10.94 / 7.17 
+   OVERALL AVERAGES:          14.94 / 9.56 / 6.18 
+
+***Message size:   600000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -   24:    10.20 / 6.79 / 3.73 
+   task pair:    1 -   25:    19.36 / 11.52 / 6.95 
+   task pair:    2 -   26:    8.74 / 6.32 / 4.32 
+   task pair:    3 -   27:    30.89 / 21.70 / 14.67 
+   task pair:    4 -   28:    8.39 / 5.96 / 4.26 
+   task pair:    5 -   29:    8.83 / 5.92 / 3.88 
+   task pair:    6 -   30:    17.67 / 10.42 / 6.93 
+   task pair:    7 -   31:    9.45 / 6.67 / 4.86 
+   task pair:    8 -   32:    8.84 / 5.82 / 3.87 
+   task pair:    9 -   33:    16.78 / 11.69 / 7.09 
+   task pair:   10 -   34:    32.58 / 15.67 / 8.57 
+   task pair:   11 -   35:    8.85 / 6.45 / 4.41 
+   task pair:   12 -   36:    16.35 / 10.28 / 7.47 
+   task pair:   13 -   37:    14.58 / 10.35 / 7.35 
+   task pair:   14 -   38:    9.80 / 6.28 / 4.26 
+   task pair:   15 -   39:    17.02 / 11.73 / 7.45 
+   task pair:   16 -   40:    9.95 / 6.36 / 3.89 
+   task pair:   17 -   41:    32.29 / 17.20 / 9.00 
+   task pair:   18 -   42:    17.28 / 11.75 / 7.70 
+   task pair:   19 -   43:    16.84 / 11.53 / 7.10 
+   task pair:   20 -   44:    16.14 / 11.15 / 7.35 
+   task pair:   21 -   45:    8.83 / 6.00 / 4.00 
+   task pair:   22 -   46:    10.16 / 6.42 / 4.22 
+   task pair:   23 -   47:    15.74 / 11.18 / 6.86 
+   OVERALL AVERAGES:          15.23 / 9.80 / 6.26 
+
+***Message size:   700000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -   24:    13.84 / 8.26 / 5.47 
+   task pair:    1 -   25:    19.28 / 11.63 / 7.50 
+   task pair:    2 -   26:    12.17 / 8.18 / 5.39 
+   task pair:    3 -   27:    31.34 / 21.21 / 14.83 
+   task pair:    4 -   28:    20.46 / 8.52 / 4.90 
+   task pair:    5 -   29:    20.65 / 8.12 / 5.59 
+   task pair:    6 -   30:    22.80 / 11.23 / 7.24 
+   task pair:    7 -   31:    11.28 / 8.28 / 5.71 
+   task pair:    8 -   32:    18.69 / 9.10 / 5.15 
+   task pair:    9 -   33:    17.39 / 11.36 / 6.88 
+   task pair:   10 -   34:    30.99 / 15.07 / 9.11 
+   task pair:   11 -   35:    11.65 / 8.33 / 5.54 
+   task pair:   12 -   36:    21.32 / 11.29 / 6.67 
+   task pair:   13 -   37:    21.46 / 11.16 / 7.51 
+   task pair:   14 -   38:    12.50 / 8.56 / 5.29 
+   task pair:   15 -   39:    18.85 / 11.77 / 7.50 
+   task pair:   16 -   40:    12.46 / 8.33 / 5.27 
+   task pair:   17 -   41:    34.36 / 17.49 / 9.15 
+   task pair:   18 -   42:    15.98 / 11.45 / 7.49 
+   task pair:   19 -   43:    16.42 / 11.31 / 6.56 
+   task pair:   20 -   44:    20.56 / 11.15 / 7.11 
+   task pair:   21 -   45:    19.50 / 8.61 / 5.01 
+   task pair:   22 -   46:    11.80 / 8.03 / 5.56 
+   task pair:   23 -   47:    19.26 / 11.15 / 7.28 
+   OVERALL AVERAGES:          18.96 / 10.82 / 6.82 
+
+***Message size:   800000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -   24:    19.09 / 14.83 / 9.24 
+   task pair:    1 -   25:    15.23 / 10.94 / 7.04 
+   task pair:    2 -   26:    18.82 / 12.72 / 5.93 
+   task pair:    3 -   27:    32.63 / 22.08 / 15.03 
+   task pair:    4 -   28:    29.85 / 22.74 / 15.83 
+   task pair:    5 -   29:    28.89 / 22.08 / 13.08 
+   task pair:    6 -   30:    25.35 / 13.36 / 7.77 
+   task pair:    7 -   31:    22.21 / 11.87 / 6.16 
+   task pair:    8 -   32:    29.75 / 23.17 / 14.29 
+   task pair:    9 -   33:    23.33 / 13.95 / 7.60 
+   task pair:   10 -   34:    31.82 / 15.86 / 8.11 
+   task pair:   11 -   35:    19.84 / 12.78 / 6.42 
+   task pair:   12 -   36:    22.80 / 13.15 / 7.77 
+   task pair:   13 -   37:    23.34 / 13.25 / 7.45 
+   task pair:   14 -   38:    21.26 / 12.10 / 5.40 
+   task pair:   15 -   39:    17.65 / 11.35 / 7.28 
+   task pair:   16 -   40:    18.97 / 12.93 / 6.01 
+   task pair:   17 -   41:    32.53 / 17.76 / 8.78 
+   task pair:   18 -   42:    16.90 / 11.33 / 7.29 
+   task pair:   19 -   43:    17.33 / 11.17 / 7.02 
+   task pair:   20 -   44:    20.65 / 13.79 / 7.00 
+   task pair:   21 -   45:    29.43 / 23.13 / 15.17 
+   task pair:   22 -   46:    20.02 / 13.36 / 5.89 
+   task pair:   23 -   47:    22.32 / 13.58 / 7.00 
+   OVERALL AVERAGES:          23.33 / 15.14 / 8.69 
+
+***Message size:   900000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -   24:    19.67 / 16.02 / 11.92 
+   task pair:    1 -   25:    16.99 / 11.81 / 7.14 
+   task pair:    2 -   26:    20.05 / 16.10 / 10.80 
+   task pair:    3 -   27:    31.92 / 22.43 / 13.42 
+   task pair:    4 -   28:    29.73 / 24.73 / 18.06 
+   task pair:    5 -   29:    30.37 / 23.77 / 15.12 
+   task pair:    6 -   30:    26.38 / 15.54 / 8.51 
+   task pair:    7 -   31:    21.48 / 18.19 / 14.95 
+   task pair:    8 -   32:    29.75 / 24.62 / 18.41 
+   task pair:    9 -   33:    23.87 / 14.92 / 8.66 
+   task pair:   10 -   34:    29.67 / 16.97 / 9.11 
+   task pair:   11 -   35:    19.91 / 16.01 / 11.59 
+   task pair:   12 -   36:    27.21 / 15.48 / 8.79 
+   task pair:   13 -   37:    28.75 / 15.59 / 8.70 
+   task pair:   14 -   38:    19.67 / 16.28 / 11.73 
+   task pair:   15 -   39:    16.52 / 12.36 / 7.97 
+   task pair:   16 -   40:    19.73 / 16.14 / 11.02 
+   task pair:   17 -   41:    34.23 / 19.80 / 10.00 
+   task pair:   18 -   42:    17.71 / 12.33 / 7.07 
+   task pair:   19 -   43:    17.40 / 11.92 / 8.09 
+   task pair:   20 -   44:    20.95 / 14.17 / 8.40 
+   task pair:   21 -   45:    29.51 / 25.04 / 18.96 
+   task pair:   22 -   46:    21.42 / 17.26 / 14.07 
+   task pair:   23 -   47:    21.36 / 14.21 / 9.21 
+   OVERALL AVERAGES:          23.93 / 17.15 / 11.32 
+
+***Message size:  1000000 *** best  /  avg  / worst (MB/sec)
+   task pair:    0 -   24:    113.51 / 60.88 / 14.98 
+   task pair:    1 -   25:    27.31 / 14.42 / 8.36 
+   task pair:    2 -   26:    54.39 / 27.56 / 11.97 
+   task pair:    3 -   27:    35.20 / 22.41 / 16.11 
+   task pair:    4 -   28:    29.36 / 24.55 / 19.15 
+   task pair:    5 -   29:    66.24 / 23.87 / 16.82 
+   task pair:    6 -   30:    27.92 / 17.12 / 9.61 
+   task pair:    7 -   31:    44.26 / 21.82 / 15.32 
+   task pair:    8 -   32:    43.31 / 25.41 / 19.26 
+   task pair:    9 -   33:    22.46 / 15.07 / 9.26 
+   task pair:   10 -   34:    47.30 / 22.23 / 8.35 
+   task pair:   11 -   35:    63.81 / 27.17 / 12.13 
+   task pair:   12 -   36:    33.75 / 17.30 / 9.85 
+   task pair:   13 -   37:    50.14 / 17.57 / 9.84 
+   task pair:   14 -   38:    40.33 / 24.03 / 12.86 
+   task pair:   15 -   39:    19.51 / 13.23 / 8.85 
+   task pair:   16 -   40:    77.08 / 28.00 / 12.37 
+   task pair:   17 -   41:    32.18 / 20.16 / 8.98 
+   task pair:   18 -   42:    20.61 / 13.15 / 9.39 
+   task pair:   19 -   43:    45.06 / 15.01 / 7.73 
+   task pair:   20 -   44:    26.84 / 15.19 / 10.05 
+   task pair:   21 -   45:    28.83 / 24.48 / 19.19 
+   task pair:   22 -   46:    54.50 / 29.74 / 14.38 
+   task pair:   23 -   47:    35.25 / 15.51 / 9.18 
+   OVERALL AVERAGES:          43.30 / 22.33 / 12.25 
+
