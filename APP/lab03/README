@@ -1,0 +1,9 @@
+1. Se observa ca un singur thread intra, la un moment dat, in interiorul unei
+sectiuni. Orinea in care se executa sectiunile / thread-urile care intra
+sunt aleatoare.
+
+4. In modul guided împarte din nou iterațiile în bucăți. Fiecare fir execută o bucată de iterații și apoi
+solicită o altă bucată până când nu mai sunt bucăți disponibile. Diferenta nu este mare fata de static,
+dar nu mai apar cazuri in care executia dureaza 0.82s / 0.90s, ci e redus la maxim 0.75s
+
+5. Timpii de rulare se impunanatesc o data cu cresterea numarului de fire de executie.

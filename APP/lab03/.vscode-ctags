@@ -1,0 +1,15 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+NCA	matrix_mult.c	15;"	d	file:
+NCA	matrix_mult_opt.c	13;"	d	file:
+NCB	matrix_mult.c	16;"	d	file:
+NCB	matrix_mult_opt.c	14;"	d	file:
+NRA	matrix_mult.c	14;"	d	file:
+NRA	matrix_mult_opt.c	12;"	d	file:
+main	matrix_mult.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	matrix_mult_opt.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	sections.c	/^int main(void) $/;"	f
