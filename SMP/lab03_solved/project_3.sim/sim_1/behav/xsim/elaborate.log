@@ -1,0 +1,25 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 037f970d73f04f2da1c26a66ea37235a --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot my_simulation_behav xil_defaultlib.my_simulation xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.chip_select_splitter
+Compiling module xil_defaultlib.design_1_chip_select_splitter_0_...
+Compiling module xil_defaultlib.data_splitter
+Compiling module xil_defaultlib.design_1_data_splitter_0_0
+Compiling module xil_defaultlib.mpc106fsm
+Compiling module xil_defaultlib.design_1_mpc106fsm_0_0
+Compiling module xil_defaultlib.mx9_sdramfsm
+Compiling module xil_defaultlib.design_1_mx9_sdramfsm_0_0
+Compiling module xil_defaultlib.powerpcfsm
+Compiling module xil_defaultlib.design_1_powerpcfsm_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.my_simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot my_simulation_behav

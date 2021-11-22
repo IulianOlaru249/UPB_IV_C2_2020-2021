@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../PowerPCItoSDRAM/powerpcfsm.v" \
+"../../../../../../PowerPCItoSDRAM/2mx9_sdramfsm.v" \
+"../../../../project_3.srcs/sources_1/new/data_splitter.v" \
+"../../../../project_3.srcs/sources_1/new/chip_select_splitter.v" \
+"../../../../../../PowerPCItoSDRAM/mpc106fsm.v" \
+"../../../../project_3.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../project_3.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

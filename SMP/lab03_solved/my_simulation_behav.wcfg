@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="my_simulation_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="my_simulation" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="910000001fs"></ZoomEndTime>
+      <Cursor1Time time="6000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="201"></NameColumnWidth>
+      <ValueColumnWidth column_width="184"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/my_simulation/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_simulation/top/design_1_i/mx9_sdramfsm_0/A" type="array">
+      <obj_property name="ElementShortName">A[0:11]</obj_property>
+      <obj_property name="ObjectShortName">A[0:11]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_simulation/top/design_1_i/mx9_sdramfsm_0/CAS" type="logic">
+      <obj_property name="ElementShortName">CAS</obj_property>
+      <obj_property name="ObjectShortName">CAS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_simulation/top/design_1_i/mx9_sdramfsm_0/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_simulation/top/design_1_i/mx9_sdramfsm_0/CS" type="logic">
+      <obj_property name="ElementShortName">CS</obj_property>
+      <obj_property name="ObjectShortName">CS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_simulation/top/design_1_i/mx9_sdramfsm_0/DQ" type="array">
+      <obj_property name="ElementShortName">DQ[0:7]</obj_property>
+      <obj_property name="ObjectShortName">DQ[0:7]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_simulation/top/design_1_i/mx9_sdramfsm_0/RAS" type="logic">
+      <obj_property name="ElementShortName">RAS</obj_property>
+      <obj_property name="ObjectShortName">RAS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_simulation/top/design_1_i/mx9_sdramfsm_0/WE" type="logic">
+      <obj_property name="ElementShortName">WE</obj_property>
+      <obj_property name="ObjectShortName">WE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_simulation/top/design_1_i/mpc106fsm_0/inst/CurrState_Sreg0" type="array">
+      <obj_property name="ElementShortName">CurrState_Sreg0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CurrState_Sreg0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_simulation/top/design_1_i/mx9_sdramfsm_0/inst/CurrState_Sreg0" type="array">
+      <obj_property name="ElementShortName">CurrState_Sreg0[2:0]</obj_property>
+      <obj_property name="ObjectShortName">CurrState_Sreg0[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_simulation/top/design_1_i/powerpcfsm_0/inst/CurrState_Sreg0" type="array">
+      <obj_property name="ElementShortName">CurrState_Sreg0[2:0]</obj_property>
+      <obj_property name="ObjectShortName">CurrState_Sreg0[2:0]</obj_property>
+   </wvobject>
+</wave_config>

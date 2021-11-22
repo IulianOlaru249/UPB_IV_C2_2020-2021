@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_5.srcs/sources_1/new/chip_select.v" \
+"../../../../project_5.srcs/sources_1/new/lab_5.v" \
+"../../../../project_5.srcs/sources_1/new/splitter_3.v" \
+"../../../../project_5.srcs/sources_1/new/splitter_1.v" \
+"../../../../project_5.srcs/sources_1/new/splitter_2.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ip/design_1_chip_select_0_0/sim/design_1_chip_select_0_0.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ip/design_1_PIC16F873_0_0/sim/design_1_PIC16F873_0_0.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ip/design_1_T74LS04_0_0/sim/design_1_T74LS04_0_0.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ip/design_1_T74LS373_0_0/sim/design_1_T74LS373_0_0.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ip/design_1_m62256_0_0/sim/design_1_m62256_0_0.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ip/design_1_splitter3_0_0/sim/design_1_splitter3_0_0.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ip/design_1_splitter_1_0_0/sim/design_1_splitter_1_0_0.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ip/design_1_splitter_2_0_0/sim/design_1_splitter_2_0_0.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ip/design_1_m62256_1_0/sim/design_1_m62256_1_0.v" \
+"../../../../project_5.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../project_5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../project_5.srcs/sim_1/new/test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

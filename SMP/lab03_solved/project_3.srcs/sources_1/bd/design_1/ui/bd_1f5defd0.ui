@@ -1,0 +1,36 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port CLK_0 -pg 1 -y 450 -defaultsOSRD
+preplace inst chip_select_splitter_0 -pg 1 -lvl 3 -y 500 -defaultsOSRD
+preplace inst data_splitter_0 -pg 1 -lvl 3 -y 350 -defaultsOSRD
+preplace inst powerpcfsm_0 -pg 1 -lvl 1 -y 440 -defaultsOSRD
+preplace inst mpc106fsm_0 -pg 1 -lvl 2 -y 440 -defaultsOSRD
+preplace inst mx9_sdramfsm_0 -pg 1 -lvl 4 -y 430 -defaultsOSRD
+preplace netloc mpc106fsm_0_TA 1 0 3 -340 270 NJ 270 260
+preplace netloc mpc106fsm_0_CS 1 2 1 290
+preplace netloc mpc106fsm_0_DBG0 1 0 3 -350 260 NJ 260 270
+preplace netloc mpc106fsm_0_ARTRY 1 0 3 -370 230 NJ 230 290
+preplace netloc powerpcfsm_0_TBST 1 1 1 -90
+preplace netloc powerpcfsm_0_TS 1 1 1 -100
+preplace netloc data_splitter_0_d_out 1 3 1 590
+preplace netloc mpc106fsm_0_BG0 1 0 3 -360 240 NJ 240 280
+preplace netloc powerpcfsm_0_BR 1 1 1 N
+preplace netloc powerpcfsm_0_DH 1 1 2 -70J 280 310
+preplace netloc mpc106fsm_0_WE 1 2 2 320J 440 570
+preplace netloc powerpcfsm_0_TSIZ 1 1 1 -110
+preplace netloc chip_select_splitter_0_b 1 3 1 600
+preplace netloc mpc106fsm_0_AACK 1 0 3 -380 220 NJ 220 300
+preplace netloc mpc106fsm_0_SDRAS 1 2 2 310J 430 580
+preplace netloc powerpcfsm_0_DL 1 1 1 -80
+preplace netloc powerpcfsm_0_WT 1 1 1 N
+preplace netloc CLK_0_1 1 0 4 -390 300 -60 250 N 250 600
+preplace netloc mpc106fsm_0_SDCAS 1 2 2 280J 410 580
+preplace netloc powerpcfsm_0_A 1 1 1 N
+preplace netloc Net 1 1 2 -120J 600 260
+preplace netloc mpc106fsm_0_SDMA 1 2 2 300J 420 570
+levelinfo -pg 1 -410 -230 140 450 790 1120 -top 0 -bot 1000
+"
+}
+

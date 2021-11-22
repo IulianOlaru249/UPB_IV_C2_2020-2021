@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jan 17 19:26:26 2021
+# Process ID: 2932
+# Current directory: B:/shoebox/uni/year 4/first/smp/labs/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15904 B:\shoebox\uni\year 4\first\smp\labs\project_4\project_4.xpr
+# Log file: B:/shoebox/uni/year 4/first/smp/labs/project_4/vivado.log
+# Journal file: B:/shoebox/uni/year 4/first/smp/labs/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {B:/shoebox/uni/year 4/first/smp/labs/project_4/project_4.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+ERROR: [BD 41-69] Error sourcing TCL scriupdate_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 17 19:28:24 2021...
+a/rsb/busdef/AXIMM/busdef.tcl} }"
+ERROR: [BD 41-69] Error sourcing TCL script: 
+    while executing
+"source -notrace {C:/Xilinx/Vivado/2018.3/data/rsb/busdef/clock_signal/busdef.tcl} "
+    (in namespace eval "::xilinx.com_ip_clock_signal_1.0" script line 1)
+    invoked from within
+"namespace eval ::xilinx.com_ip_clock_signal_1.0 { source -notrace {C:/Xilinx/Vivado/2018.3/data/rsb/busdef/clock_signal/busdef.tcl} }"
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 17 19:26:46 2021...

@@ -1,0 +1,21 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace inst arbiter_0 -pg 1 -lvl 2 -y 120 -defaultsOSRD
+preplace inst dsp_0 -pg 1 -lvl 1 -y 100 -defaultsOSRD
+preplace inst bus_0 -pg 1 -lvl 1 -y 310 -defaultsOSRD
+preplace netloc dsp_0_ba 1 1 1 N
+preplace netloc arbiter_0_bb 1 0 3 10 10 NJ 10 430
+preplace netloc arbiter_0_req 1 0 3 30 240 NJ 240 430
+preplace netloc dsp_0_br 1 1 1 N
+preplace netloc bus_0_gnt 1 1 1 210
+preplace netloc arbiter_0_clk 1 0 3 20 20 NJ 20 420
+preplace netloc arbiter_0_lock 1 0 3 20 230 NJ 230 400
+preplace netloc arbiter_0_bg 1 0 3 30 220 NJ 220 410
+preplace netloc bus_0_clk 1 1 1 220
+preplace netloc dsp_0_bl 1 1 1 N
+levelinfo -pg 1 -10 120 310 450 -top 0 -bot 380
+"
+}
+

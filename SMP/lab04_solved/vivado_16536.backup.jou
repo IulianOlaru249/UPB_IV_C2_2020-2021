@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jan 17 19:01:48 2021
+# Process ID: 16536
+# Current directory: B:/shoebox/uni/year 4/first/smp/labs/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11952 B:\shoebox\uni\year 4\first\smp\labs\project_4\project_4.xpr
+# Log file: B:/shoebox/uni/year 4/first/smp/labs/project_4/vivado.log
+# Journal file: B:/shoebox/uni/year 4/first/smp/labs/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {B:/shoebox/uni/year 4/first/smp/labs/project_4/project_4.xpr}
+update_compile_order -fileset sources_1
+open_bd_design {B:/shoebox/uni/year 4/first/smp/labs/project_4/project_4.srcs/sources_1/bd/design_1/design_1.bd}

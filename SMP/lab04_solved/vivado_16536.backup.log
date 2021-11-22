@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jan 17 19:01:48 2021
+# Process ID: 16536
+# Current directory: B:/shoebox/uni/year 4/first/smp/labs/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11952 B:\shoebox\uni\year 4\first\smp\labs\project_4\project_4.xpr
+# Log file: B:/shoebox/uni/year 4/first/smp/labs/project_4/vivado.log
+# Journal file: B:/shoebox/uni/year 4/first/smp/labs/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {B:/shoebox/uni/year 4/first/smp/labs/project_4/project_4.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 679.828 ; gain = 65.824
+update_compile_order -fileset sources_1
+open_bd_design {B:/shoebox/uni/year 4/first/smp/labs/project_4/project_4.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:module_ref:arbiter:1.0 - arbiter_0
+Adding cell -- xilinx.com:module_ref:bus:1.0 - bus_0
+Adding cell -- xilinx.com:module_ref:dsp:1.0 - dsp_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /bus_0/clk(clk) and /arbiter_0/clkpci(undef)
+Successfully read diagram <design_1> from BD file <B:/shoebox/uni/year 4/first/smp/labs/project_4/project_4.srcs/sources_1/bd/design_1/design_1.bd>
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 17 19:02:40 2021...
