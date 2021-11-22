@@ -30,20 +30,20 @@ batch_size = int(sys.argv[1])
 ## The weights have been assigned based on the 
 ## number of requests that can be handlel by a single 
 ## machine. (Percentage based). The connection number is mocked. See README.
-url_pool = [('http://0.0.0.0:5000/work/emea/0' ,20, 100),
-        ('http://0.0.0.0:5000/work/us/0'       ,19, 123),
-        ('http://0.0.0.0:5000/work/us/1'       ,18, 140),
-        ('http://0.0.0.0:5000/work/asia/0'     ,21, 200),
-        ('http://0.0.0.0:5000/work/asia/1'     ,22, 90)]
+url_pool = [('http://0.0.0.0:5000/work/emea/0' ,20, 10),
+        ('http://0.0.0.0:5000/work/us/0'       ,19, 12),
+        ('http://0.0.0.0:5000/work/us/1'       ,18, 14),
+        ('http://0.0.0.0:5000/work/asia/0'     ,21, 20),
+        ('http://0.0.0.0:5000/work/asia/1'     ,22, 9)]
 
 # Implementation on Round Robin balancer
-class WeightedRoundRobin ():
+class LeastConnection ():
     def __init__(self, pool):
         self.pool = pool
 
     # Select a server from the pool
     def get(self):
-        pass
+        test(self.pool)
 
 # Threads, aka clients doing requests in parallel
 class myThread (Thread):
@@ -53,7 +53,12 @@ class myThread (Thread):
         self.requestsNo = requestsNo
 
     def run(self):
-        send(self.threadID, self.requestsNo)
+        for i in range(self.requestsNo):
+            print(least_connection.get())
+        #send(self.threadID, self.requestsNo)
+
+def test(pool):
+    pass
 
 # Send http requests
 def send(threadID, requestsNo):
@@ -61,7 +66,7 @@ def send(threadID, requestsNo):
     for i in range(requestsNo):
         # Send HTTP GET
         try:
-            url = robin.get()[0]
+            url = least_connection.get()[0]
             r = requests.get(url = url)
             r.raise_for_status()  # Raises a HTTPError if the status is 4xx, 5xxx
         except (requests.exceptions.ConnectionError, requests.exceptions.Timeout):
@@ -80,8 +85,7 @@ def send(threadID, requestsNo):
             ##  - thinking time is not important for this
             print(data['machine'] + "," + data['region']  + ',' + str(threadID) + "," + str(i + 1) + "," + str(data['response_time']) + "," + str(data['work_time']) + ',1', end='\n')
 
-# max_weight, total_weight, current_weight, index, pool)
-robin = WeightedRoundRobin(24, 100, 20, 0, url_pool)
+least_connection = LeastConnection(url_pool)
 # Create new threads
 threads = []
 for i in range(1):
