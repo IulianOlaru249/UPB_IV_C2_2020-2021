@@ -18,5 +18,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C
 INFO: [VRFC 10-311] analyzing module design_1_wrapper
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab03_solved/project_3.srcs/sim_1/new/my_simulation.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module my_simulation
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab03_solved/project_3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
