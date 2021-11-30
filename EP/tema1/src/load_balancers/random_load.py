@@ -3,9 +3,7 @@
 """
 Least-Connection
 
-This method directs traffic to the server with the fewest active connections.
-This approach is quite useful when there are a large number of persistent client
-connections which are unevenly distributed between the servers.
+This method directs traffic to a random server.
 
 This symulates a Least-Connection load balancer processing batches on N requests
 sent by 1000 concurrent clients (threads)
@@ -16,12 +14,12 @@ Data is saved in logs just like stress_test.py
 """
 
 import sys
-from threading import Thread, Lock
+from threading import Thread
 import requests
-from functools import reduce
+import random
 
 if len(sys.argv) != 2:
-    print("usage: weighted_round_robin.py <N>")
+    print("usage: random_load.py <N>")
     exit(1)
 
 batch_size = int(sys.argv[1])
@@ -30,20 +28,21 @@ batch_size = int(sys.argv[1])
 ## The weights have been assigned based on the 
 ## number of requests that can be handlel by a single 
 ## machine. (Percentage based). The connection number is mocked. See README.
-url_pool = [('http://0.0.0.0:5000/work/emea/0' ,20, 10),
-        ('http://0.0.0.0:5000/work/us/0'       ,19, 12),
-        ('http://0.0.0.0:5000/work/us/1'       ,18, 14),
-        ('http://0.0.0.0:5000/work/asia/0'     ,21, 20),
-        ('http://0.0.0.0:5000/work/asia/1'     ,22, 9)]
+url_pool = ['http://0.0.0.0:5000/work/emea/0' ,
+        'http://0.0.0.0:5000/work/us/0'       ,
+        'http://0.0.0.0:5000/work/us/1'       ,
+        'http://0.0.0.0:5000/work/asia/0'     ,
+        'http://0.0.0.0:5000/work/asia/1'     ]
 
 # Implementation on Round Robin balancer
-class LeastConnection ():
+class RandomLoad ():
     def __init__(self, pool):
         self.pool = pool
 
     # Select a server from the pool
     def get(self):
-        test(self.pool)
+        # Harnessing the raw power and wisdom of the python random number generator.
+        return self.pool[random.randint(0, len(self.pool) - 1)]
 
 # Threads, aka clients doing requests in parallel
 class myThread (Thread):
@@ -53,12 +52,7 @@ class myThread (Thread):
         self.requestsNo = requestsNo
 
     def run(self):
-        for i in range(self.requestsNo):
-            print(least_connection.get())
-        #send(self.threadID, self.requestsNo)
-
-def test(pool):
-    pass
+        send(self.threadID, self.requestsNo)
 
 # Send http requests
 def send(threadID, requestsNo):
@@ -66,7 +60,7 @@ def send(threadID, requestsNo):
     for i in range(requestsNo):
         # Send HTTP GET
         try:
-            url = least_connection.get()[0]
+            url = random_load.get()
             r = requests.get(url = url)
             r.raise_for_status()  # Raises a HTTPError if the status is 4xx, 5xxx
         except (requests.exceptions.ConnectionError, requests.exceptions.Timeout):
@@ -85,10 +79,10 @@ def send(threadID, requestsNo):
             ##  - thinking time is not important for this
             print(data['machine'] + "," + data['region']  + ',' + str(threadID) + "," + str(i + 1) + "," + str(data['response_time']) + "," + str(data['work_time']) + ',1', end='\n')
 
-least_connection = LeastConnection(url_pool)
+random_load = RandomLoad(url_pool)
 # Create new threads
 threads = []
-for i in range(1):
+for i in range(5):
     threads.append(myThread(i, batch_size))
 
 # Start new Threads

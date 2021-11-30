@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Least-Connection
+Least Connections
 
 This method directs traffic to the server with the fewest active connections.
 This approach is quite useful when there are a large number of persistent client
@@ -16,25 +16,24 @@ Data is saved in logs just like stress_test.py
 """
 
 import sys
-from threading import Thread, Lock
+from threading import Thread
 import requests
-from functools import reduce
 
 if len(sys.argv) != 2:
-    print("usage: weighted_round_robin.py <N>")
+    print("usage: least_connections.py <N>")
     exit(1)
 
 batch_size = int(sys.argv[1])
 
 # Pool of URLs of worker servers with weights and connections.
-## The weights have been assigned based on the 
+## The weights have been assigned based on the
 ## number of requests that can be handlel by a single 
-## machine. (Percentage based). The connection number is mocked. See README.
-url_pool = [('http://0.0.0.0:5000/work/emea/0' ,20, 10),
-        ('http://0.0.0.0:5000/work/us/0'       ,19, 12),
-        ('http://0.0.0.0:5000/work/us/1'       ,18, 14),
-        ('http://0.0.0.0:5000/work/asia/0'     ,21, 20),
-        ('http://0.0.0.0:5000/work/asia/1'     ,22, 9)]
+## machine. See README.
+url_pool = [('http://0.0.0.0:5000/work/emea/0' ,20, 0),
+        ('http://0.0.0.0:5000/work/us/0'       ,19, 0),
+        ('http://0.0.0.0:5000/work/us/1'       ,18, 0),
+        ('http://0.0.0.0:5000/work/asia/0'     ,21, 0),
+        ('http://0.0.0.0:5000/work/asia/1'     ,22, 0)]
 
 # Implementation on Round Robin balancer
 class LeastConnection ():
@@ -43,7 +42,19 @@ class LeastConnection ():
 
     # Select a server from the pool
     def get(self):
-        test(self.pool)
+        for m in range(len(self.pool)):
+            # weight of server
+            if self.pool[m][1] > 0:
+                for i in range(m + 1, len(self.pool)):
+                    if self.pool[i][1] <= 0:
+                        continue
+                    # decide based on number of connections
+                    if self.pool[i][2] <= self.pool[m][2]:
+                        m = i
+                # update number of connections
+                self.pool[m] = (self.pool[m][0], self.pool[m][1], self.pool[m][2] + 1)
+                return self.pool[m]
+        return None
 
 # Threads, aka clients doing requests in parallel
 class myThread (Thread):
@@ -53,12 +64,8 @@ class myThread (Thread):
         self.requestsNo = requestsNo
 
     def run(self):
-        for i in range(self.requestsNo):
-            print(least_connection.get())
-        #send(self.threadID, self.requestsNo)
+        send(self.threadID, self.requestsNo)
 
-def test(pool):
-    return None
 
 # Send http requests
 def send(threadID, requestsNo):
@@ -88,7 +95,7 @@ def send(threadID, requestsNo):
 least_connection = LeastConnection(url_pool)
 # Create new threads
 threads = []
-for i in range(1):
+for i in range(5):
     threads.append(myThread(i, batch_size))
 
 # Start new Threads
