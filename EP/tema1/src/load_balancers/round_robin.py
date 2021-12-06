@@ -92,7 +92,7 @@ mutex = Lock()
 robin = RoundRobin(0, url_pool, mutex)
 # Create new threads
 threads = []
-for i in range(100):
+for i in range(500):
     threads.append(myThread(i, batch_size))
 
 # Start new Threads

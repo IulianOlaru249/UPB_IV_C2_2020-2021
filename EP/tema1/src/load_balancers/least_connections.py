@@ -95,7 +95,7 @@ def send(threadID, requestsNo):
 least_connection = LeastConnection(url_pool)
 # Create new threads
 threads = []
-for i in range(5):
+for i in range(250):
     threads.append(myThread(i, batch_size))
 
 # Start new Threads

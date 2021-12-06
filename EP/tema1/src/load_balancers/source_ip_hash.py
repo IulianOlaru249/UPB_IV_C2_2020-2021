@@ -101,7 +101,7 @@ def send(threadID, requestsNo):
 source_ip_hash = SourceIPHash(url_pool)
 # Create new threads
 threads = []
-for i in range(5):
+for i in range(500):
     threads.append(myThread(i, batch_size))
 
 # Start new Threads

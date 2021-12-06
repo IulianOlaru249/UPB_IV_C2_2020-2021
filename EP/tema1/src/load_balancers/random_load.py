@@ -82,7 +82,7 @@ def send(threadID, requestsNo):
 random_load = RandomLoad(url_pool)
 # Create new threads
 threads = []
-for i in range(5):
+for i in range(500):
     threads.append(myThread(i, batch_size))
 
 # Start new Threads
