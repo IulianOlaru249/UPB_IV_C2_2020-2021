@@ -1,6 +1,5 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../../../DSPtoPCI/dsptopci.v" \
 "../../../../project_4.ip_user_files/bd/design_1/ip/design_1_arbiter_0_1/sim/design_1_arbiter_0_1.v" \
 "../../../../project_4.ip_user_files/bd/design_1/ip/design_1_bus_0_0/sim/design_1_bus_0_0.v" \
 "../../../../project_4.ip_user_files/bd/design_1/ip/design_1_dsp_0_0/sim/design_1_dsp_0_0.v" \

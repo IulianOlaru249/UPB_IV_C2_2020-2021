@@ -1,0 +1,15 @@
+Time resolution is 1 ps
+time:                   0 br:1 ba:x bl:1 bb:0 bg:1 bl:1
+time:                  10 br:0 ba:1 bl:1 bb:0 bg:1 bl:1
+time:                  20 br:0 ba:1 bl:1 bb:0 bg:0 bl:1
+time:                  30 br:0 ba:1 bl:1 bb:0 bg:0 bl:1
+time:                  40 br:0 ba:1 bl:1 bb:1 bg:0 bl:1
+time:                  50 br:0 ba:0 bl:1 bb:1 bg:0 bl:1
+time:                  60 br:0 ba:0 bl:1 bb:1 bg:0 bl:1
+time:                  70 br:0 ba:0 bl:1 bb:1 bg:0 bl:1
+time:                  80 br:0 ba:0 bl:1 bb:1 bg:0 bl:1
+time:                  90 br:0 ba:0 bl:1 bb:1 bg:0 bl:1
+time:                 100 br:0 ba:0 bl:1 bb:1 bg:0 bl:1
+time:                 110 br:1 ba:0 bl:1 bb:1 bg:0 bl:1
+time:                 120 br:1 ba:1 bl:1 bb:0 bg:0 bl:1
+$finish called at time : 130 ns : File "C:/Users/Adrian/Documents/smp/DSPtoPCI/dsptopci.v" Line 72

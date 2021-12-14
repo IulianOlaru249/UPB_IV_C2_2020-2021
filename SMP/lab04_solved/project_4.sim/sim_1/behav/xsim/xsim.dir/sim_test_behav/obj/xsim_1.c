@@ -10,7 +10,9 @@
 /*  \___\/\___\                                                       */
 /**********************************************************************/
 
-
+#if defined(_WIN32)
+ #include "stdio.h"
+#endif
 #include "iki.h"
 #include <string.h>
 #include <math.h>
@@ -32,7 +34,9 @@
 /*  \___\/\___\                                                       */
 /**********************************************************************/
 
-
+#if defined(_WIN32)
+ #include "stdio.h"
+#endif
 #include "iki.h"
 #include <string.h>
 #include <math.h>
@@ -43,7 +47,6 @@
 #define alloca _alloca
 #endif
 typedef void (*funcp)(char *, char *);
-extern int main(int, char**);
 extern void execute_24(char*, char *);
 extern void execute_6(char*, char *);
 extern void execute_7(char*, char *);
@@ -100,7 +103,9 @@ void sensitize(char *);
 void simulate(char *);
 
 extern SYSTEMCLIB_IMP_DLLSPEC void local_register_implicit_channel(int, char*);
-extern void implicit_HDL_SCinstatiate();
+extern void implicit_HDL_SCinstantiate();
+
+extern void implicit_HDL_SCcleanup();
 
 extern SYSTEMCLIB_IMP_DLLSPEC int xsim_argc_copy ;
 extern SYSTEMCLIB_IMP_DLLSPEC char** xsim_argv_copy ;

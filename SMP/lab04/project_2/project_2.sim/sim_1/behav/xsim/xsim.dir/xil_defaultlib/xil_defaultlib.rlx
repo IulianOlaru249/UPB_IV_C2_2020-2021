@@ -1,0 +1,11 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab04/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_arbiter_0_0/sim/design_1_arbiter_0_0.v,1638895188,verilog,,/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab04/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_bus_0_0/sim/design_1_bus_0_0.v,,design_1_arbiter_0_0,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab04/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_bus_0_0/sim/design_1_bus_0_0.v,1638895188,verilog,,/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab04/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_dsp_0_0/sim/design_1_dsp_0_0.v,,design_1_bus_0_0,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab04/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_dsp_0_0/sim/design_1_dsp_0_0.v,1638895188,verilog,,/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab04/project_2/project_2.ip_user_files/bd/design_1/sim/design_1.v,,design_1_dsp_0_0,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab04/project_2/project_2.ip_user_files/bd/design_1/sim/design_1.v,1639491748,verilog,,/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab04/project_2/project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v,,design_1,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab04/project_2/project_2.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab04/project_2/project_2.srcs/sim_1/new/test.v,1638895141,verilog,,,,test,,,,,,,,
+/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab04/project_2/project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v,1639492032,verilog,,/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab04/project_2/project_2.srcs/sim_1/new/test.v,,design_1_wrapper,,,,,,,,

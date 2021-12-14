@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Adrian/Documents/smp/DSPtoPCI/dsptopci.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-311] analyzing module bus
+INFO: [VRFC 10-311] analyzing module dsp
+INFO: [VRFC 10-311] analyzing module interfatare
+INFO: [VRFC 10-2458] undeclared symbol req, assumed default net type wire [C:/Users/Adrian/Documents/smp/DSPtoPCI/dsptopci.v:65]
+INFO: [VRFC 10-2458] undeclared symbol gnt, assumed default net type wire [C:/Users/Adrian/Documents/smp/DSPtoPCI/dsptopci.v:65]
+INFO: [VRFC 10-2458] undeclared symbol lock, assumed default net type wire [C:/Users/Adrian/Documents/smp/DSPtoPCI/dsptopci.v:65]
+INFO: [VRFC 10-2458] undeclared symbol clk, assumed default net type wire [C:/Users/Adrian/Documents/smp/DSPtoPCI/dsptopci.v:65]
+INFO: [VRFC 10-2458] undeclared symbol br, assumed default net type wire [C:/Users/Adrian/Documents/smp/DSPtoPCI/dsptopci.v:66]
+INFO: [VRFC 10-2458] undeclared symbol ba, assumed default net type wire [C:/Users/Adrian/Documents/smp/DSPtoPCI/dsptopci.v:66]
+INFO: [VRFC 10-2458] undeclared symbol bl, assumed default net type wire [C:/Users/Adrian/Documents/smp/DSPtoPCI/dsptopci.v:66]
+INFO: [VRFC 10-2458] undeclared symbol bb, assumed default net type wire [C:/Users/Adrian/Documents/smp/DSPtoPCI/dsptopci.v:66]
+INFO: [VRFC 10-2458] undeclared symbol bg, assumed default net type wire [C:/Users/Adrian/Documents/smp/DSPtoPCI/dsptopci.v:66]
+INFO: [VRFC 10-2458] undeclared symbol clk2, assumed default net type wire [C:/Users/Adrian/Documents/smp/DSPtoPCI/dsptopci.v:66]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Adrian/Documents/smp/lab4/lab4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
