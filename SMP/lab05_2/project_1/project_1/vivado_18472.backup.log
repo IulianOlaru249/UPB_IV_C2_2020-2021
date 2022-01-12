@@ -1,0 +1,258 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jan 10 22:55:45 2022
+# Process ID: 18472
+# Current directory: C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8764 C:\Users\anton\Documents\ACS\AN4\SMP\project_1\project_1\project_1.xpr
+# Log file: C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/vivado.log
+# Journal file: C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Anul_4/Semestru1/SMP/lab5/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 736.230 ; gain = 104.812
+update_module_reference design_1_PIC16F873_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Adding component instance block -- xilinx.com:module_ref:PIC16F873:1.0 - PIC16F873_0
+Adding component instance block -- xilinx.com:module_ref:T74LS04:1.0 - T74LS04_0
+Adding component instance block -- xilinx.com:module_ref:T74LS373:1.0 - T74LS373_0
+Adding component instance block -- xilinx.com:module_ref:m62256:1.0 - m62256_0
+Adding component instance block -- xilinx.com:module_ref:splitter1:1.0 - splitter1_0
+Adding component instance block -- xilinx.com:module_ref:splitter2:1.0 - splitter2_0
+Adding component instance block -- xilinx.com:module_ref:splitter3:1.0 - splitter3_0
+Adding component instance block -- xilinx.com:module_ref:select:1.0 - select_0
+Adding component instance block -- xilinx.com:module_ref:m62256:1.0 - m62256_1
+Successfully read diagram <design_1> from BD file <C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_PIC16F873_0_0 to use current project options
+Wrote  : <C:\Users\anton\Documents\ACS\AN4\SMP\project_1\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 741.746 ; gain = 5.516
+update_module_reference design_1_T74LS04_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_T74LS04_0_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'in_snd'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'out_snd'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'in'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'out'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_T74LS04_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'out_snd' is not found on the upgraded version of the cell '/T74LS04_0'. Its connection to the net 'T74LS04_0_out_snd' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 'in_snd' is not found on the upgraded version of the cell '/T74LS04_0'. Its connection to the net 'Net' has been removed.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_T74LS04_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+WARNING: [BD 41-597] NET <T74LS04_0_out_snd> has no source
+Wrote  : <C:\Users\anton\Documents\ACS\AN4\SMP\project_1\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 741.746 ; gain = 0.000
+update_module_reference design_1_T74LS373_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_T74LS373_0_0 to use current project options
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'out_fst'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'out'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_T74LS373_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'out_fst' is not found on the upgraded version of the cell '/T74LS373_0'. Its connection to the net 'T74LS373_0_out_fst' has been removed.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_T74LS373_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+WARNING: [BD 41-597] NET <T74LS04_0_out_snd> has no source
+WARNING: [BD 41-597] NET <T74LS373_0_out_fst> has no source
+Wrote  : <C:\Users\anton\Documents\ACS\AN4\SMP\project_1\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 741.746 ; gain = 0.000
+update_module_reference {design_1_m62256_0_0 design_1_m62256_1_0}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_m62256_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_m62256_1_0 to use current project options
+WARNING: [BD 41-597] NET <T74LS04_0_out_snd> has no source
+WARNING: [BD 41-597] NET <T74LS373_0_out_fst> has no source
+Wrote  : <C:\Users\anton\Documents\ACS\AN4\SMP\project_1\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_module_reference: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 741.746 ; gain = 0.000
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-1367] The port name 'out' of cell '/T74LS04_0' is a reserved keyword in a Hardware Description Language. Please consider renaming the port.
+CRITICAL WARNING: [BD 41-1367] The port name 'in' of cell '/T74LS04_0' is a reserved keyword in a Hardware Description Language. Please consider renaming the port.
+CRITICAL WARNING: [BD 41-1367] The port name 'out' of cell '/T74LS373_0' is a reserved keyword in a Hardware Description Language. Please consider renaming the port.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/splitter1_0/out_in
+/T74LS04_0/in
+/m62256_1/ce
+/m62256_1/oe
+
+WARNING: [BD 41-597] NET <T74LS04_0_out_snd> has no source
+WARNING: [BD 41-597] NET <T74LS373_0_out_fst> has no source
+Wrote  : <C:\Users\anton\Documents\ACS\AN4\SMP\project_1\project_1\project_1.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-166] Source port for the net:T74LS04_0_out_snd is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:T74LS373_0_out_fst is NULL! Connection will be grounded!
+VHDL Output written to : C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-166] Source port for the net:T74LS04_0_out_snd is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:T74LS373_0_out_fst is NULL! Connection will be grounded!
+VHDL Output written to : C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PIC16F873_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block T74LS04_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block T74LS373_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m62256_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block splitter1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block splitter2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block splitter3_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block select_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block m62256_1 .
+Exporting to file C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/PICtoSRAM/lab4.V" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m62256
+INFO: [VRFC 10-311] analyzing module T74LS373
+INFO: [VRFC 10-311] analyzing module T74LS04
+INFO: [VRFC 10-311] analyzing module PIC16F873
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2458] undeclared symbol we, assumed default net type wire [C:/Users/anton/Documents/ACS/AN4/SMP/project_1/PICtoSRAM/lab4.V:118]
+INFO: [VRFC 10-2458] undeclared symbol le, assumed default net type wire [C:/Users/anton/Documents/ACS/AN4/SMP/project_1/PICtoSRAM/lab4.V:118]
+INFO: [VRFC 10-2458] undeclared symbol sel, assumed default net type wire [C:/Users/anton/Documents/ACS/AN4/SMP/project_1/PICtoSRAM/lab4.V:119]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/new/splitter_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module splitter1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/new/splitter_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module splitter2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/new/splitter_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module splitter3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/new/select.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_PIC16F873_0_0_1/sim/design_1_PIC16F873_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_PIC16F873_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_T74LS04_0_0_1/sim/design_1_T74LS04_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_T74LS04_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_T74LS373_0_0_1/sim/design_1_T74LS373_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_T74LS373_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_m62256_0_0_1/sim/design_1_m62256_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_m62256_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_splitter1_0_0/sim/design_1_splitter1_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_splitter1_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_splitter2_0_0/sim/design_1_splitter2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_splitter2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_splitter3_0_0/sim/design_1_splitter3_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_splitter3_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_select_0_0/sim/design_1_select_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_select_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_m62256_1_0/sim/design_1_m62256_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_m62256_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sim_1/new/test1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'test' [C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.srcs/sim_1/new/test1.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 0073e5c0c400460d96b4106ea3d975ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 0073e5c0c400460d96b4106ea3d975ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/PICtoSRAM/lab4.V" Line 38. Module PIC16F873 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/PICtoSRAM/lab4.V" Line 30. Module T74LS04 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/PICtoSRAM/lab4.V" Line 16. Module T74LS373 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/PICtoSRAM/lab4.V" Line 1. Module m62256 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/anton/Documents/ACS/AN4/SMP/project_1/PICtoSRAM/lab4.V" Line 1. Module m62256 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PIC16F873
+Compiling module xil_defaultlib.design_1_PIC16F873_0_0
+Compiling module xil_defaultlib.T74LS04
+Compiling module xil_defaultlib.design_1_T74LS04_0_0
+Compiling module xil_defaultlib.T74LS373
+Compiling module xil_defaultlib.design_1_T74LS373_0_0
+Compiling module xil_defaultlib.m62256
+Compiling module xil_defaultlib.design_1_m62256_0_0
+Compiling module xil_defaultlib.design_1_m62256_1_0
+Compiling module xil_defaultlib.select
+Compiling module xil_defaultlib.design_1_select_0_0
+Compiling module xil_defaultlib.splitter1
+Compiling module xil_defaultlib.design_1_splitter1_0_0
+Compiling module xil_defaultlib.splitter2
+Compiling module xil_defaultlib.design_1_splitter2_0_0
+Compiling module xil_defaultlib.splitter3
+Compiling module xil_defaultlib.design_1_splitter3_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Jan 10 22:58:48 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 10 22:58:48 2022...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 894.422 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -protoinst "protoinst_files/design_1.protoinst" -view {C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+open_wave_config C:/Users/anton/Documents/ACS/AN4/SMP/project_1/project_1/test_behav.wcfg
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+---
+
+***
+
+---
+
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:30 . Memory (MB): peak = 904.316 ; gain = 9.895
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 909.797 ; gain = 5.141
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 10 22:59:38 2022...

@@ -1,0 +1,37 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 1a4a14e90792487897f8eff4495bde71 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab05/laborator5/laborator5.srcs/sources_1/new/lab5.v" Line 38. Module PIC16F873 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab05/laborator5/laborator5.srcs/sources_1/new/lab5.v" Line 30. Module T74LS04 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab05/laborator5/laborator5.srcs/sources_1/new/lab5.v" Line 16. Module T74LS373 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab05/laborator5/laborator5.srcs/sources_1/new/lab5.v" Line 1. Module m62256 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/lab05/laborator5/laborator5.srcs/sources_1/new/lab5.v" Line 1. Module m62256 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PIC16F873
+Compiling module xil_defaultlib.design_1_PIC16F873_0_0
+Compiling module xil_defaultlib.T74LS04
+Compiling module xil_defaultlib.design_1_T74LS04_0_0
+Compiling module xil_defaultlib.T74LS373
+Compiling module xil_defaultlib.design_1_T74LS373_0_0
+Compiling module xil_defaultlib.chip_select
+Compiling module xil_defaultlib.design_1_chip_select_0_0
+Compiling module xil_defaultlib.m62256
+Compiling module xil_defaultlib.design_1_m62256_0_0
+Compiling module xil_defaultlib.design_1_m62256_1_0
+Compiling module xil_defaultlib.splitter3
+Compiling module xil_defaultlib.design_1_splitter3_0_0
+Compiling module xil_defaultlib.splitter_1
+Compiling module xil_defaultlib.design_1_splitter_1_0_0
+Compiling module xil_defaultlib.splitter_2
+Compiling module xil_defaultlib.design_1_splitter_2_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
