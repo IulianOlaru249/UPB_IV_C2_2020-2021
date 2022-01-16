@@ -6,4 +6,4 @@ require (
 	domain v0.1.0
 )
 
-replace submarineapi => ../domain
+replace domain => ../domain

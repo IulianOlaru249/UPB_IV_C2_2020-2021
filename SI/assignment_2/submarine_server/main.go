@@ -1,6 +1,7 @@
 package main
 
 import (
+	"events"
 	"log"
 	"net/http"
 	submarineAPI "submarineapi"
@@ -13,6 +14,9 @@ func main() {
 	//Init globals to keep track of state across the service
 	usecases.SubmarineData = *usecases.NewSubmarine()
 	usecases.ArtifactData = *usecases.NewArtifact()
+
+	//Init the rpc client to communicate with the TUI
+	events.GoRPCClient = *events.NewRPCClient()
 
 	// Start http server
 	restful.Add(submarineAPI.NewSubmarineAPI())

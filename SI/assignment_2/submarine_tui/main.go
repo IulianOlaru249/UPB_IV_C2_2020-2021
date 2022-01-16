@@ -1,11 +1,48 @@
 package main
 
 import (
-	"log"
-	"os"
-
+	"encoding/json"
 	"github.com/gdamore/tcell/v2"
+	"log"
+	"net"
+	"net/rpc"
+	"os"
 )
+
+var s tcell.Screen
+var styles *MyStyles
+var submarineCoords *Coordinates
+var artifactCoords *Coordinates
+var fishCoords []Coordinates
+var fishExists bool
+var artifactExists bool
+
+//Coordinates models the position of an object on screen
+type Coordinates struct {
+	X int
+	Y int
+}
+
+//MyStyles encapsulates a list of style for each object
+type MyStyles struct {
+	DefStyle       tcell.Style
+	SubmarineStyle tcell.Style
+	FishStyle      tcell.Style
+	ArtifactStyle  tcell.Style
+}
+
+//Listener gets updates for each object on screen
+type Listener int
+
+//initStyles sets default stylees for objects
+func initStyles() *MyStyles {
+	return &MyStyles{
+		DefStyle:       tcell.StyleDefault.Background(tcell.ColorReset).Foreground(tcell.ColorReset),
+		SubmarineStyle: tcell.StyleDefault.Foreground(tcell.ColorYellow),
+		FishStyle:      tcell.StyleDefault.Foreground(tcell.ColorWhite),
+		ArtifactStyle:  tcell.StyleDefault.Foreground(tcell.ColorBlack).Background(tcell.ColorOrange),
+	}
+}
 
 //        |_
 //  _____|~ |____
@@ -77,13 +114,24 @@ func drawArtifact(s tcell.Screen, x, y int, style tcell.Style) {
 	s.SetContent(x+2, y, ']', nil, style)
 }
 
-func main() {
-	defStyle := tcell.StyleDefault.Background(tcell.ColorReset).Foreground(tcell.ColorReset)
-	submarineStyle := tcell.StyleDefault.Foreground(tcell.ColorYellow)
-	fishStyle := tcell.StyleDefault.Foreground(tcell.ColorWhite)
-	artifactStyle := tcell.StyleDefault.Foreground(tcell.ColorBlack).Background(tcell.ColorOrange)
+func updateScreen() {
+	// Update screen
+	s.Clear()
+	s.Sync()
 
-	// Initialize screen
+	// Draw ASCII art
+	if artifactExists {
+		drawArtifact(s, artifactCoords.X, artifactCoords.Y, styles.ArtifactStyle)
+	}
+	for _, fish := range fishCoords {
+		drawFish(s, fish.X, fish.Y, styles.FishStyle)
+	}
+	drawSubmarine(s, submarineCoords.X, submarineCoords.Y, styles.SubmarineStyle)
+
+	s.Show()
+}
+
+func initScreen(styles *MyStyles) tcell.Screen {
 	s, err := tcell.NewScreen()
 	if err != nil {
 		log.Fatalf("%+v", err)
@@ -91,58 +139,83 @@ func main() {
 	if err := s.Init(); err != nil {
 		log.Fatalf("%+v", err)
 	}
-	s.SetStyle(defStyle)
+	s.SetStyle(styles.DefStyle)
 	s.EnableMouse()
 	s.EnablePaste()
 	s.Clear()
 
-	// Draw  submarine
-	x, y := 0, 0
-	drawSubmarine(s, x, y, submarineStyle)
-	drawFish(s, x+30, y, fishStyle)
-	drawArtifact(s, x+36, y, artifactStyle)
+	return s
+}
 
-	// Event loop
-	quit := func() {
-		s.Fini()
-		os.Exit(0)
+func initListener() {
+	addy, err := net.ResolveTCPAddr("tcp", "0.0.0.0:42586")
+	if err != nil {
+		log.Fatal(err)
 	}
-	for {
-		// Update screen
-		s.Show()
 
-		// Poll event
-		ev := s.PollEvent()
-
-		// Process event
-		switch ev := ev.(type) {
-		case *tcell.EventResize:
-			s.Sync()
-		case *tcell.EventKey:
-			if ev.Key() == tcell.KeyEscape || ev.Key() == tcell.KeyCtrlC {
-				quit()
-			} else if ev.Key() == tcell.KeyCtrlL {
-				s.Sync()
-			} else if ev.Key() == tcell.KeyUp {
-				// } else if ev.Rune() == 'C' || ev.Rune() == 'c' {
-				s.Clear()
-				if y > 0 {
-					y--
-				}
-				drawSubmarine(s, x, y, submarineStyle)
-			} else if ev.Key() == tcell.KeyDown {
-				s.Clear()
-				y++
-				drawSubmarine(s, x, y, submarineStyle)
-			} else if ev.Key() == tcell.KeyRight {
-				s.Clear()
-				x++
-				drawSubmarine(s, x, y, submarineStyle)
-			} else if ev.Key() == tcell.KeyLeft {
-				s.Clear()
-				x--
-				drawSubmarine(s, x, y, submarineStyle)
-			}
-		}
+	inbound, err := net.ListenTCP("tcp", addy)
+	if err != nil {
+		log.Fatal(err)
 	}
+
+	listener := new(Listener)
+	rpc.Register(listener)
+	rpc.Accept(inbound)
+}
+
+func quit() {
+	s.Fini()
+	os.Exit(0)
+}
+
+func (l *Listener) GetLineSub(payload []byte, ack *bool) error {
+	//Get payload
+	if err := json.Unmarshal(payload, &submarineCoords); err != nil {
+		return err
+	}
+	updateScreen()
+
+	return nil
+}
+
+func (l *Listener) GetLineFish(payload []byte, ack *bool) error {
+	//Get payload
+	if err := json.Unmarshal(payload, &fishCoords); err != nil {
+		return err
+	}
+
+	updateScreen()
+
+	return nil
+}
+
+func (l *Listener) GetLineArt(payload []byte, ack *bool) error {
+	artifactExists = true
+
+	//Get payload
+	if err := json.Unmarshal(payload, &artifactCoords); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func main() {
+	//Init styles
+	styles = initStyles()
+
+	// Initialize screen
+	s = initScreen(styles)
+
+	//Init global coords
+	submarineCoords = new(Coordinates)
+	artifactCoords = new(Coordinates)
+	//fishCoords = new(Coordinates)
+
+	//Sub must always be on screen
+	submarineCoords.X, submarineCoords.Y = 0, 0
+	drawSubmarine(s, submarineCoords.X, submarineCoords.Y, styles.SubmarineStyle)
+
+	// Init rpc listeners
+	initListener()
 }
