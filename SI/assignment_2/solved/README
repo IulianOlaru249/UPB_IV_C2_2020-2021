@@ -1,0 +1,95 @@
+Assignment 2 ~ Yellow Submarine
+Olaru Gabriel Iulian, 342C2
+
+Part I ~ YOCTO
+================================================================================
+> The layer containing the homework is meta-assignment-si.
+
+> Adding users:
+This is done by setting the EXTRA_USERS_PARAMS in core-image-base.bbappend
+
+> Setting the hostname:
+This is done in the same way source files are uploaded: metion the file then
+install it in a location. In this case, a file named hostname, containing the
+string  "tema2" in installed under /hostname in the do_install() function.
+
+> SSH, DHCP and AVAHI
+This is done by installing the packages containing this tools. It is in the
+first line of the .bbappend file.
+
+> There are two core recipes:
+	- recipes-server, containing the source files of the http server,
+described below, and the building recipe for the yocto image
+	- recipes-tui, containing the source files of the text user interface
+service, described below, and the building recipe for the yocto image
+
+> Building an image (flow of .bb file):
+	- files are uploaded tu the image - mentioned in SRC_URI
+	- in do_compile, the source files are compiled in an executable object
+(since go is a compiled language, unlike pyhton).
+	- the binary is moved under /usr/bin
+	- the script that initiates the service (server or tui) is moved under
+init.d/ to run at start
+	- ram layers are initialised
+	- via symbolic link, the init script is set to start N seconds after
+the init. Note that the tui is programmed to start first, since it acts as an
+RCP server that the http rest api needs to connect to.
+
+> *-init scripts:
+	- straight from the interned, just had to mention the PIDFILE and the
+binary to be launched.
+
+Part II ~ RESTFUL API
+================================================================================
+This have been developed using GO, respecting Clean Architecture principles.
+The code is devided in go modules.
+
+> Source files can be found under:
+	meta-assignment-si/recipies-server/images/files/
+> Below, I will refer to this as src/
+> There is also the server-init script, described in the yocto section.
+
+> Code structure:
+	- Interfaces modeling the behaviout of every entity (submarine,
+fish, artifact, rpc client) can be found under src/domain
+	- The implementation of each entity can be found under src/usecases
+	- The implementation of the http RESTFUL client can be found under
+src/gateway/api
+	- The implementation of the RPC client can be found under
+/src/gateway/events
+
+> Communication:
+When handleing a HTTP request, the endpoint:
+	- processes the received data (if applies)
+	- updates the in-memory entities (coordinates and such)
+	- serializes the response
+	- sends the response to the drawing service via RPC(if applies)
+	- sends the HTTP response
+
+Part III ~ Display Daemon
+================================================================================
+Got lazy so everything is in main.go. This is also a go module.
+Tcell is the library used for drawing.
+
+> Source files can be found under:
+	meta-assignment-si/recipies-tui/images/files/
+There is also the server-tui script, described in the yocto section.
+
+> Drawing:
+	- Nothing special. Starting form a set of coordinates, draw the object
+as a matrix of ascii: lines + columns, going down
+
+> Flow:
+	- Initialize the styles and screen, redirecting to ttyAMA0
+	- Initialize in-memory entities representing coordinates
+of screen dwawings
+	- Draw the submarine at 0, 0
+	- Binds a listener on port 42586 (random) to listen for RPC calls
+	- Invokes RPC handle based on call
+	- Each handle updates the in-memory data and updates the screen
+
+NOTE: the display deamon must be initialized before the http server.
+
+NOTE: test.sh script contains some http requests sent from the vm tu qemu, used
+to see if all this stuff works. IP might need tyo change.
+

@@ -132,10 +132,18 @@ func updateScreen() {
 }
 
 func initScreen(styles *MyStyles) tcell.Screen {
-	s, err := tcell.NewScreen()
+	//Redirect to new tty
+	tty, err := tcell.NewDevTtyFromDev("/dev/ttyAMA0")
 	if err != nil {
 		log.Fatalf("%+v", err)
 	}
+
+	//open screen on new tty
+	s, err = tcell.NewTerminfoScreenFromTty(tty)
+	if err != nil {
+		log.Fatalf("%+v", err)
+	}
+
 	if err := s.Init(); err != nil {
 		log.Fatalf("%+v", err)
 	}
