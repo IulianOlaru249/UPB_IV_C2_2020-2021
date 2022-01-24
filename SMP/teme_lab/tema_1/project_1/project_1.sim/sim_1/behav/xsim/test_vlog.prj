@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/new/usb.v" \
+"../../../../project_1.srcs/sources_1/new/ich8.v" \
+"../../../../project_1.srcs/sources_1/new/ddr.v" \
+"../../../../project_1.srcs/sources_1/new/gmch.v" \
+"../../../../project_1.srcs/sources_1/new/processor.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_usb_0_0/sim/design_1_usb_0_0.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_ich8_0_1/sim/design_1_ich8_0_1.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_ddr_0_1/sim/design_1_ddr_0_1.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_gmch_0_1/sim/design_1_gmch_0_1.v" \
+"../../../../project_1.ip_user_files/bd/design_1/ip/design_1_processor_0_1/sim/design_1_processor_0_1.v" \
+"../../../../project_1.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../project_1.srcs/sim_1/new/test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

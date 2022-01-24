@@ -1,0 +1,72 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.507659",
+   "Default View_TopLeft":"-471,-2051",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace inst usb_0 -pg 1 -lvl 1 -x 560 -y -790 -defaultsOSRD
+preplace inst ich8_0 -pg 1 -lvl 2 -x 1120 -y -720 -defaultsOSRD
+preplace inst ddr_0 -pg 1 -lvl 1 -x 560 -y -1090 -defaultsOSRD
+preplace inst gmch_0 -pg 1 -lvl 2 -x 1120 -y -1230 -defaultsOSRD
+preplace inst processor_0 -pg 1 -lvl 2 -x 1120 -y -1800 -defaultsOSRD
+preplace netloc Net 1 2 1 1490 -1990n
+preplace netloc Net1 1 2 1 1480 -1970n
+preplace netloc Net2 1 2 1 1470 -1950n
+preplace netloc Net3 1 2 1 1460 -1930n
+preplace netloc Net4 1 2 1 1450 -1890n
+preplace netloc Net5 1 2 1 1440 -1850n
+preplace netloc processor_0_HBPRI 1 1 2 850 -400 1610
+preplace netloc processor_0_HDEFER 1 1 2 900 -410 1600
+preplace netloc Net6 1 2 1 1430 -1830n
+preplace netloc Net7 1 2 1 1420 -1810n
+preplace netloc Net8 1 2 1 1410 -1790n
+preplace netloc processor_0_HTRDY 1 1 2 860 -390 1590
+preplace netloc processor_0_HRS 1 1 2 870 -380 1580
+preplace netloc Net9 1 2 1 1390 -1730n
+preplace netloc Net10 1 2 1 1380 -1710n
+preplace netloc Net11 1 2 1 1370 -1690n
+preplace netloc Net12 1 2 1 1360 -1670n
+preplace netloc Net13 1 2 1 1350 -1650n
+preplace netloc Net14 1 2 1 1340 -1630n
+preplace netloc Net15 1 2 1 1330 -1610n
+preplace netloc gmch_0_HACCVREF 1 1 2 980 -890 1280
+preplace netloc gmch_0_HSWING 1 1 2 880 -500 1330
+preplace netloc gmch_0_HDVREF 1 1 2 920 -510 1310
+preplace netloc gmch_0_BSEL 1 1 2 910 -530 1320
+preplace netloc gmch_0_HPCREQ 1 1 2 820 -430 1540
+preplace netloc ich8_0_TXP_A 1 1 2 810 -350 1560
+preplace netloc ich8_0_TXN_A 1 1 2 840 -420 1410
+preplace netloc ich8_0_TXP 1 1 2 830 -340 1530
+preplace netloc ich8_0_TXN 1 1 2 890 -440 1300
+preplace netloc ich8_0_DMI_IRCOMP 1 1 2 930 -450 1280
+preplace netloc ich8_0_OC 1 0 3 -570 -300 N -300 1520
+preplace netloc ich8_0_GPIO29 1 0 3 -560 -330 N -330 1440
+preplace netloc ich8_0_GPIO30 1 0 3 -550 -320 N -320 1430
+preplace netloc ich8_0_GPIO31 1 0 3 -540 -310 N -310 1420
+preplace netloc ich8_0_USBRBIAS_I 1 0 3 -530 -370 N -370 1290
+preplace netloc Net16 1 1 2 700 -360 1450
+preplace netloc Net17 1 1 2 720 -550 1260
+preplace netloc usb_0_USBRBIAS_O 1 1 1 710 -770n
+preplace netloc gmch_0_RXP_A 1 1 2 940 -470 1570J
+preplace netloc gmch_0_RXN_A 1 1 2 960 -490 1510J
+preplace netloc gmch_0_RXP 1 1 2 950 -460 1550J
+preplace netloc gmch_0_RXN 1 1 2 970 -480 1500J
+preplace netloc gmch_0_DMI_ZCOMP 1 1 2 980 -520 1400J
+preplace netloc ddr_0_SCS_A 1 1 1 700 -1230n
+preplace netloc ddr_0_SMA_A 1 1 1 710 -1210n
+preplace netloc ddr_0_SBS_A 1 1 1 720 -1190n
+preplace netloc ddr_0_SRAS_A 1 1 1 730 -1170n
+preplace netloc ddr_0_SCAS_A 1 1 1 740 -1150n
+preplace netloc ddr_0_SWE_A 1 1 1 750 -1130n
+preplace netloc ddr_0_SDM_A 1 1 1 760 -1110n
+preplace netloc ddr_0_SODT_A 1 1 1 800 -1050n
+preplace netloc ddr_0_SCLK_A 1 1 1 790 -1070n
+preplace netloc ddr_0_SCKE_A 1 1 1 780 -1090n
+preplace netloc Net18 1 1 2 770J -900 1260
+preplace netloc Net19 1 1 2 750J -540 1270
+levelinfo -pg 1 -590 560 1120 1630
+pagesize -pg 1 -db -bbox -sgen -590 -2050 1630 200
+"
+}
+

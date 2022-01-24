@@ -1,0 +1,424 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jan 24 21:13:36 2022
+# Process ID: 14493
+# Current directory: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab
+# Command line: vivado
+# Log file: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/vivado.log
+# Journal file: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1 -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+file mkdir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/processor.v w ]
+add_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/processor.v
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/ich8.v w ]
+add_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/ich8.v
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/gmch.v w ]
+add_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/gmch.v
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/usb.v w ]
+add_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/usb.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/ddr.v w ]
+add_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/ddr.v
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference gmch gmch_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property location {0.5 -160 -26} [get_bd_cells gmch_0]
+create_bd_cell -type module -reference ddr ddr_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference ich8 ich8_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference processor processor_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property location {2.5 901 -255} [get_bd_cells ddr_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {2.5 901 -255} [get_bd_cells ddr_0]'
+undo
+INFO: [Common 17-17] undo 'create_bd_cell -type module -reference processor processor_0'
+undo
+INFO: [Common 17-17] undo 'create_bd_cell -type module -reference ich8 ich8_0'
+undo
+INFO: [Common 17-17] undo 'create_bd_cell -type module -reference ddr ddr_0'
+undo
+INFO: [Common 17-17] undo 'set_property location {0.5 -160 -26} [get_bd_cells gmch_0]'
+undo
+INFO: [Common 17-17] undo 'create_bd_cell -type module -reference gmch gmch_0'
+create_bd_cell -type module -reference usb usb_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property location {0.5 -179 -375} [get_bd_cells usb_0]
+create_bd_cell -type module -reference ich8 ich8_0
+create_bd_cell -type module -reference ddr ddr_0
+set_property location {1 -225 -869} [get_bd_cells ddr_0]
+create_bd_cell -type module -reference gmch gmch_0
+set_property location {2 495 -722} [get_bd_cells gmch_0]
+create_bd_cell -type module -reference processor processor_0
+set_property location {3.5 1227 -748} [get_bd_cells processor_0]
+set_property location {0.5 -107 -775} [get_bd_cells ddr_0]
+set_property location {1.5 148 -784} [get_bd_cells usb_0]
+set_property location {0.5 -219 -778} [get_bd_cells ddr_0]
+set_property location {2 18 -773} [get_bd_cells usb_0]
+set_property location {1.5 -28 -780} [get_bd_cells usb_0]
+set_property location {2.5 304 -760} [get_bd_cells ich8_0]
+set_property location {3.5 600 -710} [get_bd_cells gmch_0]
+set_property location {4.5 914 -719} [get_bd_cells processor_0]
+set_property location {5 903 -697} [get_bd_cells processor_0]
+set_property location {2 44 -772} [get_bd_cells usb_0]
+connect_bd_net [get_bd_pins processor_0/HA] [get_bd_pins gmch_0/HA]
+connect_bd_net [get_bd_pins gmch_0/HD] [get_bd_pins processor_0/HD]
+connect_bd_net [get_bd_pins gmch_0/HADS] [get_bd_pins processor_0/HADS]
+connect_bd_net [get_bd_pins gmch_0/HBNR] [get_bd_pins processor_0/HBNR]
+connect_bd_net [get_bd_pins gmch_0/HDBSY] [get_bd_pins processor_0/HDBSY]
+connect_bd_net [get_bd_pins gmch_0/HHIT] [get_bd_pins processor_0/HHIT]
+connect_bd_net [get_bd_pins processor_0/HBPRI] [get_bd_pins gmch_0/HBPRI]
+connect_bd_net [get_bd_pins processor_0/HDEFER] [get_bd_pins gmch_0/HDEFER]
+connect_bd_net [get_bd_pins gmch_0/HHITM] [get_bd_pins processor_0/HHITM]
+connect_bd_net [get_bd_pins gmch_0/HLOCK] [get_bd_pins processor_0/HLOCK]
+connect_bd_net [get_bd_pins gmch_0/HREQ] [get_bd_pins processor_0/HREQ]
+connect_bd_net [get_bd_pins gmch_0/HTRDY] [get_bd_pins processor_0/HTRDY]
+connect_bd_net [get_bd_pins gmch_0/HRS] [get_bd_pins processor_0/HRS]
+connect_bd_net [get_bd_pins gmch_0/HBREQ0] [get_bd_pins processor_0/HBREQ0]
+connect_bd_net [get_bd_pins gmch_0/HDINV] [get_bd_pins processor_0/HDINV]
+connect_bd_net [get_bd_pins gmch_0/HADSTB] [get_bd_pins processor_0/HADSTB]
+connect_bd_net [get_bd_pins gmch_0/HDSTBP] [get_bd_pins processor_0/HDSTBP]
+connect_bd_net [get_bd_pins gmch_0/HRCOMP] [get_bd_pins processor_0/HRCOMP]
+connect_bd_net [get_bd_pins gmch_0/HSCOMP] [get_bd_pins processor_0/HSCOMP]
+connect_bd_net [get_bd_pins gmch_0/HSCOMP_C] [get_bd_pins processor_0/HSCOMP_C]
+connect_bd_net [get_bd_pins gmch_0/HACCVREF] [get_bd_pins processor_0/HACCVREF]
+connect_bd_net [get_bd_pins gmch_0/HSWING] [get_bd_pins processor_0/HSWING]
+connect_bd_net [get_bd_pins gmch_0/HDVREF] [get_bd_pins processor_0/HDVREF]
+connect_bd_net [get_bd_pins gmch_0/BSEL] [get_bd_pins processor_0/BSEL]
+connect_bd_net [get_bd_pins gmch_0/HPCREQ] [get_bd_pins processor_0/HPCREQ]
+set_property location {0.5 -401 -783} [get_bd_cells ddr_0]
+set_property location {1.5 -167 -793} [get_bd_cells usb_0]
+set_property location {2.5 144 -777} [get_bd_cells ich8_0]
+set_property location {3 133 -727} [get_bd_cells ich8_0]
+connect_bd_net [get_bd_pins ich8_0/TXP_A] [get_bd_pins gmch_0/TXP_A]
+connect_bd_net [get_bd_pins ich8_0/TXN_A] [get_bd_pins gmch_0/TXN_A]
+connect_bd_net [get_bd_pins ich8_0/TXP] [get_bd_pins gmch_0/TXP]
+connect_bd_net [get_bd_pins ich8_0/TXN] [get_bd_pins gmch_0/TXN]
+connect_bd_net [get_bd_pins ich8_0/DMI_IRCOMP] [get_bd_pins gmch_0/DMI_IRCOMP]
+set_property location {3.5 265 -423} [get_bd_cells usb_0]
+connect_bd_net [get_bd_pins ich8_0/OC] [get_bd_pins usb_0/OC]
+connect_bd_net [get_bd_pins ich8_0/GPIO29] [get_bd_pins usb_0/GPIO29]
+connect_bd_net [get_bd_pins ich8_0/GPIO30] [get_bd_pins usb_0/GPIO30]
+connect_bd_net [get_bd_pins ich8_0/GPIO31] [get_bd_pins usb_0/GPIO31]
+connect_bd_net [get_bd_pins ich8_0/USBRBIAS_I] [get_bd_pins usb_0/USBRBIAS_I]
+connect_bd_net [get_bd_pins ich8_0/P] [get_bd_pins usb_0/P]
+connect_bd_net [get_bd_pins ich8_0/N] [get_bd_pins usb_0/N]
+connect_bd_net [get_bd_pins ich8_0/USBRBIAS_O] [get_bd_pins usb_0/USBRBIAS_O]
+set_property location {2.5 100 -331} [get_bd_cells usb_0]
+set_property location {3.5 328 -298} [get_bd_cells usb_0]
+set_property location {3 252 -755} [get_bd_cells ich8_0]
+connect_bd_net [get_bd_pins ich8_0/RXP_A] [get_bd_pins gmch_0/RXP_A]
+connect_bd_net [get_bd_pins ich8_0/RXN_A] [get_bd_pins gmch_0/RXN_A]
+connect_bd_net [get_bd_pins ich8_0/RXP] [get_bd_pins gmch_0/RXP]
+connect_bd_net [get_bd_pins ich8_0/RXN] [get_bd_pins gmch_0/RXN]
+connect_bd_net [get_bd_pins ich8_0/DMI_ZCOMP] [get_bd_pins gmch_0/DMI_ZCOMP]
+set_property location {1.5 -145 -934} [get_bd_cells ddr_0]
+set_property location {1.5 34 -918} [get_bd_cells ddr_0]
+set_property location {0.5 -72 -830} [get_bd_cells ddr_0]
+set_property location {3 637 -204} [get_bd_cells ddr_0]
+set_property location {0.5 82 -487} [get_bd_cells usb_0]
+set_property location {0.5 -436 -492} [get_bd_cells ddr_0]
+set_property location {1.5 -252 -530} [get_bd_cells ddr_0]
+set_property location {3 394 -39} [get_bd_cells ddr_0]
+set_property location {2 388 -1796} [get_bd_cells processor_0]
+set_property location {2 437 -500} [get_bd_cells ich8_0]
+set_property location {2 398 -1230} [get_bd_cells gmch_0]
+set_property location {2 472 -717} [get_bd_cells ich8_0]
+set_property location {1.5 125 -786} [get_bd_cells usb_0]
+set_property location {0.5 -436 -710} [get_bd_cells ddr_0]
+set_property location {1.5 -275 -720} [get_bd_cells ddr_0]
+set_property location {1.5 -95 -779} [get_bd_cells ddr_0]
+set_property location {1.5 81 -389} [get_bd_cells ddr_0]
+set_property location {3 740 -359} [get_bd_cells ddr_0]
+set_property location {0.5 -459 -307} [get_bd_cells ddr_0]
+set_property location {1.5 -328 -479} [get_bd_cells ddr_0]
+set_property location {1.5 -159 -547} [get_bd_cells ddr_0]
+set_property location {1.5 27 -571} [get_bd_cells ddr_0]
+set_property location {1.5 132 -564} [get_bd_cells ddr_0]
+set_property location {1 226 -471} [get_bd_cells ddr_0]
+set_property location {2 356 -464} [get_bd_cells ddr_0]
+set_property location {0.5 267 -508} [get_bd_cells ddr_0]
+set_property location {1 272 -505} [get_bd_cells ddr_0]
+set_property location {2 597 -1104} [get_bd_cells ddr_0]
+set_property location {0.5 -108 -800} [get_bd_cells ddr_0]
+set_property location {1.5 198 -833} [get_bd_cells ddr_0]
+set_property location {2 515 -1332} [get_bd_cells ddr_0]
+set_property location {1 558 -1259} [get_bd_cells ddr_0]
+set_property location {1 567 -1094} [get_bd_cells ddr_0]
+set_property location {1 566 -1091} [get_bd_cells ddr_0]
+connect_bd_net [get_bd_pins ddr_0/SCS_A] [get_bd_pins gmch_0/SCS_A]
+connect_bd_net [get_bd_pins ddr_0/SMA_A] [get_bd_pins gmch_0/SMA_A]
+connect_bd_net [get_bd_pins ddr_0/SBS_A] [get_bd_pins gmch_0/SBS_A]
+connect_bd_net [get_bd_pins ddr_0/SRAS_A] [get_bd_pins gmch_0/SRAS_A]
+connect_bd_net [get_bd_pins ddr_0/SCAS_A] [get_bd_pins gmch_0/SCAS_A]
+connect_bd_net [get_bd_pins ddr_0/SWE_A] [get_bd_pins gmch_0/SWE_A]
+connect_bd_net [get_bd_pins ddr_0/SDM_A] [get_bd_pins gmch_0/SDM_A]
+connect_bd_net [get_bd_pins ddr_0/SODT_A] [get_bd_pins gmch_0/SODT_A]
+connect_bd_net [get_bd_pins ddr_0/SCLK_A] [get_bd_pins gmch_0/SCLK_A]
+connect_bd_net [get_bd_pins ddr_0/SCKE_A] [get_bd_pins gmch_0/SCKE_A]
+connect_bd_net [get_bd_pins gmch_0/SDQ_A] [get_bd_pins ddr_0/SDQ_A]
+connect_bd_net [get_bd_pins ddr_0/SDQS_A] [get_bd_pins gmch_0/SDQS_A]
+save_bd_design
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+WARNING: [BD 41-597] NET <Net2> has no source
+WARNING: [BD 41-597] NET <Net3> has no source
+WARNING: [BD 41-597] NET <Net4> has no source
+WARNING: [BD 41-597] NET <Net5> has no source
+WARNING: [BD 41-597] NET <Net6> has no source
+WARNING: [BD 41-597] NET <Net7> has no source
+WARNING: [BD 41-597] NET <Net8> has no source
+WARNING: [BD 41-597] NET <Net9> has no source
+WARNING: [BD 41-597] NET <Net10> has no source
+WARNING: [BD 41-597] NET <Net11> has no source
+WARNING: [BD 41-597] NET <Net12> has no source
+WARNING: [BD 41-597] NET <Net13> has no source
+WARNING: [BD 41-597] NET <Net14> has no source
+WARNING: [BD 41-597] NET <Net15> has no source
+WARNING: [BD 41-597] NET <Net16> has no source
+WARNING: [BD 41-597] NET <Net17> has no source
+WARNING: [BD 41-597] NET <Net18> has no source
+WARNING: [BD 41-597] NET <Net19> has no source
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+file mkdir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new/test.v w ]
+add_files -fileset sim_1 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new/test.v
+update_compile_order -fileset sim_1
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ddr_0_0/design_1_ddr_0_0.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_gmch_0_0/design_1_gmch_0_0.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_ich8_0_0/design_1_ich8_0_0.xml'
+WARNING: [SIM-utils-52] IP component XML file does not exist: '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_processor_0_0/design_1_processor_0_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto b22a4d68cd0d48bbba8d2f598f859dd1 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto b22a4d68cd0d48bbba8d2f598f859dd1 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <design_1_wrapper> not found while processing module instance <top> [/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new/test.v:30]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+generate_target Simulation [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-597] NET <Net> has no source
+WARNING: [BD 41-597] NET <Net1> has no source
+WARNING: [BD 41-597] NET <Net2> has no source
+WARNING: [BD 41-597] NET <Net3> has no source
+WARNING: [BD 41-597] NET <Net4> has no source
+WARNING: [BD 41-597] NET <Net5> has no source
+WARNING: [BD 41-597] NET <Net6> has no source
+WARNING: [BD 41-597] NET <Net7> has no source
+WARNING: [BD 41-597] NET <Net8> has no source
+WARNING: [BD 41-597] NET <Net9> has no source
+WARNING: [BD 41-597] NET <Net10> has no source
+WARNING: [BD 41-597] NET <Net11> has no source
+WARNING: [BD 41-597] NET <Net12> has no source
+WARNING: [BD 41-597] NET <Net13> has no source
+WARNING: [BD 41-597] NET <Net14> has no source
+WARNING: [BD 41-597] NET <Net15> has no source
+WARNING: [BD 41-597] NET <Net16> has no source
+WARNING: [BD 41-597] NET <Net17> has no source
+WARNING: [BD 41-597] NET <Net18> has no source
+WARNING: [BD 41-597] NET <Net19> has no source
+Wrote  : </home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net1 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net2 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net3 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net4 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net5 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net6 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net7 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net8 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net9 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net10 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net11 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net12 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net13 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net14 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net15 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net16 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net17 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net18 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net19 is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-166] Source port for the net:Net is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net1 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net2 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net3 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net4 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net5 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net6 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net7 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net8 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net9 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net10 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net11 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net12 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net13 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net14 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net15 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net16 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net17 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net18 is NULL! Connection will be grounded!
+WARNING: [BD 41-166] Source port for the net:Net19 is NULL! Connection will be grounded!
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block usb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ich8_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ddr_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gmch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processor_0 .
+Exporting to file /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.ip_user_files -ipstatic_source_dir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.cache/compile_simlib/modelsim} {questa=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.cache/compile_simlib/questa} {ies=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.cache/compile_simlib/ies} {xcelium=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.cache/compile_simlib/xcelium} {vcs=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.cache/compile_simlib/vcs} {riviera=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj test_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/usb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/ich8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ich8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/ddr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/gmch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gmch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/processor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_usb_0_0/sim/design_1_usb_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_usb_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_ich8_0_1/sim/design_1_ich8_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_ich8_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_ddr_0_1/sim/design_1_ddr_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_ddr_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_gmch_0_1/sim/design_1_gmch_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_gmch_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_processor_0_1/sim/design_1_processor_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_processor_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new/test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto b22a4d68cd0d48bbba8d2f598f859dd1 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto b22a4d68cd0d48bbba8d2f598f859dd1 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ddr
+Compiling module xil_defaultlib.design_1_ddr_0_1
+Compiling module xil_defaultlib.gmch
+Compiling module xil_defaultlib.design_1_gmch_0_1
+Compiling module xil_defaultlib.ich8
+Compiling module xil_defaultlib.design_1_ich8_0_1
+Compiling module xil_defaultlib.processor
+Compiling module xil_defaultlib.design_1_processor_0_1
+Compiling module xil_defaultlib.usb
+Compiling module xil_defaultlib.design_1_usb_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Jan 24 22:43:28 2022. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 24 22:43:28 2022...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 7469.062 ; gain = 0.000 ; free physical = 201 ; free virtual = 19453
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 7577.719 ; gain = 108.656 ; free physical = 137 ; free virtual = 19423
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 7577.719 ; gain = 0.000 ; free physical = 203 ; free virtual = 19462
+export_ip_user_files -of_objects  [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new/test.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new/test.v
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 24 23:22:13 2022...

@@ -1,0 +1,179 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jan 24 21:13:36 2022
+# Process ID: 14493
+# Current directory: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab
+# Command line: vivado
+# Log file: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/vivado.log
+# Journal file: /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1 -part xc7a100tcsg324-1
+file mkdir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/processor.v w ]
+add_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/processor.v
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/ich8.v w ]
+add_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/ich8.v
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/gmch.v w ]
+add_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/gmch.v
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/usb.v w ]
+add_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/usb.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/ddr.v w ]
+add_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/new/ddr.v
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference gmch gmch_0
+set_property location {0.5 -160 -26} [get_bd_cells gmch_0]
+create_bd_cell -type module -reference ddr ddr_0
+create_bd_cell -type module -reference ich8 ich8_0
+create_bd_cell -type module -reference processor processor_0
+set_property location {2.5 901 -255} [get_bd_cells ddr_0]
+undo
+undo
+undo
+undo
+undo
+undo
+create_bd_cell -type module -reference usb usb_0
+set_property location {0.5 -179 -375} [get_bd_cells usb_0]
+create_bd_cell -type module -reference ich8 ich8_0
+create_bd_cell -type module -reference ddr ddr_0
+set_property location {1 -225 -869} [get_bd_cells ddr_0]
+create_bd_cell -type module -reference gmch gmch_0
+set_property location {2 495 -722} [get_bd_cells gmch_0]
+create_bd_cell -type module -reference processor processor_0
+set_property location {3.5 1227 -748} [get_bd_cells processor_0]
+set_property location {0.5 -107 -775} [get_bd_cells ddr_0]
+set_property location {1.5 148 -784} [get_bd_cells usb_0]
+set_property location {0.5 -219 -778} [get_bd_cells ddr_0]
+set_property location {2 18 -773} [get_bd_cells usb_0]
+set_property location {1.5 -28 -780} [get_bd_cells usb_0]
+set_property location {2.5 304 -760} [get_bd_cells ich8_0]
+set_property location {3.5 600 -710} [get_bd_cells gmch_0]
+set_property location {4.5 914 -719} [get_bd_cells processor_0]
+set_property location {5 903 -697} [get_bd_cells processor_0]
+set_property location {2 44 -772} [get_bd_cells usb_0]
+connect_bd_net [get_bd_pins processor_0/HA] [get_bd_pins gmch_0/HA]
+connect_bd_net [get_bd_pins gmch_0/HD] [get_bd_pins processor_0/HD]
+connect_bd_net [get_bd_pins gmch_0/HADS] [get_bd_pins processor_0/HADS]
+connect_bd_net [get_bd_pins gmch_0/HBNR] [get_bd_pins processor_0/HBNR]
+connect_bd_net [get_bd_pins gmch_0/HDBSY] [get_bd_pins processor_0/HDBSY]
+connect_bd_net [get_bd_pins gmch_0/HHIT] [get_bd_pins processor_0/HHIT]
+connect_bd_net [get_bd_pins processor_0/HBPRI] [get_bd_pins gmch_0/HBPRI]
+connect_bd_net [get_bd_pins processor_0/HDEFER] [get_bd_pins gmch_0/HDEFER]
+connect_bd_net [get_bd_pins gmch_0/HHITM] [get_bd_pins processor_0/HHITM]
+connect_bd_net [get_bd_pins gmch_0/HLOCK] [get_bd_pins processor_0/HLOCK]
+connect_bd_net [get_bd_pins gmch_0/HREQ] [get_bd_pins processor_0/HREQ]
+connect_bd_net [get_bd_pins gmch_0/HTRDY] [get_bd_pins processor_0/HTRDY]
+connect_bd_net [get_bd_pins gmch_0/HRS] [get_bd_pins processor_0/HRS]
+connect_bd_net [get_bd_pins gmch_0/HBREQ0] [get_bd_pins processor_0/HBREQ0]
+connect_bd_net [get_bd_pins gmch_0/HDINV] [get_bd_pins processor_0/HDINV]
+connect_bd_net [get_bd_pins gmch_0/HADSTB] [get_bd_pins processor_0/HADSTB]
+connect_bd_net [get_bd_pins gmch_0/HDSTBP] [get_bd_pins processor_0/HDSTBP]
+connect_bd_net [get_bd_pins gmch_0/HRCOMP] [get_bd_pins processor_0/HRCOMP]
+connect_bd_net [get_bd_pins gmch_0/HSCOMP] [get_bd_pins processor_0/HSCOMP]
+connect_bd_net [get_bd_pins gmch_0/HSCOMP_C] [get_bd_pins processor_0/HSCOMP_C]
+connect_bd_net [get_bd_pins gmch_0/HACCVREF] [get_bd_pins processor_0/HACCVREF]
+connect_bd_net [get_bd_pins gmch_0/HSWING] [get_bd_pins processor_0/HSWING]
+connect_bd_net [get_bd_pins gmch_0/HDVREF] [get_bd_pins processor_0/HDVREF]
+connect_bd_net [get_bd_pins gmch_0/BSEL] [get_bd_pins processor_0/BSEL]
+connect_bd_net [get_bd_pins gmch_0/HPCREQ] [get_bd_pins processor_0/HPCREQ]
+set_property location {0.5 -401 -783} [get_bd_cells ddr_0]
+set_property location {1.5 -167 -793} [get_bd_cells usb_0]
+set_property location {2.5 144 -777} [get_bd_cells ich8_0]
+set_property location {3 133 -727} [get_bd_cells ich8_0]
+connect_bd_net [get_bd_pins ich8_0/TXP_A] [get_bd_pins gmch_0/TXP_A]
+connect_bd_net [get_bd_pins ich8_0/TXN_A] [get_bd_pins gmch_0/TXN_A]
+connect_bd_net [get_bd_pins ich8_0/TXP] [get_bd_pins gmch_0/TXP]
+connect_bd_net [get_bd_pins ich8_0/TXN] [get_bd_pins gmch_0/TXN]
+connect_bd_net [get_bd_pins ich8_0/DMI_IRCOMP] [get_bd_pins gmch_0/DMI_IRCOMP]
+set_property location {3.5 265 -423} [get_bd_cells usb_0]
+connect_bd_net [get_bd_pins ich8_0/OC] [get_bd_pins usb_0/OC]
+connect_bd_net [get_bd_pins ich8_0/GPIO29] [get_bd_pins usb_0/GPIO29]
+connect_bd_net [get_bd_pins ich8_0/GPIO30] [get_bd_pins usb_0/GPIO30]
+connect_bd_net [get_bd_pins ich8_0/GPIO31] [get_bd_pins usb_0/GPIO31]
+connect_bd_net [get_bd_pins ich8_0/USBRBIAS_I] [get_bd_pins usb_0/USBRBIAS_I]
+connect_bd_net [get_bd_pins ich8_0/P] [get_bd_pins usb_0/P]
+connect_bd_net [get_bd_pins ich8_0/N] [get_bd_pins usb_0/N]
+connect_bd_net [get_bd_pins ich8_0/USBRBIAS_O] [get_bd_pins usb_0/USBRBIAS_O]
+set_property location {2.5 100 -331} [get_bd_cells usb_0]
+set_property location {3.5 328 -298} [get_bd_cells usb_0]
+set_property location {3 252 -755} [get_bd_cells ich8_0]
+connect_bd_net [get_bd_pins ich8_0/RXP_A] [get_bd_pins gmch_0/RXP_A]
+connect_bd_net [get_bd_pins ich8_0/RXN_A] [get_bd_pins gmch_0/RXN_A]
+connect_bd_net [get_bd_pins ich8_0/RXP] [get_bd_pins gmch_0/RXP]
+connect_bd_net [get_bd_pins ich8_0/RXN] [get_bd_pins gmch_0/RXN]
+connect_bd_net [get_bd_pins ich8_0/DMI_ZCOMP] [get_bd_pins gmch_0/DMI_ZCOMP]
+set_property location {1.5 -145 -934} [get_bd_cells ddr_0]
+set_property location {1.5 34 -918} [get_bd_cells ddr_0]
+set_property location {0.5 -72 -830} [get_bd_cells ddr_0]
+set_property location {3 637 -204} [get_bd_cells ddr_0]
+set_property location {0.5 82 -487} [get_bd_cells usb_0]
+set_property location {0.5 -436 -492} [get_bd_cells ddr_0]
+set_property location {1.5 -252 -530} [get_bd_cells ddr_0]
+set_property location {3 394 -39} [get_bd_cells ddr_0]
+set_property location {2 388 -1796} [get_bd_cells processor_0]
+set_property location {2 437 -500} [get_bd_cells ich8_0]
+set_property location {2 398 -1230} [get_bd_cells gmch_0]
+set_property location {2 472 -717} [get_bd_cells ich8_0]
+set_property location {1.5 125 -786} [get_bd_cells usb_0]
+set_property location {0.5 -436 -710} [get_bd_cells ddr_0]
+set_property location {1.5 -275 -720} [get_bd_cells ddr_0]
+set_property location {1.5 -95 -779} [get_bd_cells ddr_0]
+set_property location {1.5 81 -389} [get_bd_cells ddr_0]
+set_property location {3 740 -359} [get_bd_cells ddr_0]
+set_property location {0.5 -459 -307} [get_bd_cells ddr_0]
+set_property location {1.5 -328 -479} [get_bd_cells ddr_0]
+set_property location {1.5 -159 -547} [get_bd_cells ddr_0]
+set_property location {1.5 27 -571} [get_bd_cells ddr_0]
+set_property location {1.5 132 -564} [get_bd_cells ddr_0]
+set_property location {1 226 -471} [get_bd_cells ddr_0]
+set_property location {2 356 -464} [get_bd_cells ddr_0]
+set_property location {0.5 267 -508} [get_bd_cells ddr_0]
+set_property location {1 272 -505} [get_bd_cells ddr_0]
+set_property location {2 597 -1104} [get_bd_cells ddr_0]
+set_property location {0.5 -108 -800} [get_bd_cells ddr_0]
+set_property location {1.5 198 -833} [get_bd_cells ddr_0]
+set_property location {2 515 -1332} [get_bd_cells ddr_0]
+set_property location {1 558 -1259} [get_bd_cells ddr_0]
+set_property location {1 567 -1094} [get_bd_cells ddr_0]
+set_property location {1 566 -1091} [get_bd_cells ddr_0]
+connect_bd_net [get_bd_pins ddr_0/SCS_A] [get_bd_pins gmch_0/SCS_A]
+connect_bd_net [get_bd_pins ddr_0/SMA_A] [get_bd_pins gmch_0/SMA_A]
+connect_bd_net [get_bd_pins ddr_0/SBS_A] [get_bd_pins gmch_0/SBS_A]
+connect_bd_net [get_bd_pins ddr_0/SRAS_A] [get_bd_pins gmch_0/SRAS_A]
+connect_bd_net [get_bd_pins ddr_0/SCAS_A] [get_bd_pins gmch_0/SCAS_A]
+connect_bd_net [get_bd_pins ddr_0/SWE_A] [get_bd_pins gmch_0/SWE_A]
+connect_bd_net [get_bd_pins ddr_0/SDM_A] [get_bd_pins gmch_0/SDM_A]
+connect_bd_net [get_bd_pins ddr_0/SODT_A] [get_bd_pins gmch_0/SODT_A]
+connect_bd_net [get_bd_pins ddr_0/SCLK_A] [get_bd_pins gmch_0/SCLK_A]
+connect_bd_net [get_bd_pins ddr_0/SCKE_A] [get_bd_pins gmch_0/SCKE_A]
+connect_bd_net [get_bd_pins gmch_0/SDQ_A] [get_bd_pins ddr_0/SDQ_A]
+connect_bd_net [get_bd_pins ddr_0/SDQS_A] [get_bd_pins gmch_0/SDQS_A]
+save_bd_design
+file mkdir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new/test.v w ]
+add_files -fileset sim_1 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new/test.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+generate_target Simulation [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.ip_user_files -ipstatic_source_dir /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.cache/compile_simlib/modelsim} {questa=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.cache/compile_simlib/questa} {ies=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.cache/compile_simlib/ies} {xcelium=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.cache/compile_simlib/xcelium} {vcs=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.cache/compile_simlib/vcs} {riviera=/home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source test.tcl
+close_sim
+export_ip_user_files -of_objects  [get_files /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new/test.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 /home/ghostpants/Documents/UPB_IV_C2_2020-2021/SMP/teme_lab/tema_1/project_1/project_1.srcs/sim_1/new/test.v

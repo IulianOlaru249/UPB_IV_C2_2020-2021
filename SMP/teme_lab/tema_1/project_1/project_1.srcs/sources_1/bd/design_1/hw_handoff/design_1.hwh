@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jan 24 22:43:10 2022" VIVADOVERSION="2019.2">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS/>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/ddr_0" HWVERSION="1.0" INSTANCE="ddr_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ddr" VLNV="xilinx.com:module_ref:ddr:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ddr_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="1" NAME="SCS_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SCS_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="SCS_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="14" NAME="SMA_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SMA_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="SMA_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="SBS_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SBS_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="SBS_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SRAS_A" SIGIS="undef" SIGNAME="ddr_0_SRAS_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="SRAS_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SCAS_A" SIGIS="undef" SIGNAME="ddr_0_SCAS_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="SCAS_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SWE_A" SIGIS="undef" SIGNAME="ddr_0_SWE_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="SWE_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="63" NAME="SDQ_A" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="SDM_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SDM_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="SDM_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="7" NAME="SDQS_A" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="SCKE_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SCKE_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="SCKE_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="SCLK_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SCLK_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="SCLK_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="SODT_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SODT_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="SODT_A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/gmch_0" HWVERSION="1.0" INSTANCE="gmch_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="gmch" VLNV="xilinx.com:module_ref:gmch:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_gmch_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="TXP_A" RIGHT="1" SIGIS="undef" SIGNAME="ich8_0_TXP_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="TXP_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="TXN_A" RIGHT="1" SIGIS="undef" SIGNAME="ich8_0_TXN_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="TXN_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="TXP" RIGHT="3" SIGIS="undef" SIGNAME="ich8_0_TXP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="TXP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="TXN" RIGHT="3" SIGIS="undef" SIGNAME="ich8_0_TXN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="TXN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="RXP_A" RIGHT="1" SIGIS="undef" SIGNAME="gmch_0_RXP_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="RXP_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="RXN_A" RIGHT="1" SIGIS="undef" SIGNAME="gmch_0_RXN_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="RXN_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="RXP" RIGHT="3" SIGIS="undef" SIGNAME="gmch_0_RXP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="RXP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="RXN" RIGHT="3" SIGIS="undef" SIGNAME="gmch_0_RXN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="RXN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DMI_ZCOMP" SIGIS="undef" SIGNAME="gmch_0_DMI_ZCOMP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="DMI_ZCOMP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DMI_IRCOMP" SIGIS="undef" SIGNAME="ich8_0_DMI_IRCOMP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="DMI_IRCOMP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="35" NAME="HA" RIGHT="3" SIGIS="undef"/>
+        <PORT DIR="IO" LEFT="63" NAME="HD" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="IO" NAME="HADS" SIGIS="undef"/>
+        <PORT DIR="IO" NAME="HBNR" SIGIS="undef"/>
+        <PORT DIR="I" NAME="HBPRI" SIGIS="undef" SIGNAME="processor_0_HBPRI">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processor_0" PORT="HBPRI"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="HDBSY" SIGIS="undef"/>
+        <PORT DIR="I" NAME="HDEFER" SIGIS="undef" SIGNAME="processor_0_HDEFER">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processor_0" PORT="HDEFER"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="HHIT" SIGIS="undef"/>
+        <PORT DIR="IO" NAME="HHITM" SIGIS="undef"/>
+        <PORT DIR="IO" NAME="HLOCK" SIGIS="undef"/>
+        <PORT DIR="IO" LEFT="4" NAME="HREQ" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HPCREQ" SIGIS="undef" SIGNAME="gmch_0_HPCREQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processor_0" PORT="HPCREQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HTRDY" SIGIS="undef" SIGNAME="processor_0_HTRDY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processor_0" PORT="HTRDY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="HRS" RIGHT="0" SIGIS="undef" SIGNAME="processor_0_HRS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processor_0" PORT="HRS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="HBREQ0" SIGIS="undef"/>
+        <PORT DIR="IO" LEFT="3" NAME="HDINV" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="IO" LEFT="1" NAME="HADSTB" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="IO" LEFT="3" NAME="HDSTBP" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="2" NAME="BSEL" RIGHT="0" SIGIS="undef" SIGNAME="gmch_0_BSEL">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processor_0" PORT="BSEL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="HRCOMP" SIGIS="undef"/>
+        <PORT DIR="IO" NAME="HSCOMP" SIGIS="undef"/>
+        <PORT DIR="IO" NAME="HSCOMP_C" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HSWING" SIGIS="undef" SIGNAME="gmch_0_HSWING">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processor_0" PORT="HSWING"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HDVREF" SIGIS="undef" SIGNAME="gmch_0_HDVREF">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processor_0" PORT="HDVREF"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HACCVREF" SIGIS="undef" SIGNAME="gmch_0_HACCVREF">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processor_0" PORT="HACCVREF"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="SCS_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SCS_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddr_0" PORT="SCS_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="14" NAME="SMA_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SMA_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddr_0" PORT="SMA_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="SBS_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SBS_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddr_0" PORT="SBS_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SRAS_A" SIGIS="undef" SIGNAME="ddr_0_SRAS_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddr_0" PORT="SRAS_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SCAS_A" SIGIS="undef" SIGNAME="ddr_0_SCAS_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddr_0" PORT="SCAS_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SWE_A" SIGIS="undef" SIGNAME="ddr_0_SWE_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddr_0" PORT="SWE_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="63" NAME="SDQ_A" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="SDM_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SDM_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddr_0" PORT="SDM_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="7" NAME="SDQS_A" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="SCKE_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SCKE_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddr_0" PORT="SCKE_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="SCLK_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SCLK_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddr_0" PORT="SCLK_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="SODT_A" RIGHT="0" SIGIS="undef" SIGNAME="ddr_0_SODT_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddr_0" PORT="SODT_A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/ich8_0" HWVERSION="1.0" INSTANCE="ich8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ich8" VLNV="xilinx.com:module_ref:ich8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ich8_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="TXP_A" RIGHT="1" SIGIS="undef" SIGNAME="ich8_0_TXP_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="TXP_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="TXN_A" RIGHT="1" SIGIS="undef" SIGNAME="ich8_0_TXN_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="TXN_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="TXP" RIGHT="3" SIGIS="undef" SIGNAME="ich8_0_TXP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="TXP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="TXN" RIGHT="3" SIGIS="undef" SIGNAME="ich8_0_TXN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="TXN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="RXP_A" RIGHT="1" SIGIS="undef" SIGNAME="gmch_0_RXP_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="RXP_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="RXN_A" RIGHT="1" SIGIS="undef" SIGNAME="gmch_0_RXN_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="RXN_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="RXP" RIGHT="3" SIGIS="undef" SIGNAME="gmch_0_RXP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="RXP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="RXN" RIGHT="3" SIGIS="undef" SIGNAME="gmch_0_RXN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="RXN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DMI_ZCOMP" SIGIS="undef" SIGNAME="gmch_0_DMI_ZCOMP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="DMI_ZCOMP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DMI_IRCOMP" SIGIS="undef" SIGNAME="ich8_0_DMI_IRCOMP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="DMI_IRCOMP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="7" NAME="P" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="IO" LEFT="7" NAME="N" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="4" NAME="OC" RIGHT="0" SIGIS="undef" SIGNAME="ich8_0_OC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="usb_0" PORT="OC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="GPIO29" SIGIS="undef" SIGNAME="ich8_0_GPIO29">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="usb_0" PORT="GPIO29"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="GPIO30" SIGIS="undef" SIGNAME="ich8_0_GPIO30">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="usb_0" PORT="GPIO30"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="GPIO31" SIGIS="undef" SIGNAME="ich8_0_GPIO31">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="usb_0" PORT="GPIO31"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="USBRBIAS_I" SIGIS="undef" SIGNAME="ich8_0_USBRBIAS_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="usb_0" PORT="USBRBIAS_I"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="USBRBIAS_O" SIGIS="undef" SIGNAME="usb_0_USBRBIAS_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="usb_0" PORT="USBRBIAS_O"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/processor_0" HWVERSION="1.0" INSTANCE="processor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="processor" VLNV="xilinx.com:module_ref:processor:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_processor_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="IO" LEFT="35" NAME="HA" RIGHT="3" SIGIS="undef"/>
+        <PORT DIR="IO" LEFT="63" NAME="HD" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="IO" NAME="HADS" SIGIS="undef"/>
+        <PORT DIR="IO" NAME="HBNR" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HBPRI" SIGIS="undef" SIGNAME="processor_0_HBPRI">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="HBPRI"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="HDBSY" SIGIS="undef"/>
+        <PORT DIR="O" NAME="HDEFER" SIGIS="undef" SIGNAME="processor_0_HDEFER">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="HDEFER"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="HHIT" SIGIS="undef"/>
+        <PORT DIR="IO" NAME="HHITM" SIGIS="undef"/>
+        <PORT DIR="IO" NAME="HLOCK" SIGIS="undef"/>
+        <PORT DIR="IO" LEFT="4" NAME="HREQ" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="HPCREQ" SIGIS="undef" SIGNAME="gmch_0_HPCREQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="HPCREQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="HTRDY" SIGIS="undef" SIGNAME="processor_0_HTRDY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="HTRDY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="HRS" RIGHT="0" SIGIS="undef" SIGNAME="processor_0_HRS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="HRS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="HBREQ0" SIGIS="undef"/>
+        <PORT DIR="IO" LEFT="3" NAME="HDINV" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="IO" LEFT="1" NAME="HADSTB" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="IO" LEFT="3" NAME="HDSTBP" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="BSEL" RIGHT="0" SIGIS="undef" SIGNAME="gmch_0_BSEL">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="BSEL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="HRCOMP" SIGIS="undef"/>
+        <PORT DIR="IO" NAME="HSCOMP" SIGIS="undef"/>
+        <PORT DIR="IO" NAME="HSCOMP_C" SIGIS="undef"/>
+        <PORT DIR="I" NAME="HSWING" SIGIS="undef" SIGNAME="gmch_0_HSWING">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="HSWING"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HDVREF" SIGIS="undef" SIGNAME="gmch_0_HDVREF">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="HDVREF"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HACCVREF" SIGIS="undef" SIGNAME="gmch_0_HACCVREF">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="gmch_0" PORT="HACCVREF"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/usb_0" HWVERSION="1.0" INSTANCE="usb_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="usb" VLNV="xilinx.com:module_ref:usb:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_usb_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="IO" LEFT="7" NAME="P" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="IO" LEFT="7" NAME="N" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="4" NAME="OC" RIGHT="0" SIGIS="undef" SIGNAME="ich8_0_OC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="OC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="GPIO29" SIGIS="undef" SIGNAME="ich8_0_GPIO29">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="GPIO29"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="GPIO30" SIGIS="undef" SIGNAME="ich8_0_GPIO30">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="GPIO30"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="GPIO31" SIGIS="undef" SIGNAME="ich8_0_GPIO31">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="GPIO31"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="USBRBIAS_I" SIGIS="undef" SIGNAME="ich8_0_USBRBIAS_I">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="USBRBIAS_I"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="USBRBIAS_O" SIGIS="undef" SIGNAME="usb_0_USBRBIAS_O">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ich8_0" PORT="USBRBIAS_O"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

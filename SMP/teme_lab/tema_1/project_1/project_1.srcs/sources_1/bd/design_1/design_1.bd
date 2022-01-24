@@ -1,0 +1,850 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "usb_0": "",
+      "ich8_0": "",
+      "ddr_0": "",
+      "gmch_0": "",
+      "processor_0": ""
+    },
+    "components": {
+      "usb_0": {
+        "vlnv": "xilinx.com:module_ref:usb:1.0",
+        "xci_name": "design_1_usb_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "usb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "P": {
+            "direction": "IO",
+            "left": "7",
+            "right": "0"
+          },
+          "N": {
+            "direction": "IO",
+            "left": "7",
+            "right": "0"
+          },
+          "OC": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "GPIO29": {
+            "direction": "I"
+          },
+          "GPIO30": {
+            "direction": "I"
+          },
+          "GPIO31": {
+            "direction": "I"
+          },
+          "USBRBIAS_I": {
+            "direction": "I"
+          },
+          "USBRBIAS_O": {
+            "direction": "O"
+          }
+        }
+      },
+      "ich8_0": {
+        "vlnv": "xilinx.com:module_ref:ich8:1.0",
+        "xci_name": "design_1_ich8_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ich8",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "TXP_A": {
+            "direction": "O",
+            "left": "0",
+            "right": "1"
+          },
+          "TXN_A": {
+            "direction": "O",
+            "left": "0",
+            "right": "1"
+          },
+          "TXP": {
+            "direction": "O",
+            "left": "2",
+            "right": "3"
+          },
+          "TXN": {
+            "direction": "O",
+            "left": "2",
+            "right": "3"
+          },
+          "RXP_A": {
+            "direction": "I",
+            "left": "0",
+            "right": "1"
+          },
+          "RXN_A": {
+            "direction": "I",
+            "left": "0",
+            "right": "1"
+          },
+          "RXP": {
+            "direction": "I",
+            "left": "2",
+            "right": "3"
+          },
+          "RXN": {
+            "direction": "I",
+            "left": "2",
+            "right": "3"
+          },
+          "DMI_ZCOMP": {
+            "direction": "I"
+          },
+          "DMI_IRCOMP": {
+            "direction": "O"
+          },
+          "P": {
+            "direction": "IO",
+            "left": "7",
+            "right": "0"
+          },
+          "N": {
+            "direction": "IO",
+            "left": "7",
+            "right": "0"
+          },
+          "OC": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "GPIO29": {
+            "direction": "O"
+          },
+          "GPIO30": {
+            "direction": "O"
+          },
+          "GPIO31": {
+            "direction": "O"
+          },
+          "USBRBIAS_I": {
+            "direction": "O"
+          },
+          "USBRBIAS_O": {
+            "direction": "I"
+          }
+        }
+      },
+      "ddr_0": {
+        "vlnv": "xilinx.com:module_ref:ddr:1.0",
+        "xci_name": "design_1_ddr_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ddr",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SCS_A": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "SMA_A": {
+            "direction": "O",
+            "left": "14",
+            "right": "0"
+          },
+          "SBS_A": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "SRAS_A": {
+            "direction": "O"
+          },
+          "SCAS_A": {
+            "direction": "O"
+          },
+          "SWE_A": {
+            "direction": "O"
+          },
+          "SDQ_A": {
+            "direction": "IO",
+            "left": "63",
+            "right": "0"
+          },
+          "SDM_A": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "SDQS_A": {
+            "direction": "IO",
+            "left": "7",
+            "right": "0"
+          },
+          "SCKE_A": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "SCLK_A": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "SODT_A": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "gmch_0": {
+        "vlnv": "xilinx.com:module_ref:gmch:1.0",
+        "xci_name": "design_1_gmch_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "gmch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "TXP_A": {
+            "direction": "I",
+            "left": "0",
+            "right": "1"
+          },
+          "TXN_A": {
+            "direction": "I",
+            "left": "0",
+            "right": "1"
+          },
+          "TXP": {
+            "direction": "I",
+            "left": "2",
+            "right": "3"
+          },
+          "TXN": {
+            "direction": "I",
+            "left": "2",
+            "right": "3"
+          },
+          "RXP_A": {
+            "direction": "O",
+            "left": "0",
+            "right": "1"
+          },
+          "RXN_A": {
+            "direction": "O",
+            "left": "0",
+            "right": "1"
+          },
+          "RXP": {
+            "direction": "O",
+            "left": "2",
+            "right": "3"
+          },
+          "RXN": {
+            "direction": "O",
+            "left": "2",
+            "right": "3"
+          },
+          "DMI_ZCOMP": {
+            "direction": "O"
+          },
+          "DMI_IRCOMP": {
+            "direction": "I"
+          },
+          "HA": {
+            "direction": "IO",
+            "left": "35",
+            "right": "3"
+          },
+          "HD": {
+            "direction": "IO",
+            "left": "63",
+            "right": "0"
+          },
+          "HADS": {
+            "direction": "IO"
+          },
+          "HBNR": {
+            "direction": "IO"
+          },
+          "HBPRI": {
+            "direction": "I"
+          },
+          "HDBSY": {
+            "direction": "IO"
+          },
+          "HDEFER": {
+            "direction": "I"
+          },
+          "HHIT": {
+            "direction": "IO"
+          },
+          "HHITM": {
+            "direction": "IO"
+          },
+          "HLOCK": {
+            "direction": "IO"
+          },
+          "HREQ": {
+            "direction": "IO",
+            "left": "4",
+            "right": "0"
+          },
+          "HPCREQ": {
+            "direction": "O"
+          },
+          "HTRDY": {
+            "direction": "I"
+          },
+          "HRS": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "HBREQ0": {
+            "direction": "IO"
+          },
+          "HDINV": {
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
+          },
+          "HADSTB": {
+            "direction": "IO",
+            "left": "1",
+            "right": "0"
+          },
+          "HDSTBP": {
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
+          },
+          "BSEL": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "HRCOMP": {
+            "direction": "IO"
+          },
+          "HSCOMP": {
+            "direction": "IO"
+          },
+          "HSCOMP_C": {
+            "direction": "IO"
+          },
+          "HSWING": {
+            "direction": "O"
+          },
+          "HDVREF": {
+            "direction": "O"
+          },
+          "HACCVREF": {
+            "direction": "O"
+          },
+          "SCS_A": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "SMA_A": {
+            "direction": "I",
+            "left": "14",
+            "right": "0"
+          },
+          "SBS_A": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "SRAS_A": {
+            "direction": "I"
+          },
+          "SCAS_A": {
+            "direction": "I"
+          },
+          "SWE_A": {
+            "direction": "I"
+          },
+          "SDQ_A": {
+            "direction": "IO",
+            "left": "63",
+            "right": "0"
+          },
+          "SDM_A": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "SDQS_A": {
+            "direction": "IO",
+            "left": "7",
+            "right": "0"
+          },
+          "SCKE_A": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "SCLK_A": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "SODT_A": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "processor_0": {
+        "vlnv": "xilinx.com:module_ref:processor:1.0",
+        "xci_name": "design_1_processor_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "processor",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "HA": {
+            "direction": "IO",
+            "left": "35",
+            "right": "3"
+          },
+          "HD": {
+            "direction": "IO",
+            "left": "63",
+            "right": "0"
+          },
+          "HADS": {
+            "direction": "IO"
+          },
+          "HBNR": {
+            "direction": "IO"
+          },
+          "HBPRI": {
+            "direction": "O"
+          },
+          "HDBSY": {
+            "direction": "IO"
+          },
+          "HDEFER": {
+            "direction": "O"
+          },
+          "HHIT": {
+            "direction": "IO"
+          },
+          "HHITM": {
+            "direction": "IO"
+          },
+          "HLOCK": {
+            "direction": "IO"
+          },
+          "HREQ": {
+            "direction": "IO",
+            "left": "4",
+            "right": "0"
+          },
+          "HPCREQ": {
+            "direction": "I"
+          },
+          "HTRDY": {
+            "direction": "O"
+          },
+          "HRS": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "HBREQ0": {
+            "direction": "IO"
+          },
+          "HDINV": {
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
+          },
+          "HADSTB": {
+            "direction": "IO",
+            "left": "1",
+            "right": "0"
+          },
+          "HDSTBP": {
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
+          },
+          "BSEL": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "HRCOMP": {
+            "direction": "IO"
+          },
+          "HSCOMP": {
+            "direction": "IO"
+          },
+          "HSCOMP_C": {
+            "direction": "IO"
+          },
+          "HSWING": {
+            "direction": "I"
+          },
+          "HDVREF": {
+            "direction": "I"
+          },
+          "HACCVREF": {
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "processor_0/HA",
+          "gmch_0/HA"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "gmch_0/HD",
+          "processor_0/HD"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "gmch_0/HADS",
+          "processor_0/HADS"
+        ]
+      },
+      "Net3": {
+        "ports": [
+          "gmch_0/HBNR",
+          "processor_0/HBNR"
+        ]
+      },
+      "Net4": {
+        "ports": [
+          "gmch_0/HDBSY",
+          "processor_0/HDBSY"
+        ]
+      },
+      "Net5": {
+        "ports": [
+          "gmch_0/HHIT",
+          "processor_0/HHIT"
+        ]
+      },
+      "processor_0_HBPRI": {
+        "ports": [
+          "processor_0/HBPRI",
+          "gmch_0/HBPRI"
+        ]
+      },
+      "processor_0_HDEFER": {
+        "ports": [
+          "processor_0/HDEFER",
+          "gmch_0/HDEFER"
+        ]
+      },
+      "Net6": {
+        "ports": [
+          "gmch_0/HHITM",
+          "processor_0/HHITM"
+        ]
+      },
+      "Net7": {
+        "ports": [
+          "gmch_0/HLOCK",
+          "processor_0/HLOCK"
+        ]
+      },
+      "Net8": {
+        "ports": [
+          "gmch_0/HREQ",
+          "processor_0/HREQ"
+        ]
+      },
+      "processor_0_HTRDY": {
+        "ports": [
+          "processor_0/HTRDY",
+          "gmch_0/HTRDY"
+        ]
+      },
+      "processor_0_HRS": {
+        "ports": [
+          "processor_0/HRS",
+          "gmch_0/HRS"
+        ]
+      },
+      "Net9": {
+        "ports": [
+          "gmch_0/HBREQ0",
+          "processor_0/HBREQ0"
+        ]
+      },
+      "Net10": {
+        "ports": [
+          "gmch_0/HDINV",
+          "processor_0/HDINV"
+        ]
+      },
+      "Net11": {
+        "ports": [
+          "gmch_0/HADSTB",
+          "processor_0/HADSTB"
+        ]
+      },
+      "Net12": {
+        "ports": [
+          "gmch_0/HDSTBP",
+          "processor_0/HDSTBP"
+        ]
+      },
+      "Net13": {
+        "ports": [
+          "gmch_0/HRCOMP",
+          "processor_0/HRCOMP"
+        ]
+      },
+      "Net14": {
+        "ports": [
+          "gmch_0/HSCOMP",
+          "processor_0/HSCOMP"
+        ]
+      },
+      "Net15": {
+        "ports": [
+          "gmch_0/HSCOMP_C",
+          "processor_0/HSCOMP_C"
+        ]
+      },
+      "gmch_0_HACCVREF": {
+        "ports": [
+          "gmch_0/HACCVREF",
+          "processor_0/HACCVREF"
+        ]
+      },
+      "gmch_0_HSWING": {
+        "ports": [
+          "gmch_0/HSWING",
+          "processor_0/HSWING"
+        ]
+      },
+      "gmch_0_HDVREF": {
+        "ports": [
+          "gmch_0/HDVREF",
+          "processor_0/HDVREF"
+        ]
+      },
+      "gmch_0_BSEL": {
+        "ports": [
+          "gmch_0/BSEL",
+          "processor_0/BSEL"
+        ]
+      },
+      "gmch_0_HPCREQ": {
+        "ports": [
+          "gmch_0/HPCREQ",
+          "processor_0/HPCREQ"
+        ]
+      },
+      "ich8_0_TXP_A": {
+        "ports": [
+          "ich8_0/TXP_A",
+          "gmch_0/TXP_A"
+        ]
+      },
+      "ich8_0_TXN_A": {
+        "ports": [
+          "ich8_0/TXN_A",
+          "gmch_0/TXN_A"
+        ]
+      },
+      "ich8_0_TXP": {
+        "ports": [
+          "ich8_0/TXP",
+          "gmch_0/TXP"
+        ]
+      },
+      "ich8_0_TXN": {
+        "ports": [
+          "ich8_0/TXN",
+          "gmch_0/TXN"
+        ]
+      },
+      "ich8_0_DMI_IRCOMP": {
+        "ports": [
+          "ich8_0/DMI_IRCOMP",
+          "gmch_0/DMI_IRCOMP"
+        ]
+      },
+      "ich8_0_OC": {
+        "ports": [
+          "ich8_0/OC",
+          "usb_0/OC"
+        ]
+      },
+      "ich8_0_GPIO29": {
+        "ports": [
+          "ich8_0/GPIO29",
+          "usb_0/GPIO29"
+        ]
+      },
+      "ich8_0_GPIO30": {
+        "ports": [
+          "ich8_0/GPIO30",
+          "usb_0/GPIO30"
+        ]
+      },
+      "ich8_0_GPIO31": {
+        "ports": [
+          "ich8_0/GPIO31",
+          "usb_0/GPIO31"
+        ]
+      },
+      "ich8_0_USBRBIAS_I": {
+        "ports": [
+          "ich8_0/USBRBIAS_I",
+          "usb_0/USBRBIAS_I"
+        ]
+      },
+      "Net16": {
+        "ports": [
+          "ich8_0/P",
+          "usb_0/P"
+        ]
+      },
+      "Net17": {
+        "ports": [
+          "ich8_0/N",
+          "usb_0/N"
+        ]
+      },
+      "usb_0_USBRBIAS_O": {
+        "ports": [
+          "usb_0/USBRBIAS_O",
+          "ich8_0/USBRBIAS_O"
+        ]
+      },
+      "gmch_0_RXP_A": {
+        "ports": [
+          "gmch_0/RXP_A",
+          "ich8_0/RXP_A"
+        ]
+      },
+      "gmch_0_RXN_A": {
+        "ports": [
+          "gmch_0/RXN_A",
+          "ich8_0/RXN_A"
+        ]
+      },
+      "gmch_0_RXP": {
+        "ports": [
+          "gmch_0/RXP",
+          "ich8_0/RXP"
+        ]
+      },
+      "gmch_0_RXN": {
+        "ports": [
+          "gmch_0/RXN",
+          "ich8_0/RXN"
+        ]
+      },
+      "gmch_0_DMI_ZCOMP": {
+        "ports": [
+          "gmch_0/DMI_ZCOMP",
+          "ich8_0/DMI_ZCOMP"
+        ]
+      },
+      "ddr_0_SCS_A": {
+        "ports": [
+          "ddr_0/SCS_A",
+          "gmch_0/SCS_A"
+        ]
+      },
+      "ddr_0_SMA_A": {
+        "ports": [
+          "ddr_0/SMA_A",
+          "gmch_0/SMA_A"
+        ]
+      },
+      "ddr_0_SBS_A": {
+        "ports": [
+          "ddr_0/SBS_A",
+          "gmch_0/SBS_A"
+        ]
+      },
+      "ddr_0_SRAS_A": {
+        "ports": [
+          "ddr_0/SRAS_A",
+          "gmch_0/SRAS_A"
+        ]
+      },
+      "ddr_0_SCAS_A": {
+        "ports": [
+          "ddr_0/SCAS_A",
+          "gmch_0/SCAS_A"
+        ]
+      },
+      "ddr_0_SWE_A": {
+        "ports": [
+          "ddr_0/SWE_A",
+          "gmch_0/SWE_A"
+        ]
+      },
+      "ddr_0_SDM_A": {
+        "ports": [
+          "ddr_0/SDM_A",
+          "gmch_0/SDM_A"
+        ]
+      },
+      "ddr_0_SODT_A": {
+        "ports": [
+          "ddr_0/SODT_A",
+          "gmch_0/SODT_A"
+        ]
+      },
+      "ddr_0_SCLK_A": {
+        "ports": [
+          "ddr_0/SCLK_A",
+          "gmch_0/SCLK_A"
+        ]
+      },
+      "ddr_0_SCKE_A": {
+        "ports": [
+          "ddr_0/SCKE_A",
+          "gmch_0/SCKE_A"
+        ]
+      },
+      "Net18": {
+        "ports": [
+          "gmch_0/SDQ_A",
+          "ddr_0/SDQ_A"
+        ]
+      },
+      "Net19": {
+        "ports": [
+          "ddr_0/SDQS_A",
+          "gmch_0/SDQS_A"
+        ]
+      }
+    }
+  }
+}
