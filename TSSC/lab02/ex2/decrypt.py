@@ -1,0 +1,16 @@
+from gmpy2 import invert
+from gmpy2 import powmod
+
+p = 238324208831434331628131715304428889871
+q = 296805874594538235115008173244022912163
+e = 3
+C = 28822365203577929536184039125870638440692316100772583657817939349051546473185
+
+n = p * q
+phi = (p - 1) * (q - 1)
+
+d = invert(e, phi)
+
+M = powmod(C, d, n)
+
+print(print(bytearray.fromhex(hex(int(M))[2:])))
