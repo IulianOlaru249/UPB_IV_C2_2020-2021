@@ -1,0 +1,4 @@
+break copy
+break *0x8048507
+break *0x8048521
+
