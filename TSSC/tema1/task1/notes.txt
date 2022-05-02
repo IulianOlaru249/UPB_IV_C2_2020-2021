@@ -1,0 +1,65 @@
+Flag-ul ala obtinut din json e criptat cu encrypt, asta inseamna ca pe el s-a aplicat un rsa si b64.
+Prin inmultirea mesajul ma refer strict la inmultirea cipher_num-urilor, care sunt obtinute cu gmpy2.powmod... 
+Acuma, flag-ul din json deja a suferit 2 transformari: S-a calculat cipher_num-ul care e obtinut din ridicarea mesajului initial(care e chiar flagul pe care vrem sa-l aflam) la e mod n si apoi s-a facut base64 pe el.
+Noi avem rezultatu final, dupa aplicarea b64 si vrem sa obtinem cipher_num-ul lui.
+
+Ca sa faci asta poti arunca la misto un mesaj criptat b64 catre server si o sa
+scuipe o eroare cu linia in care decripteaza mesaju' trimis de noi de unde extragi
+functia de decrypt. Ca sa nu te mai chinui, ea arata cam asa gmpy2.from_binary(base64.b64decode(flag-ul din message.txt)).
+
+Dupa ce faci asta, ai obtinut cipher_num-ul flagului, acuma mai ramane sa faci
+cipher_num-ul mesajului random. In cazul de fata 2.
+
+Adica inmultesti cipher_num de la flag cu gmpy2.powmod(2,e,n).
+Rezultatul inmultirii il criptezi base64 cu base64 encode, iar apoi formezi un json
+pe care-l trimiti la server. JSON-ul dupa cum ai vazut contine cheia flag, si campul un mesaj b64
+Criptezi jsonul base64(https://codebeautify.org/json-to-base64-converter),
+trimiti mesajul la server si serverul o sa-ti dea un sir de bytes. Sirul ala de
+bytes se converteste la un numar(vezi int.from_bytes), il imparti la 2(care era
+mesajul nostru random) si obtii un numar ce reprezinta flag-ul pe care-l cauti.
+Apoi doar convertesti numarul obtinut cu number_to_str din script si ala e flagul.
+
+
+
+
+I. Decode the message in message.txt from base64.
+{"n": 11542281117101797020909134485668778291404618784845318023489187247011413639020490884288576594468523877622715246587792774352399089307280931978344754738401490925189369533088262004025143571852223696949317580914401534575230792324650796457887550787924792994419887241834090142385805639127276773914396868935608127887901711741508825190392224231992945587302837939331085843066557015854890582668295699219558344470071386863427539567565230422489461366728348496623263132181818134700071860817013679717937390532084468849584720653332126936491941492201395234351440239941699717597579805460723341700836445854238928787022852167217377600681, "e": 110791, "flag": "AQGz15yY96oxVlvNsZhFnNeAZzZQf72I7MftY13aB1OVaT7OhMWFU7XOiww8Nzqa5GS2/W3j5yBw57Ey5QEpaZ4ydqEPRTuJTlrOiqz08UOfnLwfqW/2L4G+/C+W6Wb1GL/39nXLuMmk5q15sqxCN+2QqpFngp78///twf9IHtGVYK+VMBo/O9rb7E1Fg1rit9g9LK2D4Tj/pOUQikjueJtQhQgZ7Ye0H8AEDGQl3Np6hZuJ63mhkm2aDFiRg2TVaNovNfOhAjXSSEBDcCrwT6Mdl3qeAg9pNnHzxA9wxO5SHGiBtACJqep21Gpo6+6KIRpsBYY0aA8PW9DGKUqf5oM8"}
+
+II. Send to server a random b64 message
+Should get something like this:
+
+$: nc isc2022.1337.cx 11015
+Please enter your secret message for verification:
+Z2FsY2VhdmEK
+Traceback (most recent call last):
+  File "/usr/local/bin/crypto-checker.py", line 45, in <module>
+    message_obj = json.loads(base64.b64decode(message_enc))
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Seee the function used to decript the message from error trace:
+base64.b64decode(message_enc)
+Use this neat thing to convert the result from hex to base10:
+gmpy2.from_binary(base64.b64decode(message_enc))
+
+III. Use it on the flag from the original message:
+
+gmpy2.from_binary(base64.b64decode("AQGz15yY96oxVlvNsZhFnNeAZzZQf72I7MftY13aB1OVaT7OhMWFU7XOiww8Nzqa5GS2/W3j5yBw57Ey5QEpaZ4ydqEPRTuJTlrOiqz08UOfnLwfqW/2L4G+/C+W6Wb1GL/39nXLuMmk5q15sqxCN+2QqpFngp78///twf9IHtGVYK+VMBo/O9rb7E1Fg1rit9g9LK2D4Tj/pOUQikjueJtQhQgZ7Ye0H8AEDGQl3Np6hZuJ63mhkm2aDFiRg2TVaNovNfOhAjXSSEBDcCrwT6Mdl3qeAg9pNnHzxA9wxO5SHGiBtACJqep21Gpo6+6KIRpsBYY0aA8PW9DGKUqf5oM8"))
+
+Result:
+
+mpz(7639341040184015006788075558191847515585835121699449389481619713206038879344124723896736019243039115060306033261997457243464766097402747802548906011410283715155621471496473527381032259676457486658010673194159851776457678305525422607956862211128455149552480158514297570514756059728739601730448775999257716704168890414887768871394830739925986433138430913855880031964902836238733538622052483804122603279549517395707029171449314240187463309710045055970761855688836517290801269722222351565340089127794790471104343066481345998890091171609132770928416831896606986388370376959523431347825672013051176581645411482925684021171)
+
+
+IV:
+{flag:"AQFZTP6a1kP8GpAq/feVOf2397HaTr9SdG4xIdrVGLZP830FmI9+Fu1jP+Ae0SLFPnKEayzHNK71w50H86H4/dwYWuxbOU/FN6F14H0rL02K56JrvSQw1LlQodpGO3zqcvkOY6bCPVtgnGLoYqHusHvhqtMgFnxHA/ovXg3UIMbQoqdiWxCMc5rD/z76p3acMHm/i9K4zsdc/qjhIQOnH+vF1QxlLVus7w5qEwLyAdFgsjfJsCvgy0DtBv1wS2I4NPSlGiIBtADrm2gBJCviPRSSPvZJs1b6iPb0s7ImM0feDDaf4yPFvRofa9sEp9B9SncKYchc/w5ev+hpeSFZIhJVo87RAQ=="}
+
+
+--------------------------------------------------------------------------------
+SpeishFlag{ZUQYxFGcIb44vWPh5IvYRA9jWASIacff}
+

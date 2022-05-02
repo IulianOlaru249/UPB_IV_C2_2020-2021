@@ -1,0 +1,38 @@
+I. Decode the message in message.txt from base64.
+
+II. Send to server a random b64 message
+Should get something like this:
+
+$: nc isc2022.1337.cx 11015
+Please enter your secret message for verification:
+Z2FsY2VhdmEK
+Traceback (most recent call last):
+  File "/usr/local/bin/crypto-checker.py", line 45, in <module>
+    message_obj = json.loads(base64.b64decode(message_enc))
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+Seee the function used to decript the message from error trace:
+base64.b64decode(message_enc)
+Use this neat thing to convert the result from hex to base10:
+gmpy2.from_binary(base64.b64decode(message_enc))
+
+III. Use it on the flag from the original message
+Result is the cypher num of the original flag.
+
+IV. Compose a new message (random), and get its cypher numbe
+
+V. Encode the new message in base 64 using n and e from the original message
+
+VI. Compose the json with the original n and e and the encoded message from ^ as
+the flag
+
+VII. Get the string of bytes, devide it by the random message cypher
+
+VIII. Translate the number from ^ as the a string. Tada, that's the flag.
+

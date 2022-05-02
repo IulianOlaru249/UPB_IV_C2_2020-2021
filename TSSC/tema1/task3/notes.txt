@@ -1,0 +1,16 @@
+I. Identify target func address (ghidra + objdump):
+
+$: objdump -d -M intel casino | grep win
+080486e6 <win>:
+ 80486f7:	74 19                	je     8048712 <win+0x2c>
+ 804872b:	74 2c                	je     8048759 <win+0x73>
+
+
+II. Identify vulnerable func:
+
+the scanf from the list of numbers selection.
+
+GDB useful:
+p/d (int)lucky_number
+
+SpeishFlag{b2BcWeBrLwMh5ph9nLUYhlSeRiPFdZ6y}

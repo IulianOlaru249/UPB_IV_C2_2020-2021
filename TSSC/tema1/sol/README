@@ -1,0 +1,21 @@
+Olaru Gabriel Iulian - 324CC
+Assignment 1
+
+Structure:
+
+├── task1
+│   ├── encrypt0r.py // Added a few lines to solve task
+│   └── notes.txt    // Explanations and step by step solution
+├── task2
+│   └── notes.txt    // Explanation and step by step solution
+└── task3
+    ├── casino       // Original  
+    ├── notes.txt    // Explanations and step by step solution
+    └── run.sh       // Auxiliary script with payload
+
+Flags
+
+Task1: SpeishFlag{ZUQYxFGcIb44vWPh5IvYRA9jWASIacff}
+Task2: SpeishFlag{8oMrfZHRAWJ19woCRlfrPY4So5iRWT5L}
+Task3: SpeishFlag{b2BcWeBrLwMh5ph9nLUYhlSeRiPFdZ6y}
+
