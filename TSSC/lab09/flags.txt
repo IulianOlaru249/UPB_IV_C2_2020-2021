@@ -1,0 +1,5 @@
+ISC{sending_passwords_in_cleartext_is_not_smart}
+
+ISC{file_is_our_friend}
+
+ISC{we_all_love_grep}
